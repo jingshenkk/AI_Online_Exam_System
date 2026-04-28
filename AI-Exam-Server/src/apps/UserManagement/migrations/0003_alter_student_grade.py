@@ -1,0 +1,17 @@
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('UserManagement', '0002_alter_student_email_alter_student_phone_and_more'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='student',
+            name='grade',
+            field=models.CharField(blank=True, help_text='年级', max_length=30, null=True),
+        ),
+    ]

@@ -1,0 +1,6500 @@
+[
+  {
+    "question_id": 1,
+    "subject": "计算机网络",
+    "question": "简述TCP协议的三次握手过程及其主要目的。",
+    "standard_answer": "1. 目的：建立可靠的连接，同步双方的初始序列号，防止已失效的连接请求报文段导致错误。\n2. 过程：客户端发送SYN=1的报文，包含初始序列号x；服务器回复SYN=1, ACK=1的报文，包含确认号x+1和自身序列号y；客户端发送ACK=1的报文，确认号y+1。\n3. 作用：确保双方都具有发送和接收能力，协商初始序列号以实现可靠传输。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确说明三次握手的主要目的：建立可靠的连接",
+        "score": 2,
+        "acceptable_expressions": [
+          "建立可靠的连接",
+          "确保连接可靠",
+          "建立可靠的数据传输通道",
+          "建立可靠的双向通信"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明三次握手的主要目的：同步双方的初始序列号",
+        "score": 2,
+        "acceptable_expressions": [
+          "同步序列号",
+          "交换初始序列号",
+          "协商序列号",
+          "确定起始序列号"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确说明三次握手的主要目的：防止已失效的连接请求报文段导致错误",
+        "score": 2,
+        "acceptable_expressions": [
+          "防止旧的连接请求造成混乱",
+          "避免历史连接干扰",
+          "防止失效请求导致错误",
+          "避免重复连接问题"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确描述第一次握手：客户端发送SYN=1的报文，包含初始序列号x",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户端发送SYN报文，携带序列号x",
+          "第一步：客户端发送SYN和序列号x",
+          "客户端发起连接，SYN=1，seq=x"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确描述第二次握手：服务器回复SYN=1, ACK=1的报文，包含确认号x+1和自身序列号y",
+        "score": 1,
+        "acceptable_expressions": [
+          "服务器回复SYN+ACK，ack=x+1，seq=y",
+          "第二步：服务器发送SYN和ACK，确认客户端序列号并发送自身序列号",
+          "服务器回应SYN=1, ACK=1, ack=x+1, seq=y"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "正确描述第三次握手：客户端发送ACK=1的报文，确认号y+1",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户端发送ACK，ack=y+1",
+          "第三步：客户端确认服务器序列号",
+          "客户端回应ACK，确认服务器的序列号y+1"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "正确总结三次握手的作用：确保双方都具有发送和接收能力",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "验证双向通信能力",
+          "确认双方都能发送和接收数据",
+          "测试通信双方的可用性"
+        ]
+      },
+      {
+        "id": 8,
+        "description": "正确总结三次握手的作用：协商初始序列号以实现可靠传输",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "通过序列号协商实现可靠传输",
+          "确定序列号以保证数据有序和可靠",
+          "序列号同步保障传输可靠性"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "TCP协议的三次握手主要目的是建立可靠的连接，同步双方的初始序列号，并防止已失效的连接请求报文段导致错误。具体过程如下：首先，客户端发送一个SYN=1的报文，包含初始序列号x；接着，服务器收到后回复一个SYN=1、ACK=1的报文，其中确认号为x+1，并携带自身的初始序列号y；最后，客户端再发送一个ACK=1的报文，确认号为y+1。通过这个过程，双方都确认了彼此的发送和接收能力，并协商了初始序列号，从而为实现可靠传输奠定了基础。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 9.7
+  },
+  {
+    "question_id": 1,
+    "subject": "计算机网络",
+    "question": "简述TCP协议的三次握手过程及其主要目的。",
+    "standard_answer": "1. 目的：建立可靠的连接，同步双方的初始序列号，防止已失效的连接请求报文段导致错误。\n2. 过程：客户端发送SYN=1的报文，包含初始序列号x；服务器回复SYN=1, ACK=1的报文，包含确认号x+1和自身序列号y；客户端发送ACK=1的报文，确认号y+1。\n3. 作用：确保双方都具有发送和接收能力，协商初始序列号以实现可靠传输。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确说明三次握手的主要目的：建立可靠的连接",
+        "score": 2,
+        "acceptable_expressions": [
+          "建立可靠的连接",
+          "确保连接可靠",
+          "建立可靠的数据传输通道",
+          "建立可靠的双向通信"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明三次握手的主要目的：同步双方的初始序列号",
+        "score": 2,
+        "acceptable_expressions": [
+          "同步序列号",
+          "交换初始序列号",
+          "协商序列号",
+          "确定起始序列号"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确说明三次握手的主要目的：防止已失效的连接请求报文段导致错误",
+        "score": 2,
+        "acceptable_expressions": [
+          "防止旧的连接请求造成混乱",
+          "避免历史连接干扰",
+          "防止失效请求导致错误",
+          "避免重复连接问题"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确描述第一次握手：客户端发送SYN=1的报文，包含初始序列号x",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户端发送SYN报文，携带序列号x",
+          "第一步：客户端发送SYN和序列号x",
+          "客户端发起连接，SYN=1，seq=x"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确描述第二次握手：服务器回复SYN=1, ACK=1的报文，包含确认号x+1和自身序列号y",
+        "score": 1,
+        "acceptable_expressions": [
+          "服务器回复SYN+ACK，ack=x+1，seq=y",
+          "第二步：服务器发送SYN和ACK，确认客户端序列号并发送自身序列号",
+          "服务器回应SYN=1, ACK=1, ack=x+1, seq=y"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "正确描述第三次握手：客户端发送ACK=1的报文，确认号y+1",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户端发送ACK，ack=y+1",
+          "第三步：客户端确认服务器序列号",
+          "客户端回应ACK，确认服务器的序列号y+1"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "正确总结三次握手的作用：确保双方都具有发送和接收能力",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "验证双向通信能力",
+          "确认双方都能发送和接收数据",
+          "测试通信双方的可用性"
+        ]
+      },
+      {
+        "id": 8,
+        "description": "正确总结三次握手的作用：协商初始序列号以实现可靠传输",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "通过序列号协商实现可靠传输",
+          "确定序列号以保证数据有序和可靠",
+          "序列号同步保障传输可靠性"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "三次握手是为了建立TCP连接。第一步是客户端发送一个SYN报文给服务器，第二步是服务器回复一个SYN-ACK报文，第三步是客户端再回复一个ACK报文。这样做可以确保双方都能通信，并协商一些参数。主要目的就是建立连接，避免出现错误。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 8.0,
+    "human_score_2": 9.0,
+    "human_score_3": 8.5,
+    "human_score_avg": 8.5,
+    "lenient_score": 7.5,
+    "strict_score": 7.5,
+    "free_score": 8.0,
+    "keyword_score": 5.5
+  },
+  {
+    "question_id": 1,
+    "subject": "计算机网络",
+    "question": "简述TCP协议的三次握手过程及其主要目的。",
+    "standard_answer": "1. 目的：建立可靠的连接，同步双方的初始序列号，防止已失效的连接请求报文段导致错误。\n2. 过程：客户端发送SYN=1的报文，包含初始序列号x；服务器回复SYN=1, ACK=1的报文，包含确认号x+1和自身序列号y；客户端发送ACK=1的报文，确认号y+1。\n3. 作用：确保双方都具有发送和接收能力，协商初始序列号以实现可靠传输。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确说明三次握手的主要目的：建立可靠的连接",
+        "score": 2,
+        "acceptable_expressions": [
+          "建立可靠的连接",
+          "确保连接可靠",
+          "建立可靠的数据传输通道",
+          "建立可靠的双向通信"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明三次握手的主要目的：同步双方的初始序列号",
+        "score": 2,
+        "acceptable_expressions": [
+          "同步序列号",
+          "交换初始序列号",
+          "协商序列号",
+          "确定起始序列号"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确说明三次握手的主要目的：防止已失效的连接请求报文段导致错误",
+        "score": 2,
+        "acceptable_expressions": [
+          "防止旧的连接请求造成混乱",
+          "避免历史连接干扰",
+          "防止失效请求导致错误",
+          "避免重复连接问题"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确描述第一次握手：客户端发送SYN=1的报文，包含初始序列号x",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户端发送SYN报文，携带序列号x",
+          "第一步：客户端发送SYN和序列号x",
+          "客户端发起连接，SYN=1，seq=x"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确描述第二次握手：服务器回复SYN=1, ACK=1的报文，包含确认号x+1和自身序列号y",
+        "score": 1,
+        "acceptable_expressions": [
+          "服务器回复SYN+ACK，ack=x+1，seq=y",
+          "第二步：服务器发送SYN和ACK，确认客户端序列号并发送自身序列号",
+          "服务器回应SYN=1, ACK=1, ack=x+1, seq=y"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "正确描述第三次握手：客户端发送ACK=1的报文，确认号y+1",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户端发送ACK，ack=y+1",
+          "第三步：客户端确认服务器序列号",
+          "客户端回应ACK，确认服务器的序列号y+1"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "正确总结三次握手的作用：确保双方都具有发送和接收能力",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "验证双向通信能力",
+          "确认双方都能发送和接收数据",
+          "测试通信双方的可用性"
+        ]
+      },
+      {
+        "id": 8,
+        "description": "正确总结三次握手的作用：协商初始序列号以实现可靠传输",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "通过序列号协商实现可靠传输",
+          "确定序列号以保证数据有序和可靠",
+          "序列号同步保障传输可靠性"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "TCP握手就是客户端和服务器互相打招呼，发三个包确认一下，然后就可以开始传数据了。目的是为了能连上，防止传输出错。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 4.0,
+    "human_score_2": 4.0,
+    "human_score_3": 5.0,
+    "human_score_avg": 4.33,
+    "lenient_score": 2.0,
+    "strict_score": 4.5,
+    "free_score": 4.0,
+    "keyword_score": 1.7
+  },
+  {
+    "question_id": 2,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？请简述它们之间的主要区别。",
+    "standard_answer": "1. 定义：进程是资源分配的基本单位，拥有独立的内存空间；线程是CPU调度的基本单位，是进程内的执行单元。\n2. 资源：进程间资源独立，通信成本高；线程共享进程资源，通信方便但需同步。\n3. 开销：进程创建、切换开销大；线程开销小，更轻量级。\n4. 健壮性：一个进程崩溃不影响其他进程；一个线程出错可能导致整个进程终止。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确给出进程的定义，指出进程是资源分配的基本单位，拥有独立的内存空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是系统进行资源分配和调度的基本单位",
+          "进程拥有独立的内存地址空间",
+          "进程是程序的一次执行过程，拥有自己的资源"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确给出线程的定义，指出线程是CPU调度的基本单位，是进程内的执行单元",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是CPU调度和执行的基本单位",
+          "线程是进程中的一个执行流",
+          "线程共享进程的资源，但独立调度"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程间资源独立，通信成本高；线程共享进程资源，通信方便但需要同步",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程拥有独立的地址空间，通信需IPC机制",
+          "线程共享进程的内存和资源，通信简单但需注意同步问题",
+          "进程间隔离性强，线程间共享数据容易"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程创建和切换开销大，线程开销小，更轻量级",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程创建和上下文切换代价高",
+          "线程创建和切换速度快，资源消耗少",
+          "线程比进程更轻量，创建和调度效率更高"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出一个进程崩溃不影响其他进程；一个线程出错可能导致整个进程终止",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互独立，一个进程崩溃不会影响其他进程",
+          "线程共享进程地址空间，一个线程崩溃可能导致整个进程退出",
+          "进程具有更好的隔离性和健壮性"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "进程是操作系统进行资源分配的基本单位，每个进程都拥有独立的地址空间和系统资源。线程是CPU调度的基本单位，是进程内部的一个执行序列，一个进程可以包含多个线程。主要区别在于：1）资源占用：进程间资源相互独立，通信需要通过进程间通信（IPC）机制，成本较高；而同一进程内的线程共享该进程的内存和资源，通信方便，但需要同步机制来避免冲突。2）开销：进程的创建、切换和销毁开销较大，因为涉及独立的资源分配；线程的创建和管理开销较小，更轻量。3）健壮性：一个进程崩溃通常不会影响其他进程的运行；但一个线程发生错误（如访问非法内存）可能导致整个进程终止，影响同一进程内的所有线程。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 2,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？请简述它们之间的主要区别。",
+    "standard_answer": "1. 定义：进程是资源分配的基本单位，拥有独立的内存空间；线程是CPU调度的基本单位，是进程内的执行单元。\n2. 资源：进程间资源独立，通信成本高；线程共享进程资源，通信方便但需同步。\n3. 开销：进程创建、切换开销大；线程开销小，更轻量级。\n4. 健壮性：一个进程崩溃不影响其他进程；一个线程出错可能导致整个进程终止。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确给出进程的定义，指出进程是资源分配的基本单位，拥有独立的内存空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是系统进行资源分配和调度的基本单位",
+          "进程拥有独立的内存地址空间",
+          "进程是程序的一次执行过程，拥有自己的资源"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确给出线程的定义，指出线程是CPU调度的基本单位，是进程内的执行单元",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是CPU调度和执行的基本单位",
+          "线程是进程中的一个执行流",
+          "线程共享进程的资源，但独立调度"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程间资源独立，通信成本高；线程共享进程资源，通信方便但需要同步",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程拥有独立的地址空间，通信需IPC机制",
+          "线程共享进程的内存和资源，通信简单但需注意同步问题",
+          "进程间隔离性强，线程间共享数据容易"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程创建和切换开销大，线程开销小，更轻量级",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程创建和上下文切换代价高",
+          "线程创建和切换速度快，资源消耗少",
+          "线程比进程更轻量，创建和调度效率更高"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出一个进程崩溃不影响其他进程；一个线程出错可能导致整个进程终止",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互独立，一个进程崩溃不会影响其他进程",
+          "线程共享进程地址空间，一个线程崩溃可能导致整个进程退出",
+          "进程具有更好的隔离性和健壮性"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "进程是程序的一次执行，有自己独立的内存空间。线程是进程的一部分，是更小的执行单位。它们的主要区别是：进程之间不共享内存，所以通信比较麻烦；而线程共享进程的内存，所以通信简单一些，但也要注意同步问题。另外，进程的开销比线程大，创建和切换更慢。一个进程出问题不会影响别的进程，但一个线程出问题可能会让整个进程都崩溃。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 4.0
+  },
+  {
+    "question_id": 2,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？请简述它们之间的主要区别。",
+    "standard_answer": "1. 定义：进程是资源分配的基本单位，拥有独立的内存空间；线程是CPU调度的基本单位，是进程内的执行单元。\n2. 资源：进程间资源独立，通信成本高；线程共享进程资源，通信方便但需同步。\n3. 开销：进程创建、切换开销大；线程开销小，更轻量级。\n4. 健壮性：一个进程崩溃不影响其他进程；一个线程出错可能导致整个进程终止。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确给出进程的定义，指出进程是资源分配的基本单位，拥有独立的内存空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是系统进行资源分配和调度的基本单位",
+          "进程拥有独立的内存地址空间",
+          "进程是程序的一次执行过程，拥有自己的资源"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确给出线程的定义，指出线程是CPU调度的基本单位，是进程内的执行单元",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是CPU调度和执行的基本单位",
+          "线程是进程中的一个执行流",
+          "线程共享进程的资源，但独立调度"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程间资源独立，通信成本高；线程共享进程资源，通信方便但需要同步",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程拥有独立的地址空间，通信需IPC机制",
+          "线程共享进程的内存和资源，通信简单但需注意同步问题",
+          "进程间隔离性强，线程间共享数据容易"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程创建和切换开销大，线程开销小，更轻量级",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程创建和上下文切换代价高",
+          "线程创建和切换速度快，资源消耗少",
+          "线程比进程更轻量，创建和调度效率更高"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出一个进程崩溃不影响其他进程；一个线程出错可能导致整个进程终止",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互独立，一个进程崩溃不会影响其他进程",
+          "线程共享进程地址空间，一个线程崩溃可能导致整个进程退出",
+          "进程具有更好的隔离性和健壮性"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "进程就是一个正在运行的程序，比如打开一个软件。线程好像是进程里面更小的东西，可以同时干好几件事。区别可能就是进程大一点，线程小一点吧。别的就不太清楚了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.5,
+    "human_score_2": 3.5,
+    "human_score_3": 4.0,
+    "human_score_avg": 3.67,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 3.0,
+    "keyword_score": 1.2
+  },
+  {
+    "question_id": 3,
+    "subject": "数据库",
+    "question": "简述数据库事务的ACID特性分别指什么。",
+    "standard_answer": "1. 原子性（Atomicity）：事务是不可分割的最小单位，要么全部成功，要么全部回滚。\n2. 一致性（Consistency）：事务执行前后数据库必须保持一致性状态。\n3. 隔离性（Isolation）：并发事务间互不干扰，每个事务感觉不到其他事务并发执行。\n4. 持久性（Durability）：事务提交后，对数据的修改永久保存，即使系统故障也不丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "答出原子性（Atomicity）并解释为事务要么全部完成，要么全部回滚（不可分割）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务是不可分割的整体，要么全执行，要么全不执行",
+          "事务中的所有操作要么全部成功，要么全部失败回滚",
+          "事务的原子性保证操作完全完成或完全不影响数据库"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "答出一致性（Consistency）并解释为事务执行前后数据库保持一致性状态（符合约束）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务使数据库从一个一致状态变为另一个一致状态",
+          "事务执行必须保证数据库完整性约束不被破坏",
+          "事务前后数据库满足所有预定义的规则和约束"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "答出隔离性（Isolation）并解释为并发事务之间互不干扰（相互隔离）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "多个事务并发执行时互不干扰，如同单独执行",
+          "事务的中间状态对其他事务不可见",
+          "并发事务之间相互隔离，防止数据不一致"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "答出持久性（Durability）并解释为事务提交后修改永久保存（故障不丢失）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务一旦提交，对数据的修改是永久性的",
+          "即使系统故障，已提交事务的结果也不会丢失",
+          "事务持久性确保修改永久写入存储介质"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "数据库事务的ACID特性包括：原子性（Atomicity）指事务是一个不可分割的操作单元，要么全部执行成功，要么全部回滚，不能只执行一部分；一致性（Consistency）指事务执行前后，数据库的状态必须保持一致，符合所有的完整性约束；隔离性（Isolation）指多个事务并发执行时，每个事务都感觉不到其他事务的存在，相互之间不会产生干扰；持久性（Durability）指事务一旦提交，其对数据库的修改就是永久性的，即使系统发生故障也不会丢失。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 8.6
+  },
+  {
+    "question_id": 3,
+    "subject": "数据库",
+    "question": "简述数据库事务的ACID特性分别指什么。",
+    "standard_answer": "1. 原子性（Atomicity）：事务是不可分割的最小单位，要么全部成功，要么全部回滚。\n2. 一致性（Consistency）：事务执行前后数据库必须保持一致性状态。\n3. 隔离性（Isolation）：并发事务间互不干扰，每个事务感觉不到其他事务并发执行。\n4. 持久性（Durability）：事务提交后，对数据的修改永久保存，即使系统故障也不丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "答出原子性（Atomicity）并解释为事务要么全部完成，要么全部回滚（不可分割）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务是不可分割的整体，要么全执行，要么全不执行",
+          "事务中的所有操作要么全部成功，要么全部失败回滚",
+          "事务的原子性保证操作完全完成或完全不影响数据库"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "答出一致性（Consistency）并解释为事务执行前后数据库保持一致性状态（符合约束）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务使数据库从一个一致状态变为另一个一致状态",
+          "事务执行必须保证数据库完整性约束不被破坏",
+          "事务前后数据库满足所有预定义的规则和约束"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "答出隔离性（Isolation）并解释为并发事务之间互不干扰（相互隔离）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "多个事务并发执行时互不干扰，如同单独执行",
+          "事务的中间状态对其他事务不可见",
+          "并发事务之间相互隔离，防止数据不一致"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "答出持久性（Durability）并解释为事务提交后修改永久保存（故障不丢失）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务一旦提交，对数据的修改是永久性的",
+          "即使系统故障，已提交事务的结果也不会丢失",
+          "事务持久性确保修改永久写入存储介质"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "ACID特性有原子性、一致性、隔离性和持久性。原子性就是事务要么全做，要么全不做，不能做一半。一致性是说事务执行前后数据要一致，符合规则。隔离性是多个事务一起执行时不能互相影响。持久性是事务完成后数据要永久保存。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 2.8
+  },
+  {
+    "question_id": 3,
+    "subject": "数据库",
+    "question": "简述数据库事务的ACID特性分别指什么。",
+    "standard_answer": "1. 原子性（Atomicity）：事务是不可分割的最小单位，要么全部成功，要么全部回滚。\n2. 一致性（Consistency）：事务执行前后数据库必须保持一致性状态。\n3. 隔离性（Isolation）：并发事务间互不干扰，每个事务感觉不到其他事务并发执行。\n4. 持久性（Durability）：事务提交后，对数据的修改永久保存，即使系统故障也不丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "答出原子性（Atomicity）并解释为事务要么全部完成，要么全部回滚（不可分割）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务是不可分割的整体，要么全执行，要么全不执行",
+          "事务中的所有操作要么全部成功，要么全部失败回滚",
+          "事务的原子性保证操作完全完成或完全不影响数据库"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "答出一致性（Consistency）并解释为事务执行前后数据库保持一致性状态（符合约束）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务使数据库从一个一致状态变为另一个一致状态",
+          "事务执行必须保证数据库完整性约束不被破坏",
+          "事务前后数据库满足所有预定义的规则和约束"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "答出隔离性（Isolation）并解释为并发事务之间互不干扰（相互隔离）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "多个事务并发执行时互不干扰，如同单独执行",
+          "事务的中间状态对其他事务不可见",
+          "并发事务之间相互隔离，防止数据不一致"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "答出持久性（Durability）并解释为事务提交后修改永久保存（故障不丢失）",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务一旦提交，对数据的修改是永久性的",
+          "即使系统故障，已提交事务的结果也不会丢失",
+          "事务持久性确保修改永久写入存储介质"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "ACID好像是数据库里保证数据正确的一些特点，具体记不太清了，好像有原子性，就是事务不能分开，其他几个不太清楚。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.0,
+    "human_score_2": 2.5,
+    "human_score_3": 2.5,
+    "human_score_avg": 2.67,
+    "lenient_score": 2.5,
+    "strict_score": 2.5,
+    "free_score": 3.0,
+    "keyword_score": 1.0
+  },
+  {
+    "question_id": 4,
+    "subject": "数据结构",
+    "question": "简述二叉搜索树（BST）的定义及其在查找、插入、删除操作上的平均时间复杂度。",
+    "standard_answer": "1. 定义：每个节点的左子树所有节点值小于该节点，右子树所有节点值大于该节点。\n2. 查找：平均O(log n)，最坏O(n)（退化成链表）。\n3. 插入：平均O(log n)，需先查找插入位置。\n4. 删除：平均O(log n)，分三种情况处理（无子节点、一个子节点、两个子节点）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确定义二叉搜索树（BST）的结构特点，即每个节点的左子树所有节点值小于该节点值，右子树所有节点值大于该节点值",
+        "score": 3,
+        "acceptable_expressions": [
+          "左子树节点值均小于该节点，右子树节点值均大于该节点",
+          "左子树所有值小于根节点，右子树所有值大于根节点",
+          "左子节点值小于父节点，右子节点值大于父节点",
+          "满足二叉搜索树性质：左<根<右"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确回答查找操作的平均时间复杂度为O(log n)，并指出最坏情况为O(n)（退化成链表）",
+        "score": 2,
+        "acceptable_expressions": [
+          "查找平均O(log n)，最坏O(n)",
+          "平均O(log n)，退化时O(n)",
+          "平均对数复杂度，最坏线性复杂度",
+          "查找时间复杂度平均O(log n)，最坏情况为链状时O(n)"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确回答插入操作的平均时间复杂度为O(log n)，并说明需要先查找插入位置",
+        "score": 2,
+        "acceptable_expressions": [
+          "插入平均O(log n)，需先查找位置",
+          "平均O(log n)，先查找再插入",
+          "插入时间复杂度平均O(log n)",
+          "插入与查找类似，平均O(log n)"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确回答删除操作的平均时间复杂度为O(log n)，并提及删除需要处理三种情况（无子节点、一个子节点、两个子节点）",
+        "score": 3,
+        "acceptable_expressions": [
+          "删除平均O(log n)，分三种情况处理",
+          "平均O(log n)，处理无子节点、一个子节点、两个子节点",
+          "删除时间复杂度平均O(log n)，需考虑不同情形",
+          "删除操作平均O(log n)，根据子节点数量分别处理"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "二叉搜索树（BST）是一种特殊的二叉树结构，其定义是：对于树中的任意一个节点，其左子树中所有节点的值都小于该节点的值，而右子树中所有节点的值都大于该节点的值。这使得BST具备有序性。在查找操作中，由于每次比较都能排除一半的子树，所以在树平衡的情况下，平均时间复杂度为O(log n)；但若树退化成链表（如所有节点只有左子树或只有右子树），最坏情况时间复杂度为O(n)。插入操作需要先查找合适的插入位置，因此平均时间复杂度也是O(log n)。删除操作相对复杂，平均时间复杂度同样为O(log n)，具体处理时需根据三种情况分别操作：若被删除节点无子节点，则直接删除；若只有一个子节点，则用其子节点替代；若有两个子节点，则通常用其右子树的最小节点或左子树的最大节点来替代，并递归删除该替代节点。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 4,
+    "subject": "数据结构",
+    "question": "简述二叉搜索树（BST）的定义及其在查找、插入、删除操作上的平均时间复杂度。",
+    "standard_answer": "1. 定义：每个节点的左子树所有节点值小于该节点，右子树所有节点值大于该节点。\n2. 查找：平均O(log n)，最坏O(n)（退化成链表）。\n3. 插入：平均O(log n)，需先查找插入位置。\n4. 删除：平均O(log n)，分三种情况处理（无子节点、一个子节点、两个子节点）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确定义二叉搜索树（BST）的结构特点，即每个节点的左子树所有节点值小于该节点值，右子树所有节点值大于该节点值",
+        "score": 3,
+        "acceptable_expressions": [
+          "左子树节点值均小于该节点，右子树节点值均大于该节点",
+          "左子树所有值小于根节点，右子树所有值大于根节点",
+          "左子节点值小于父节点，右子节点值大于父节点",
+          "满足二叉搜索树性质：左<根<右"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确回答查找操作的平均时间复杂度为O(log n)，并指出最坏情况为O(n)（退化成链表）",
+        "score": 2,
+        "acceptable_expressions": [
+          "查找平均O(log n)，最坏O(n)",
+          "平均O(log n)，退化时O(n)",
+          "平均对数复杂度，最坏线性复杂度",
+          "查找时间复杂度平均O(log n)，最坏情况为链状时O(n)"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确回答插入操作的平均时间复杂度为O(log n)，并说明需要先查找插入位置",
+        "score": 2,
+        "acceptable_expressions": [
+          "插入平均O(log n)，需先查找位置",
+          "平均O(log n)，先查找再插入",
+          "插入时间复杂度平均O(log n)",
+          "插入与查找类似，平均O(log n)"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确回答删除操作的平均时间复杂度为O(log n)，并提及删除需要处理三种情况（无子节点、一个子节点、两个子节点）",
+        "score": 3,
+        "acceptable_expressions": [
+          "删除平均O(log n)，分三种情况处理",
+          "平均O(log n)，处理无子节点、一个子节点、两个子节点",
+          "删除时间复杂度平均O(log n)，需考虑不同情形",
+          "删除操作平均O(log n)，根据子节点数量分别处理"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "二叉搜索树是一种二叉树，它的每个节点都满足：左子树上所有节点的值小于当前节点，右子树上所有节点的值大于当前节点。查找时，平均时间复杂度是O(log n)，但如果树不平衡，最坏会变成O(n)。插入操作也是先找到位置再插入，平均O(log n)。删除操作平均也是O(log n)，但删除时要考虑节点有没有子节点的情况。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 7.3
+  },
+  {
+    "question_id": 4,
+    "subject": "数据结构",
+    "question": "简述二叉搜索树（BST）的定义及其在查找、插入、删除操作上的平均时间复杂度。",
+    "standard_answer": "1. 定义：每个节点的左子树所有节点值小于该节点，右子树所有节点值大于该节点。\n2. 查找：平均O(log n)，最坏O(n)（退化成链表）。\n3. 插入：平均O(log n)，需先查找插入位置。\n4. 删除：平均O(log n)，分三种情况处理（无子节点、一个子节点、两个子节点）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确定义二叉搜索树（BST）的结构特点，即每个节点的左子树所有节点值小于该节点值，右子树所有节点值大于该节点值",
+        "score": 3,
+        "acceptable_expressions": [
+          "左子树节点值均小于该节点，右子树节点值均大于该节点",
+          "左子树所有值小于根节点，右子树所有值大于根节点",
+          "左子节点值小于父节点，右子节点值大于父节点",
+          "满足二叉搜索树性质：左<根<右"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确回答查找操作的平均时间复杂度为O(log n)，并指出最坏情况为O(n)（退化成链表）",
+        "score": 2,
+        "acceptable_expressions": [
+          "查找平均O(log n)，最坏O(n)",
+          "平均O(log n)，退化时O(n)",
+          "平均对数复杂度，最坏线性复杂度",
+          "查找时间复杂度平均O(log n)，最坏情况为链状时O(n)"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确回答插入操作的平均时间复杂度为O(log n)，并说明需要先查找插入位置",
+        "score": 2,
+        "acceptable_expressions": [
+          "插入平均O(log n)，需先查找位置",
+          "平均O(log n)，先查找再插入",
+          "插入时间复杂度平均O(log n)",
+          "插入与查找类似，平均O(log n)"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确回答删除操作的平均时间复杂度为O(log n)，并提及删除需要处理三种情况（无子节点、一个子节点、两个子节点）",
+        "score": 3,
+        "acceptable_expressions": [
+          "删除平均O(log n)，分三种情况处理",
+          "平均O(log n)，处理无子节点、一个子节点、两个子节点",
+          "删除时间复杂度平均O(log n)，需考虑不同情形",
+          "删除操作平均O(log n)，根据子节点数量分别处理"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "二叉搜索树就是一种树，用来存数据的。查找的时候好像挺快的，具体时间忘了。插入和删除就是往里面加东西或者拿掉东西，时间应该差不多吧。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 1.0,
+    "human_score_2": 1.0,
+    "human_score_3": 1.0,
+    "human_score_avg": 1.0,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 2.0,
+    "keyword_score": 1.3
+  },
+  {
+    "question_id": 5,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议中GET和POST请求的主要区别。",
+    "standard_answer": "1. 数据位置：GET参数在URL中，POST在请求体中。\n2. 安全性：GET参数可见，安全性低；POST相对安全。\n3. 数据长度：GET受URL长度限制，POST支持大数据传输。\n4. 幂等性：GET是幂等操作，POST不是。\n5. 缓存：GET可被缓存，POST一般不可缓存。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "指出GET请求的参数位于URL中，而POST请求的参数位于请求体中",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET参数在URL/地址栏/查询字符串中，POST参数在请求体/body/form-data中",
+          "GET数据附在URL之后，POST数据封装在请求体",
+          "GET通过URL传递参数，POST通过请求正文传递"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "说明GET请求参数可见（如浏览器地址栏、历史记录），安全性较低；POST请求相对更安全（数据不在URL中直接暴露）",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET参数暴露在URL中，安全性差/不安全；POST数据不直接显示，更安全",
+          "GET请求会被浏览器记录，有安全风险；POST请求对用户不可见，安全性更高"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出GET请求受URL长度限制（如浏览器或服务器限制），POST请求可传输较大数据量",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET有URL长度限制（如2048字符），POST可传输大数据/文件",
+          "GET适合小数据，POST支持大数据传输",
+          "GET受限于URL长度，POST数据量更大"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "说明GET请求是幂等操作（多次执行结果相同），POST请求不是幂等的（可能产生不同结果或副作用）",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET是幂等的（多次请求资源状态不变），POST非幂等（可能修改资源）",
+          "GET用于获取数据，可重复执行；POST用于提交数据，可能改变服务器状态",
+          "GET是安全方法（只读），POST可能产生副作用"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出GET请求可以被缓存（如浏览器、代理服务器缓存），POST请求一般不可缓存",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET可被缓存/书签保存，POST通常不被缓存",
+          "GET响应可缓存，POST请求默认不缓存",
+          "GET适合缓存静态数据，POST不适合缓存"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "HTTP协议中GET和POST请求的主要区别如下：\n1. 数据位置：GET请求的参数会附加在URL之后，以查询字符串形式传输；而POST请求的参数放在请求体中，不会直接暴露在URL中。\n2. 安全性：由于GET参数在URL中可见，容易被浏览器历史记录、服务器日志等记录，安全性较低；POST相对更安全，但传输过程中仍需加密保护。\n3. 数据长度：GET请求受URL长度限制（如浏览器限制约2048字符），不适合传输大量数据；POST请求支持较大数据量传输（通常受服务器配置限制）。\n4. 幂等性：GET请求是幂等的，多次重复执行不会对服务器资源产生额外影响；POST请求不是幂等的，多次提交可能产生不同结果（如重复提交订单）。\n5. 缓存特性：GET请求可以被浏览器、代理服务器缓存，适合获取静态资源；POST请求一般不会被缓存，因为可能涉及数据修改。\n此外，GET常用于获取数据，POST常用于提交数据。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 8.9
+  },
+  {
+    "question_id": 5,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议中GET和POST请求的主要区别。",
+    "standard_answer": "1. 数据位置：GET参数在URL中，POST在请求体中。\n2. 安全性：GET参数可见，安全性低；POST相对安全。\n3. 数据长度：GET受URL长度限制，POST支持大数据传输。\n4. 幂等性：GET是幂等操作，POST不是。\n5. 缓存：GET可被缓存，POST一般不可缓存。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "指出GET请求的参数位于URL中，而POST请求的参数位于请求体中",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET参数在URL/地址栏/查询字符串中，POST参数在请求体/body/form-data中",
+          "GET数据附在URL之后，POST数据封装在请求体",
+          "GET通过URL传递参数，POST通过请求正文传递"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "说明GET请求参数可见（如浏览器地址栏、历史记录），安全性较低；POST请求相对更安全（数据不在URL中直接暴露）",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET参数暴露在URL中，安全性差/不安全；POST数据不直接显示，更安全",
+          "GET请求会被浏览器记录，有安全风险；POST请求对用户不可见，安全性更高"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出GET请求受URL长度限制（如浏览器或服务器限制），POST请求可传输较大数据量",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET有URL长度限制（如2048字符），POST可传输大数据/文件",
+          "GET适合小数据，POST支持大数据传输",
+          "GET受限于URL长度，POST数据量更大"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "说明GET请求是幂等操作（多次执行结果相同），POST请求不是幂等的（可能产生不同结果或副作用）",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET是幂等的（多次请求资源状态不变），POST非幂等（可能修改资源）",
+          "GET用于获取数据，可重复执行；POST用于提交数据，可能改变服务器状态",
+          "GET是安全方法（只读），POST可能产生副作用"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出GET请求可以被缓存（如浏览器、代理服务器缓存），POST请求一般不可缓存",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET可被缓存/书签保存，POST通常不被缓存",
+          "GET响应可缓存，POST请求默认不缓存",
+          "GET适合缓存静态数据，POST不适合缓存"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "GET和POST的主要区别是：\n1. GET的参数会显示在网址里，POST不会，所以POST更安全一些。\n2. GET有长度限制，不能传太多数据，POST可以传比较大的数据。\n3. GET一般用来获取数据，POST用来提交数据。\n4. GET请求可以被缓存，POST不行。\n总的来说，POST比GET更安全，功能也更强。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 8.5,
+    "human_score_2": 8.5,
+    "human_score_3": 8.5,
+    "human_score_avg": 8.5,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 2.5
+  },
+  {
+    "question_id": 5,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议中GET和POST请求的主要区别。",
+    "standard_answer": "1. 数据位置：GET参数在URL中，POST在请求体中。\n2. 安全性：GET参数可见，安全性低；POST相对安全。\n3. 数据长度：GET受URL长度限制，POST支持大数据传输。\n4. 幂等性：GET是幂等操作，POST不是。\n5. 缓存：GET可被缓存，POST一般不可缓存。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "指出GET请求的参数位于URL中，而POST请求的参数位于请求体中",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET参数在URL/地址栏/查询字符串中，POST参数在请求体/body/form-data中",
+          "GET数据附在URL之后，POST数据封装在请求体",
+          "GET通过URL传递参数，POST通过请求正文传递"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "说明GET请求参数可见（如浏览器地址栏、历史记录），安全性较低；POST请求相对更安全（数据不在URL中直接暴露）",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET参数暴露在URL中，安全性差/不安全；POST数据不直接显示，更安全",
+          "GET请求会被浏览器记录，有安全风险；POST请求对用户不可见，安全性更高"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出GET请求受URL长度限制（如浏览器或服务器限制），POST请求可传输较大数据量",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET有URL长度限制（如2048字符），POST可传输大数据/文件",
+          "GET适合小数据，POST支持大数据传输",
+          "GET受限于URL长度，POST数据量更大"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "说明GET请求是幂等操作（多次执行结果相同），POST请求不是幂等的（可能产生不同结果或副作用）",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET是幂等的（多次请求资源状态不变），POST非幂等（可能修改资源）",
+          "GET用于获取数据，可重复执行；POST用于提交数据，可能改变服务器状态",
+          "GET是安全方法（只读），POST可能产生副作用"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出GET请求可以被缓存（如浏览器、代理服务器缓存），POST请求一般不可缓存",
+        "score": 2,
+        "acceptable_expressions": [
+          "GET可被缓存/书签保存，POST通常不被缓存",
+          "GET响应可缓存，POST请求默认不缓存",
+          "GET适合缓存静态数据，POST不适合缓存"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "GET就是获取数据，POST就是发送数据。GET快一点，POST慢一点。POST比GET安全，因为GET会把数据暴露出来。其他区别不太清楚，可能还有一些技术细节不同。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 4.0,
+    "human_score_2": 4.5,
+    "human_score_3": 4.0,
+    "human_score_avg": 4.17,
+    "lenient_score": 2.0,
+    "strict_score": 2.0,
+    "free_score": 4.0,
+    "keyword_score": 1.5
+  },
+  {
+    "question_id": 6,
+    "subject": "操作系统",
+    "question": "简述什么是死锁，并列举产生死锁的四个必要条件。",
+    "standard_answer": "1. 定义：多个进程因竞争资源而相互等待，无法向前推进的状态。\n2. 互斥条件：资源一次只能被一个进程使用。\n3. 请求与保持：进程持有资源的同时请求新资源。\n4. 不可剥夺：进程已获得的资源不能被强制剥夺。\n5. 循环等待：存在进程资源的环形等待链。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确回答死锁的定义",
+        "score": 3,
+        "acceptable_expressions": [
+          "多个进程因竞争资源而相互等待，无法向前推进",
+          "两个或以上进程因争夺资源而陷入互相等待的僵局",
+          "进程因无法获取所需资源而永远阻塞的状态"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "答出互斥条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "资源一次只能被一个进程使用",
+          "资源是独占的",
+          "资源不能共享"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "答出请求与保持条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程持有资源的同时请求新资源",
+          "进程在等待新资源时不释放已占有的资源",
+          "占有且等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "答出不可剥夺条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程已获得的资源不能被强制剥夺",
+          "资源只能由进程主动释放",
+          "操作系统不能强行收回资源"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "答出循环等待条件",
+        "score": 1,
+        "acceptable_expressions": [
+          "存在进程资源的环形等待链",
+          "进程之间形成等待资源的循环",
+          "存在一个进程等待序列{P1,P2,...,Pn}，其中P1等待P2占有的资源，P2等待P3占有的资源，...，Pn等待P1占有的资源"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "死锁是指多个进程在运行过程中因竞争资源而造成的一种相互等待、无法继续执行的状态。产生死锁必须同时满足四个必要条件：1. 互斥条件：资源一次只能被一个进程使用；2. 请求与保持条件：进程在持有至少一个资源的同时，又请求新的资源；3. 不可剥夺条件：进程已获得的资源在未使用完之前不能被强制剥夺；4. 循环等待条件：存在一个进程-资源的环形等待链，即每个进程都在等待下一个进程持有的资源。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 7.6
+  },
+  {
+    "question_id": 6,
+    "subject": "操作系统",
+    "question": "简述什么是死锁，并列举产生死锁的四个必要条件。",
+    "standard_answer": "1. 定义：多个进程因竞争资源而相互等待，无法向前推进的状态。\n2. 互斥条件：资源一次只能被一个进程使用。\n3. 请求与保持：进程持有资源的同时请求新资源。\n4. 不可剥夺：进程已获得的资源不能被强制剥夺。\n5. 循环等待：存在进程资源的环形等待链。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确回答死锁的定义",
+        "score": 3,
+        "acceptable_expressions": [
+          "多个进程因竞争资源而相互等待，无法向前推进",
+          "两个或以上进程因争夺资源而陷入互相等待的僵局",
+          "进程因无法获取所需资源而永远阻塞的状态"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "答出互斥条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "资源一次只能被一个进程使用",
+          "资源是独占的",
+          "资源不能共享"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "答出请求与保持条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程持有资源的同时请求新资源",
+          "进程在等待新资源时不释放已占有的资源",
+          "占有且等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "答出不可剥夺条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程已获得的资源不能被强制剥夺",
+          "资源只能由进程主动释放",
+          "操作系统不能强行收回资源"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "答出循环等待条件",
+        "score": 1,
+        "acceptable_expressions": [
+          "存在进程资源的环形等待链",
+          "进程之间形成等待资源的循环",
+          "存在一个进程等待序列{P1,P2,...,Pn}，其中P1等待P2占有的资源，P2等待P3占有的资源，...，Pn等待P1占有的资源"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "死锁就是多个进程互相等着对方释放资源，结果谁都执行不下去。四个必要条件包括：互斥条件（资源不能共享）、请求与保持（占着资源还要新的）、不可剥夺（资源不能被抢走），还有一个是……嗯，好像是进程之间形成一个循环等待的关系。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 7.2
+  },
+  {
+    "question_id": 6,
+    "subject": "操作系统",
+    "question": "简述什么是死锁，并列举产生死锁的四个必要条件。",
+    "standard_answer": "1. 定义：多个进程因竞争资源而相互等待，无法向前推进的状态。\n2. 互斥条件：资源一次只能被一个进程使用。\n3. 请求与保持：进程持有资源的同时请求新资源。\n4. 不可剥夺：进程已获得的资源不能被强制剥夺。\n5. 循环等待：存在进程资源的环形等待链。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确回答死锁的定义",
+        "score": 3,
+        "acceptable_expressions": [
+          "多个进程因竞争资源而相互等待，无法向前推进",
+          "两个或以上进程因争夺资源而陷入互相等待的僵局",
+          "进程因无法获取所需资源而永远阻塞的状态"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "答出互斥条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "资源一次只能被一个进程使用",
+          "资源是独占的",
+          "资源不能共享"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "答出请求与保持条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程持有资源的同时请求新资源",
+          "进程在等待新资源时不释放已占有的资源",
+          "占有且等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "答出不可剥夺条件",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程已获得的资源不能被强制剥夺",
+          "资源只能由进程主动释放",
+          "操作系统不能强行收回资源"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "答出循环等待条件",
+        "score": 1,
+        "acceptable_expressions": [
+          "存在进程资源的环形等待链",
+          "进程之间形成等待资源的循环",
+          "存在一个进程等待序列{P1,P2,...,Pn}，其中P1等待P2占有的资源，P2等待P3占有的资源，...，Pn等待P1占有的资源"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "死锁就是程序卡住了不动了。可能跟资源有关，比如多个程序同时想用一个东西就会冲突。必要条件？大概是要有多个进程，还有资源不够分吧。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 4.0,
+    "human_score_2": 4.5,
+    "human_score_3": 2.0,
+    "human_score_avg": 3.5,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 3.0,
+    "keyword_score": 2.0
+  },
+  {
+    "question_id": 7,
+    "subject": "数据库",
+    "question": "什么是数据库的范化（规范化）？简述第一范式（1NF）的要求。",
+    "standard_answer": "1. 定义：通过分解表来消除数据冗余和更新异常的设计过程。\n2. 1NF要求：表中每个字段都是不可再分的原子值。\n3. 具体要求：每列数据都是单一值，无重复组或数组。\n4. 目的：消除重复数据，保证数据原子性，为更高范式奠定基础。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确回答范化的定义，指出是通过分解表来消除数据冗余和更新异常的过程。",
+        "score": 4,
+        "acceptable_expressions": [
+          "通过分解表消除数据冗余和更新异常的设计过程",
+          "分解表以减少冗余和避免更新异常的设计方法",
+          "规范化是通过合理的表设计来消除冗余和异常的过程"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明第一范式（1NF）的核心要求，即表中每个字段都是不可再分的原子值。",
+        "score": 3,
+        "acceptable_expressions": [
+          "每个字段都是不可再分的原子值",
+          "所有属性都是原子的，不可再分",
+          "表中每列存储单一值，无复合结构"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "进一步解释1NF的具体要求，如每列数据为单一值、无重复组或数组。",
+        "score": 2,
+        "acceptable_expressions": [
+          "每列数据都是单一值，无重复组或数组",
+          "不允许一列中有多个值或值的集合",
+          "消除表中重复的数据组"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "简要说明范化的目的或作用，如消除重复、保证原子性、为更高范式打基础。",
+        "score": 1,
+        "acceptable_expressions": [
+          "消除重复数据，保证数据原子性，为更高范式奠定基础",
+          "减少冗余，提高数据一致性，便于后续规范化"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "数据库的范化（规范化）是指通过合理设计数据库表结构，将表进行分解，以消除数据冗余和避免插入、删除、更新等操作时可能出现的异常。第一范式（1NF）是范式的基础，它要求表中的每个字段都必须是最小的、不可再分的原子值。具体来说，每个列中的数据都应该是单一的值，不能包含重复的组或数组。遵循1NF的目的是为了消除重复数据，确保数据的原子性，并为后续的更高范式（如2NF、3NF）奠定基础。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 8.9
+  },
+  {
+    "question_id": 7,
+    "subject": "数据库",
+    "question": "什么是数据库的范化（规范化）？简述第一范式（1NF）的要求。",
+    "standard_answer": "1. 定义：通过分解表来消除数据冗余和更新异常的设计过程。\n2. 1NF要求：表中每个字段都是不可再分的原子值。\n3. 具体要求：每列数据都是单一值，无重复组或数组。\n4. 目的：消除重复数据，保证数据原子性，为更高范式奠定基础。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确回答范化的定义，指出是通过分解表来消除数据冗余和更新异常的过程。",
+        "score": 4,
+        "acceptable_expressions": [
+          "通过分解表消除数据冗余和更新异常的设计过程",
+          "分解表以减少冗余和避免更新异常的设计方法",
+          "规范化是通过合理的表设计来消除冗余和异常的过程"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明第一范式（1NF）的核心要求，即表中每个字段都是不可再分的原子值。",
+        "score": 3,
+        "acceptable_expressions": [
+          "每个字段都是不可再分的原子值",
+          "所有属性都是原子的，不可再分",
+          "表中每列存储单一值，无复合结构"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "进一步解释1NF的具体要求，如每列数据为单一值、无重复组或数组。",
+        "score": 2,
+        "acceptable_expressions": [
+          "每列数据都是单一值，无重复组或数组",
+          "不允许一列中有多个值或值的集合",
+          "消除表中重复的数据组"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "简要说明范化的目的或作用，如消除重复、保证原子性、为更高范式打基础。",
+        "score": 1,
+        "acceptable_expressions": [
+          "消除重复数据，保证数据原子性，为更高范式奠定基础",
+          "减少冗余，提高数据一致性，便于后续规范化"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "数据库的规范化是为了减少数据重复，提高数据一致性。第一范式要求表中的字段不能有多个值，每个字段都应该是单独的，不能把几个数据放在一个字段里。比如，不能用一个字段存放多个电话号码。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 2.2
+  },
+  {
+    "question_id": 7,
+    "subject": "数据库",
+    "question": "什么是数据库的范化（规范化）？简述第一范式（1NF）的要求。",
+    "standard_answer": "1. 定义：通过分解表来消除数据冗余和更新异常的设计过程。\n2. 1NF要求：表中每个字段都是不可再分的原子值。\n3. 具体要求：每列数据都是单一值，无重复组或数组。\n4. 目的：消除重复数据，保证数据原子性，为更高范式奠定基础。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确回答范化的定义，指出是通过分解表来消除数据冗余和更新异常的过程。",
+        "score": 4,
+        "acceptable_expressions": [
+          "通过分解表消除数据冗余和更新异常的设计过程",
+          "分解表以减少冗余和避免更新异常的设计方法",
+          "规范化是通过合理的表设计来消除冗余和异常的过程"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明第一范式（1NF）的核心要求，即表中每个字段都是不可再分的原子值。",
+        "score": 3,
+        "acceptable_expressions": [
+          "每个字段都是不可再分的原子值",
+          "所有属性都是原子的，不可再分",
+          "表中每列存储单一值，无复合结构"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "进一步解释1NF的具体要求，如每列数据为单一值、无重复组或数组。",
+        "score": 2,
+        "acceptable_expressions": [
+          "每列数据都是单一值，无重复组或数组",
+          "不允许一列中有多个值或值的集合",
+          "消除表中重复的数据组"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "简要说明范化的目的或作用，如消除重复、保证原子性、为更高范式打基础。",
+        "score": 1,
+        "acceptable_expressions": [
+          "消除重复数据，保证数据原子性，为更高范式奠定基础",
+          "减少冗余，提高数据一致性，便于后续规范化"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "数据库范式就是设计数据库时要遵守的一些规则。第一范式好像是要让数据整齐一点，不能太乱。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.0,
+    "human_score_2": 2.0,
+    "human_score_3": 2.0,
+    "human_score_avg": 2.33,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 3.0,
+    "keyword_score": 0.6
+  },
+  {
+    "question_id": 8,
+    "subject": "数据结构",
+    "question": "简述快速排序算法的基本思想及其平均时间复杂度。",
+    "standard_answer": "1. 思想：基于分治法，选取一个基准元素，将数组分为小于基准和大于基准的两部分，递归排序。\n2. 步骤：选择基准、分区操作、递归排序子数组。\n3. 时间复杂度：平均O(n log n)，最坏O(n²)（当数组已排序）。\n4. 特点：原地排序，不稳定排序算法。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "说明快速排序基于分治法思想",
+        "score": 2,
+        "acceptable_expressions": [
+          "采用分治法",
+          "使用分治策略",
+          "分治思想",
+          "分而治之"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "描述分区过程：选取基准元素，将数组分为小于基准和大于基准的两部分",
+        "score": 3,
+        "acceptable_expressions": [
+          "选择一个基准（pivot），将数组划分为小于基准和大于基准的子数组",
+          "通过基准元素将数组分割为两个子序列",
+          "分区操作：以基准为界分割数组"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "说明递归排序子数组的步骤",
+        "score": 2,
+        "acceptable_expressions": [
+          "递归地对两个子数组进行排序",
+          "对划分后的子序列递归调用快速排序",
+          "递归处理左右分区"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "给出平均时间复杂度为O(n log n)",
+        "score": 2,
+        "acceptable_expressions": [
+          "平均情况时间复杂度为O(n log n)",
+          "平均时间复杂度O(n log n)",
+          "平均O(n log n)"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "提及最坏时间复杂度为O(n²)及其条件（如数组已排序）",
+        "score": 1,
+        "acceptable_expressions": [
+          "最坏情况O(n²)（例如数组已有序时）",
+          "最坏时间复杂度O(n²)，当数组完全有序时",
+          "最坏O(n²)，发生在基准选择不当时"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "快速排序采用分治法思想：首先从数组中选取一个基准元素，然后通过分区操作将数组分为两部分，左侧部分的所有元素都小于等于基准，右侧部分的所有元素都大于等于基准。之后递归地对左右两个子数组进行同样的快速排序，直到子数组长度为1或0时终止递归。快速排序的平均时间复杂度为O(n log n)，最坏情况下（如数组已完全有序）时间复杂度会退化到O(n²)，但它是一种原地排序算法，不需要额外空间，不过排序过程不稳定。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 8.7
+  },
+  {
+    "question_id": 8,
+    "subject": "数据结构",
+    "question": "简述快速排序算法的基本思想及其平均时间复杂度。",
+    "standard_answer": "1. 思想：基于分治法，选取一个基准元素，将数组分为小于基准和大于基准的两部分，递归排序。\n2. 步骤：选择基准、分区操作、递归排序子数组。\n3. 时间复杂度：平均O(n log n)，最坏O(n²)（当数组已排序）。\n4. 特点：原地排序，不稳定排序算法。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "说明快速排序基于分治法思想",
+        "score": 2,
+        "acceptable_expressions": [
+          "采用分治法",
+          "使用分治策略",
+          "分治思想",
+          "分而治之"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "描述分区过程：选取基准元素，将数组分为小于基准和大于基准的两部分",
+        "score": 3,
+        "acceptable_expressions": [
+          "选择一个基准（pivot），将数组划分为小于基准和大于基准的子数组",
+          "通过基准元素将数组分割为两个子序列",
+          "分区操作：以基准为界分割数组"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "说明递归排序子数组的步骤",
+        "score": 2,
+        "acceptable_expressions": [
+          "递归地对两个子数组进行排序",
+          "对划分后的子序列递归调用快速排序",
+          "递归处理左右分区"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "给出平均时间复杂度为O(n log n)",
+        "score": 2,
+        "acceptable_expressions": [
+          "平均情况时间复杂度为O(n log n)",
+          "平均时间复杂度O(n log n)",
+          "平均O(n log n)"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "提及最坏时间复杂度为O(n²)及其条件（如数组已排序）",
+        "score": 1,
+        "acceptable_expressions": [
+          "最坏情况O(n²)（例如数组已有序时）",
+          "最坏时间复杂度O(n²)，当数组完全有序时",
+          "最坏O(n²)，发生在基准选择不当时"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "快速排序的基本思想是先选一个基准数，然后把比它小的放左边，比它大的放右边，再分别对左右两边做同样的操作。这样一直分下去，直到每个部分只有一个数。它的平均时间复杂度是O(n log n)，但如果数据已经排好序，可能会比较慢。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 3.8
+  },
+  {
+    "question_id": 8,
+    "subject": "数据结构",
+    "question": "简述快速排序算法的基本思想及其平均时间复杂度。",
+    "standard_answer": "1. 思想：基于分治法，选取一个基准元素，将数组分为小于基准和大于基准的两部分，递归排序。\n2. 步骤：选择基准、分区操作、递归排序子数组。\n3. 时间复杂度：平均O(n log n)，最坏O(n²)（当数组已排序）。\n4. 特点：原地排序，不稳定排序算法。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "说明快速排序基于分治法思想",
+        "score": 2,
+        "acceptable_expressions": [
+          "采用分治法",
+          "使用分治策略",
+          "分治思想",
+          "分而治之"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "描述分区过程：选取基准元素，将数组分为小于基准和大于基准的两部分",
+        "score": 3,
+        "acceptable_expressions": [
+          "选择一个基准（pivot），将数组划分为小于基准和大于基准的子数组",
+          "通过基准元素将数组分割为两个子序列",
+          "分区操作：以基准为界分割数组"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "说明递归排序子数组的步骤",
+        "score": 2,
+        "acceptable_expressions": [
+          "递归地对两个子数组进行排序",
+          "对划分后的子序列递归调用快速排序",
+          "递归处理左右分区"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "给出平均时间复杂度为O(n log n)",
+        "score": 2,
+        "acceptable_expressions": [
+          "平均情况时间复杂度为O(n log n)",
+          "平均时间复杂度O(n log n)",
+          "平均O(n log n)"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "提及最坏时间复杂度为O(n²)及其条件（如数组已排序）",
+        "score": 1,
+        "acceptable_expressions": [
+          "最坏情况O(n²)（例如数组已有序时）",
+          "最坏时间复杂度O(n²)，当数组完全有序时",
+          "最坏O(n²)，发生在基准选择不当时"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "快速排序就是每次都选一个数，然后把数组分成两半再排，排得挺快的。时间复杂度好像是O(n)吧，记不太清了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 6.0,
+    "human_score_2": 6.0,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.67,
+    "lenient_score": 4.0,
+    "strict_score": 4.0,
+    "free_score": 3.0,
+    "keyword_score": 2.0
+  },
+  {
+    "question_id": 9,
+    "subject": "计算机网络",
+    "question": "简述IP地址和MAC地址的主要区别及各自的作用。",
+    "standard_answer": "1. 层次：IP地址是网络层逻辑地址，用于跨网络寻址；MAC地址是数据链路层物理地址，用于局域网内寻址。\n2. 可变性：IP地址可变，随网络变化；MAC地址固化在网卡中，全球唯一。\n3. 作用：IP地址实现网络间路由；MAC地址实现同一链路内设备间帧传输。\n4. 地址格式：IPv4为32位，MAC为48位。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "IP地址是网络层的逻辑地址，用于不同网络之间的寻址；MAC地址是数据链路层的物理地址，用于同一局域网内的设备寻址。",
+        "score": 3,
+        "acceptable_expressions": [
+          "IP地址是网络层逻辑地址，用于跨网络通信；MAC地址是数据链路层物理地址，用于局域网内通信",
+          "IP地址在网络层，负责不同网络间寻址；MAC地址在数据链路层，负责同一网段内寻址",
+          "IP地址是逻辑地址，用于网络间路由；MAC地址是硬件地址，用于本地网络传输"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "IP地址是可变的，会随着网络环境变化；MAC地址是固化在网卡中的，全球唯一且基本不变。",
+        "score": 2,
+        "acceptable_expressions": [
+          "IP地址可以手动或自动分配，可能变化；MAC地址由厂商设定，全球唯一，通常不变",
+          "IP地址随网络位置变化；MAC地址是硬件固有地址，唯一不变",
+          "IP地址可变，如DHCP分配；MAC地址固定，烧录在网卡中"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "IP地址的主要作用是实现不同网络之间的路由和寻址；MAC地址的主要作用是实现同一物理链路内设备间的帧传输。",
+        "score": 3,
+        "acceptable_expressions": [
+          "IP地址用于网络间路由选择；MAC地址用于本地链路帧传递",
+          "IP地址负责跨网络通信的路由；MAC地址负责同一网络内设备间的直接通信",
+          "IP地址实现网络层寻址和路由；MAC地址实现数据链路层帧的本地传递"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "IPv4地址长度为32位，MAC地址长度为48位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "IPv4地址是32位二进制数；MAC地址是48位二进制数",
+          "IP地址（IPv4）通常用点分十进制表示，占32位；MAC地址用十六进制表示，占48位",
+          "IPv4地址有32位；MAC地址有48位"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "IP地址是网络层的逻辑地址，用于在不同网络之间进行寻址和路由，实现跨网络通信。它是可变的，例如当我们连接到不同Wi-Fi时IP地址会改变。MAC地址是数据链路层的物理地址，固化在网卡硬件中，全球唯一且基本不变，主要用于同一局域网内设备之间的帧传输。从格式上看，IPv4地址由32位二进制数组成，而MAC地址由48位组成。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 8.8
+  },
+  {
+    "question_id": 9,
+    "subject": "计算机网络",
+    "question": "简述IP地址和MAC地址的主要区别及各自的作用。",
+    "standard_answer": "1. 层次：IP地址是网络层逻辑地址，用于跨网络寻址；MAC地址是数据链路层物理地址，用于局域网内寻址。\n2. 可变性：IP地址可变，随网络变化；MAC地址固化在网卡中，全球唯一。\n3. 作用：IP地址实现网络间路由；MAC地址实现同一链路内设备间帧传输。\n4. 地址格式：IPv4为32位，MAC为48位。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "IP地址是网络层的逻辑地址，用于不同网络之间的寻址；MAC地址是数据链路层的物理地址，用于同一局域网内的设备寻址。",
+        "score": 3,
+        "acceptable_expressions": [
+          "IP地址是网络层逻辑地址，用于跨网络通信；MAC地址是数据链路层物理地址，用于局域网内通信",
+          "IP地址在网络层，负责不同网络间寻址；MAC地址在数据链路层，负责同一网段内寻址",
+          "IP地址是逻辑地址，用于网络间路由；MAC地址是硬件地址，用于本地网络传输"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "IP地址是可变的，会随着网络环境变化；MAC地址是固化在网卡中的，全球唯一且基本不变。",
+        "score": 2,
+        "acceptable_expressions": [
+          "IP地址可以手动或自动分配，可能变化；MAC地址由厂商设定，全球唯一，通常不变",
+          "IP地址随网络位置变化；MAC地址是硬件固有地址，唯一不变",
+          "IP地址可变，如DHCP分配；MAC地址固定，烧录在网卡中"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "IP地址的主要作用是实现不同网络之间的路由和寻址；MAC地址的主要作用是实现同一物理链路内设备间的帧传输。",
+        "score": 3,
+        "acceptable_expressions": [
+          "IP地址用于网络间路由选择；MAC地址用于本地链路帧传递",
+          "IP地址负责跨网络通信的路由；MAC地址负责同一网络内设备间的直接通信",
+          "IP地址实现网络层寻址和路由；MAC地址实现数据链路层帧的本地传递"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "IPv4地址长度为32位，MAC地址长度为48位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "IPv4地址是32位二进制数；MAC地址是48位二进制数",
+          "IP地址（IPv4）通常用点分十进制表示，占32位；MAC地址用十六进制表示，占48位",
+          "IPv4地址有32位；MAC地址有48位"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "IP地址是用来标识网络设备的，可以在不同网络间通信时使用，比如上网时路由器会分配IP。MAC地址是网卡自带的地址，每个设备都不一样，主要在局域网内用来找设备。IP地址有时候会变，MAC地址一般不变。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 9.0,
+    "human_score_2": 9.0,
+    "human_score_3": 9.5,
+    "human_score_avg": 9.17,
+    "lenient_score": 8.0,
+    "strict_score": 8.0,
+    "free_score": 7.0,
+    "keyword_score": 2.5
+  },
+  {
+    "question_id": 9,
+    "subject": "计算机网络",
+    "question": "简述IP地址和MAC地址的主要区别及各自的作用。",
+    "standard_answer": "1. 层次：IP地址是网络层逻辑地址，用于跨网络寻址；MAC地址是数据链路层物理地址，用于局域网内寻址。\n2. 可变性：IP地址可变，随网络变化；MAC地址固化在网卡中，全球唯一。\n3. 作用：IP地址实现网络间路由；MAC地址实现同一链路内设备间帧传输。\n4. 地址格式：IPv4为32位，MAC为48位。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "IP地址是网络层的逻辑地址，用于不同网络之间的寻址；MAC地址是数据链路层的物理地址，用于同一局域网内的设备寻址。",
+        "score": 3,
+        "acceptable_expressions": [
+          "IP地址是网络层逻辑地址，用于跨网络通信；MAC地址是数据链路层物理地址，用于局域网内通信",
+          "IP地址在网络层，负责不同网络间寻址；MAC地址在数据链路层，负责同一网段内寻址",
+          "IP地址是逻辑地址，用于网络间路由；MAC地址是硬件地址，用于本地网络传输"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "IP地址是可变的，会随着网络环境变化；MAC地址是固化在网卡中的，全球唯一且基本不变。",
+        "score": 2,
+        "acceptable_expressions": [
+          "IP地址可以手动或自动分配，可能变化；MAC地址由厂商设定，全球唯一，通常不变",
+          "IP地址随网络位置变化；MAC地址是硬件固有地址，唯一不变",
+          "IP地址可变，如DHCP分配；MAC地址固定，烧录在网卡中"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "IP地址的主要作用是实现不同网络之间的路由和寻址；MAC地址的主要作用是实现同一物理链路内设备间的帧传输。",
+        "score": 3,
+        "acceptable_expressions": [
+          "IP地址用于网络间路由选择；MAC地址用于本地链路帧传递",
+          "IP地址负责跨网络通信的路由；MAC地址负责同一网络内设备间的直接通信",
+          "IP地址实现网络层寻址和路由；MAC地址实现数据链路层帧的本地传递"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "IPv4地址长度为32位，MAC地址长度为48位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "IPv4地址是32位二进制数；MAC地址是48位二进制数",
+          "IP地址（IPv4）通常用点分十进制表示，占32位；MAC地址用十六进制表示，占48位",
+          "IPv4地址有32位；MAC地址有48位"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "IP地址就是上网用的地址，像192.168.1.1这样，MAC地址好像是一串字母数字，具体区别不太清楚，可能一个管软件一个管硬件吧。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.0,
+    "human_score_2": 2.0,
+    "human_score_3": 2.0,
+    "human_score_avg": 2.33,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 3.0,
+    "keyword_score": 1.8
+  },
+  {
+    "question_id": 10,
+    "subject": "操作系统",
+    "question": "简述虚拟内存的概念及其主要作用。",
+    "standard_answer": "1. 定义：将部分外存作为内存扩展，使程序认为拥有连续可用的内存空间。\n2. 作用一：扩大可用内存空间，运行比物理内存大的程序。\n3. 作用二：实现内存隔离，保护进程地址空间。\n4. 作用三：简化编程，提供连续地址空间抽象。\n5. 关键技术：分页、页面置换、请求调页。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "定义：将部分外存作为内存扩展，使程序认为拥有连续可用的内存空间。",
+        "score": 3,
+        "acceptable_expressions": [
+          "利用外存扩充内存",
+          "模拟出连续的地址空间",
+          "提供比物理内存更大的逻辑地址空间",
+          "通过外存扩展实现内存虚拟化"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "作用一：扩大可用内存空间，运行比物理内存大的程序。",
+        "score": 2,
+        "acceptable_expressions": [
+          "允许运行大于物理内存的程序",
+          "扩展内存容量",
+          "突破物理内存限制",
+          "支持大程序运行"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "作用二：实现内存隔离，保护进程地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间内存隔离",
+          "防止进程互相干扰",
+          "提供内存保护机制",
+          "确保进程地址空间独立"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "作用三：简化编程，提供连续地址空间抽象。",
+        "score": 2,
+        "acceptable_expressions": [
+          "提供连续逻辑地址空间",
+          "简化程序员内存管理",
+          "隐藏内存碎片问题",
+          "提供统一地址空间视图"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "关键技术：分页、页面置换、请求调页。",
+        "score": 1,
+        "acceptable_expressions": [
+          "分页机制",
+          "页面置换算法",
+          "按需调页",
+          "分页与交换技术"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "虚拟内存是一种内存管理技术，它通过将部分外存（如硬盘）作为扩展内存来使用。这使得应用程序能够认为自己拥有一个连续且完整的地址空间，而这一空间的大小通常远大于实际的物理内存。它的主要作用有三个：第一，扩大可用的内存空间，允许运行比物理内存容量更大的程序，因为只有当前活跃的代码和数据需要常驻内存，其余部分可以暂存于外存。第二，实现内存隔离和保护，每个进程都拥有自己的虚拟地址空间，操作系统通过内存管理单元（MMU）进行地址转换，防止进程间相互干扰。第三，简化编程，程序员无需关心物理内存的具体分配和碎片问题，只需在一个连续的虚拟地址空间中进行操作。其关键技术包括分页、页面置换和请求调页等。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 10,
+    "subject": "操作系统",
+    "question": "简述虚拟内存的概念及其主要作用。",
+    "standard_answer": "1. 定义：将部分外存作为内存扩展，使程序认为拥有连续可用的内存空间。\n2. 作用一：扩大可用内存空间，运行比物理内存大的程序。\n3. 作用二：实现内存隔离，保护进程地址空间。\n4. 作用三：简化编程，提供连续地址空间抽象。\n5. 关键技术：分页、页面置换、请求调页。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "定义：将部分外存作为内存扩展，使程序认为拥有连续可用的内存空间。",
+        "score": 3,
+        "acceptable_expressions": [
+          "利用外存扩充内存",
+          "模拟出连续的地址空间",
+          "提供比物理内存更大的逻辑地址空间",
+          "通过外存扩展实现内存虚拟化"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "作用一：扩大可用内存空间，运行比物理内存大的程序。",
+        "score": 2,
+        "acceptable_expressions": [
+          "允许运行大于物理内存的程序",
+          "扩展内存容量",
+          "突破物理内存限制",
+          "支持大程序运行"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "作用二：实现内存隔离，保护进程地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间内存隔离",
+          "防止进程互相干扰",
+          "提供内存保护机制",
+          "确保进程地址空间独立"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "作用三：简化编程，提供连续地址空间抽象。",
+        "score": 2,
+        "acceptable_expressions": [
+          "提供连续逻辑地址空间",
+          "简化程序员内存管理",
+          "隐藏内存碎片问题",
+          "提供统一地址空间视图"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "关键技术：分页、页面置换、请求调页。",
+        "score": 1,
+        "acceptable_expressions": [
+          "分页机制",
+          "页面置换算法",
+          "按需调页",
+          "分页与交换技术"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "虚拟内存就是让电脑能同时运行很多大程序，即使内存不够用。它的原理是把硬盘的一部分当做内存来用，把暂时用不到的程序数据先存到硬盘上，等需要的时候再换回来。这样电脑就能运行比实际内存更大的程序了。它还能让每个程序都有自己的内存空间，互相不干扰，比较安全。这样编程也简单一些，不用总想着内存到底够不够。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 9.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 9.67,
+    "lenient_score": 9.0,
+    "strict_score": 9.0,
+    "free_score": 8.0,
+    "keyword_score": 1.6
+  },
+  {
+    "question_id": 10,
+    "subject": "操作系统",
+    "question": "简述虚拟内存的概念及其主要作用。",
+    "standard_answer": "1. 定义：将部分外存作为内存扩展，使程序认为拥有连续可用的内存空间。\n2. 作用一：扩大可用内存空间，运行比物理内存大的程序。\n3. 作用二：实现内存隔离，保护进程地址空间。\n4. 作用三：简化编程，提供连续地址空间抽象。\n5. 关键技术：分页、页面置换、请求调页。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "定义：将部分外存作为内存扩展，使程序认为拥有连续可用的内存空间。",
+        "score": 3,
+        "acceptable_expressions": [
+          "利用外存扩充内存",
+          "模拟出连续的地址空间",
+          "提供比物理内存更大的逻辑地址空间",
+          "通过外存扩展实现内存虚拟化"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "作用一：扩大可用内存空间，运行比物理内存大的程序。",
+        "score": 2,
+        "acceptable_expressions": [
+          "允许运行大于物理内存的程序",
+          "扩展内存容量",
+          "突破物理内存限制",
+          "支持大程序运行"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "作用二：实现内存隔离，保护进程地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间内存隔离",
+          "防止进程互相干扰",
+          "提供内存保护机制",
+          "确保进程地址空间独立"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "作用三：简化编程，提供连续地址空间抽象。",
+        "score": 2,
+        "acceptable_expressions": [
+          "提供连续逻辑地址空间",
+          "简化程序员内存管理",
+          "隐藏内存碎片问题",
+          "提供统一地址空间视图"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "关键技术：分页、页面置换、请求调页。",
+        "score": 1,
+        "acceptable_expressions": [
+          "分页机制",
+          "页面置换算法",
+          "按需调页",
+          "分页与交换技术"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "虚拟内存就是电脑里的一个功能，当内存不够用的时候，它可以让程序继续运行。好像是把硬盘的空间拿过来用一下，具体怎么实现的我不太清楚。可能能提高一些运行效率吧。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 4.0,
+    "human_score_2": 4.5,
+    "human_score_3": 6.0,
+    "human_score_avg": 4.83,
+    "lenient_score": 5.0,
+    "strict_score": 5.0,
+    "free_score": 4.0,
+    "keyword_score": 1.4
+  },
+  {
+    "question_id": 11,
+    "subject": "计算机网络",
+    "question": "简述TCP协议的三次握手过程，并说明其目的。",
+    "standard_answer": "1. 客户端发送SYN=1，seq=x的报文给服务器，请求建立连接。2. 服务器收到后回复SYN=1，ACK=1，seq=y，ack=x+1的报文，表示同意连接。3. 客户端再发送ACK=1，seq=x+1，ack=y+1的报文进行确认。目的是为了同步双方的初始序列号，确保连接的可靠建立，防止已失效的连接请求报文突然又传送到服务端导致错误。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "第一次握手：客户端发送SYN=1，seq=x的报文给服务器，请求建立连接。",
+        "score": 3,
+        "acceptable_expressions": [
+          "客户端发送SYN报文，包含初始序列号x",
+          "客户端发送SYN=1，seq=x",
+          "主动打开方发送SYN报文",
+          "第一次握手是客户端发送一个SYN包，携带序列号x"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "第二次握手：服务器收到后回复SYN=1，ACK=1，seq=y，ack=x+1的报文，表示同意连接。",
+        "score": 3,
+        "acceptable_expressions": [
+          "服务器回复SYN和ACK标志位都为1，seq=y，ack=x+1",
+          "服务器发送SYN-ACK报文，确认号ack=x+1，携带自己的初始序列号y",
+          "第二次握手是服务器发送SYN+ACK包，确认客户端的SYN"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "第三次握手：客户端再发送ACK=1，seq=x+1，ack=y+1的报文进行确认。",
+        "score": 2,
+        "acceptable_expressions": [
+          "客户端发送ACK标志位为1的报文，seq=x+1，ack=y+1",
+          "客户端发送ACK报文，确认服务器的SYN",
+          "第三次握手是客户端发送ACK包，确认服务器的SYN"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "目的：为了同步双方的初始序列号，确保连接的可靠建立，防止已失效的连接请求报文突然又传送到服务端导致错误。",
+        "score": 2,
+        "acceptable_expressions": [
+          "同步双方的初始序列号，保证连接可靠建立",
+          "确保双方都能确认对方的发送和接收能力，防止旧的重复连接请求造成混乱",
+          "三次握手的主要目的是同步序列号，防止历史连接导致的错误",
+          "目的是建立可靠的连接，避免因网络延迟导致的无效连接问题"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "TCP三次握手的过程如下：首先，客户端发送一个SYN=1且包含初始序列号seq=x的报文给服务器，请求建立连接。接着，服务器收到后回复一个SYN=1、ACK=1的报文，其中包含自己的初始序列号seq=y以及对客户端序列号的确认ack=x+1。最后，客户端再发送一个ACK=1的报文，确认收到服务器的响应，其中seq=x+1，ack=y+1。这样三次握手就完成了。其目的是为了同步双方的初始序列号，确保连接可靠建立，并且防止已失效的连接请求报文突然又传送到服务器导致错误。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 11,
+    "subject": "计算机网络",
+    "question": "简述TCP协议的三次握手过程，并说明其目的。",
+    "standard_answer": "1. 客户端发送SYN=1，seq=x的报文给服务器，请求建立连接。2. 服务器收到后回复SYN=1，ACK=1，seq=y，ack=x+1的报文，表示同意连接。3. 客户端再发送ACK=1，seq=x+1，ack=y+1的报文进行确认。目的是为了同步双方的初始序列号，确保连接的可靠建立，防止已失效的连接请求报文突然又传送到服务端导致错误。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "第一次握手：客户端发送SYN=1，seq=x的报文给服务器，请求建立连接。",
+        "score": 3,
+        "acceptable_expressions": [
+          "客户端发送SYN报文，包含初始序列号x",
+          "客户端发送SYN=1，seq=x",
+          "主动打开方发送SYN报文",
+          "第一次握手是客户端发送一个SYN包，携带序列号x"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "第二次握手：服务器收到后回复SYN=1，ACK=1，seq=y，ack=x+1的报文，表示同意连接。",
+        "score": 3,
+        "acceptable_expressions": [
+          "服务器回复SYN和ACK标志位都为1，seq=y，ack=x+1",
+          "服务器发送SYN-ACK报文，确认号ack=x+1，携带自己的初始序列号y",
+          "第二次握手是服务器发送SYN+ACK包，确认客户端的SYN"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "第三次握手：客户端再发送ACK=1，seq=x+1，ack=y+1的报文进行确认。",
+        "score": 2,
+        "acceptable_expressions": [
+          "客户端发送ACK标志位为1的报文，seq=x+1，ack=y+1",
+          "客户端发送ACK报文，确认服务器的SYN",
+          "第三次握手是客户端发送ACK包，确认服务器的SYN"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "目的：为了同步双方的初始序列号，确保连接的可靠建立，防止已失效的连接请求报文突然又传送到服务端导致错误。",
+        "score": 2,
+        "acceptable_expressions": [
+          "同步双方的初始序列号，保证连接可靠建立",
+          "确保双方都能确认对方的发送和接收能力，防止旧的重复连接请求造成混乱",
+          "三次握手的主要目的是同步序列号，防止历史连接导致的错误",
+          "目的是建立可靠的连接，避免因网络延迟导致的无效连接问题"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "三次握手就是客户端和服务器之间要建立连接。第一步是客户端发送一个请求，第二步是服务器收到后回复一个同意连接的报文，第三步是客户端再发一个确认。这样连接就建立起来了。目的主要是为了保证连接的可靠性。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 9.0,
+    "human_score_2": 8.0,
+    "human_score_3": 8.0,
+    "human_score_avg": 8.33,
+    "lenient_score": 2.0,
+    "strict_score": 2.0,
+    "free_score": 6.0,
+    "keyword_score": 4.2
+  },
+  {
+    "question_id": 11,
+    "subject": "计算机网络",
+    "question": "简述TCP协议的三次握手过程，并说明其目的。",
+    "standard_answer": "1. 客户端发送SYN=1，seq=x的报文给服务器，请求建立连接。2. 服务器收到后回复SYN=1，ACK=1，seq=y，ack=x+1的报文，表示同意连接。3. 客户端再发送ACK=1，seq=x+1，ack=y+1的报文进行确认。目的是为了同步双方的初始序列号，确保连接的可靠建立，防止已失效的连接请求报文突然又传送到服务端导致错误。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "第一次握手：客户端发送SYN=1，seq=x的报文给服务器，请求建立连接。",
+        "score": 3,
+        "acceptable_expressions": [
+          "客户端发送SYN报文，包含初始序列号x",
+          "客户端发送SYN=1，seq=x",
+          "主动打开方发送SYN报文",
+          "第一次握手是客户端发送一个SYN包，携带序列号x"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "第二次握手：服务器收到后回复SYN=1，ACK=1，seq=y，ack=x+1的报文，表示同意连接。",
+        "score": 3,
+        "acceptable_expressions": [
+          "服务器回复SYN和ACK标志位都为1，seq=y，ack=x+1",
+          "服务器发送SYN-ACK报文，确认号ack=x+1，携带自己的初始序列号y",
+          "第二次握手是服务器发送SYN+ACK包，确认客户端的SYN"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "第三次握手：客户端再发送ACK=1，seq=x+1，ack=y+1的报文进行确认。",
+        "score": 2,
+        "acceptable_expressions": [
+          "客户端发送ACK标志位为1的报文，seq=x+1，ack=y+1",
+          "客户端发送ACK报文，确认服务器的SYN",
+          "第三次握手是客户端发送ACK包，确认服务器的SYN"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "目的：为了同步双方的初始序列号，确保连接的可靠建立，防止已失效的连接请求报文突然又传送到服务端导致错误。",
+        "score": 2,
+        "acceptable_expressions": [
+          "同步双方的初始序列号，保证连接可靠建立",
+          "确保双方都能确认对方的发送和接收能力，防止旧的重复连接请求造成混乱",
+          "三次握手的主要目的是同步序列号，防止历史连接导致的错误",
+          "目的是建立可靠的连接，避免因网络延迟导致的无效连接问题"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "TCP协议握手就是客户端给服务器发个消息，服务器回一个消息，然后客户端再回一个消息，连接就建立了。目的是为了连接更稳定。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 7.5,
+    "human_score_2": 7.0,
+    "human_score_3": 4.0,
+    "human_score_avg": 6.17,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 4.0,
+    "keyword_score": 2.2
+  },
+  {
+    "question_id": 12,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？它们之间的主要区别是什么？",
+    "standard_answer": "1. 进程是程序的一次执行，是系统资源分配的基本单位。2. 线程是进程中的一个执行单元，是CPU调度的基本单位。3. 主要区别：a. 进程拥有独立的地址空间，线程共享所属进程的地址空间。b. 进程间通信较复杂，线程间通信较简单。c. 进程切换开销大，线程切换开销小。d. 一个进程崩溃不影响其他进程，但一个线程崩溃可能导致整个进程崩溃。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "给出进程的定义：程序的一次执行，系统资源分配的基本单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是程序的一次执行实例",
+          "进程是系统进行资源分配和调度的基本单位",
+          "进程是拥有独立内存空间的程序执行单元"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "给出线程的定义：进程中的一个执行单元，CPU调度的基本单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是进程内的一个执行流",
+          "线程是CPU调度和执行的基本单位",
+          "线程是进程中的一个实体"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程拥有独立的地址空间，线程共享所属进程的地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间内存隔离，线程间内存共享",
+          "每个进程有独立的内存空间，同一进程的线程共享内存",
+          "进程资源独立，线程资源共享"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程间通信较复杂，线程间通信较简单。",
+        "score": 1,
+        "acceptable_expressions": [
+          "进程通信需要特定机制（如管道、消息队列），线程可直接读写共享变量",
+          "进程通信开销大，线程通信效率高"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出进程切换开销大，线程切换开销小。",
+        "score": 1,
+        "acceptable_expressions": [
+          "进程上下文切换成本高，线程切换成本低",
+          "进程切换涉及资源管理，线程切换主要在CPU寄存器"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "指出一个进程崩溃不影响其他进程，但一个线程崩溃可能导致整个进程崩溃。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互独立，一个进程出错不影响其他进程；线程出错可能波及所属进程的所有线程",
+          "进程有独立性，线程缺乏独立性"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "进程是程序的一次执行过程，是操作系统进行资源分配和调度的基本单位，拥有独立的内存地址空间。线程是进程中的一个执行单元，是CPU调度的基本单位，同一个进程内的多个线程共享该进程的内存空间和系统资源。\n它们的主要区别包括：\n1. 内存空间：进程拥有独立的地址空间，线程共享所属进程的地址空间。\n2. 通信机制：进程间通信（IPC）需要通过操作系统提供的复杂机制（如管道、消息队列等），而线程间可以直接读写共享数据，通信更简单高效。\n3. 切换开销：进程切换涉及内存空间、寄存器等大量状态的保存与恢复，开销较大；线程切换主要在进程内部进行，开销较小。\n4. 容错性：一个进程崩溃不会直接影响其他进程，但一个线程崩溃（如访问非法内存）可能导致整个进程崩溃，影响该进程的所有线程。",
+    "expected_score_range": [
+      9,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 12,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？它们之间的主要区别是什么？",
+    "standard_answer": "1. 进程是程序的一次执行，是系统资源分配的基本单位。2. 线程是进程中的一个执行单元，是CPU调度的基本单位。3. 主要区别：a. 进程拥有独立的地址空间，线程共享所属进程的地址空间。b. 进程间通信较复杂，线程间通信较简单。c. 进程切换开销大，线程切换开销小。d. 一个进程崩溃不影响其他进程，但一个线程崩溃可能导致整个进程崩溃。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "给出进程的定义：程序的一次执行，系统资源分配的基本单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是程序的一次执行实例",
+          "进程是系统进行资源分配和调度的基本单位",
+          "进程是拥有独立内存空间的程序执行单元"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "给出线程的定义：进程中的一个执行单元，CPU调度的基本单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是进程内的一个执行流",
+          "线程是CPU调度和执行的基本单位",
+          "线程是进程中的一个实体"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程拥有独立的地址空间，线程共享所属进程的地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间内存隔离，线程间内存共享",
+          "每个进程有独立的内存空间，同一进程的线程共享内存",
+          "进程资源独立，线程资源共享"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程间通信较复杂，线程间通信较简单。",
+        "score": 1,
+        "acceptable_expressions": [
+          "进程通信需要特定机制（如管道、消息队列），线程可直接读写共享变量",
+          "进程通信开销大，线程通信效率高"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出进程切换开销大，线程切换开销小。",
+        "score": 1,
+        "acceptable_expressions": [
+          "进程上下文切换成本高，线程切换成本低",
+          "进程切换涉及资源管理，线程切换主要在CPU寄存器"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "指出一个进程崩溃不影响其他进程，但一个线程崩溃可能导致整个进程崩溃。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互独立，一个进程出错不影响其他进程；线程出错可能波及所属进程的所有线程",
+          "进程有独立性，线程缺乏独立性"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "进程就是运行中的程序，系统会给它分配内存等资源。线程是进程里更小的执行单位，一个进程可以有多个线程。\n区别方面：进程之间是相互独立的，每个进程有自己的内存，所以一个进程出问题不会影响别的进程。线程是共享进程资源的，所以线程之间通信比较方便，但一个线程崩溃的话可能会让整个进程都挂掉。另外，线程切换比进程切换要快一些，因为线程共享进程的资源。",
+    "expected_score_range": [
+      5,
+      6
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 3.7
+  },
+  {
+    "question_id": 12,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？它们之间的主要区别是什么？",
+    "standard_answer": "1. 进程是程序的一次执行，是系统资源分配的基本单位。2. 线程是进程中的一个执行单元，是CPU调度的基本单位。3. 主要区别：a. 进程拥有独立的地址空间，线程共享所属进程的地址空间。b. 进程间通信较复杂，线程间通信较简单。c. 进程切换开销大，线程切换开销小。d. 一个进程崩溃不影响其他进程，但一个线程崩溃可能导致整个进程崩溃。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "给出进程的定义：程序的一次执行，系统资源分配的基本单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是程序的一次执行实例",
+          "进程是系统进行资源分配和调度的基本单位",
+          "进程是拥有独立内存空间的程序执行单元"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "给出线程的定义：进程中的一个执行单元，CPU调度的基本单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是进程内的一个执行流",
+          "线程是CPU调度和执行的基本单位",
+          "线程是进程中的一个实体"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程拥有独立的地址空间，线程共享所属进程的地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间内存隔离，线程间内存共享",
+          "每个进程有独立的内存空间，同一进程的线程共享内存",
+          "进程资源独立，线程资源共享"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程间通信较复杂，线程间通信较简单。",
+        "score": 1,
+        "acceptable_expressions": [
+          "进程通信需要特定机制（如管道、消息队列），线程可直接读写共享变量",
+          "进程通信开销大，线程通信效率高"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出进程切换开销大，线程切换开销小。",
+        "score": 1,
+        "acceptable_expressions": [
+          "进程上下文切换成本高，线程切换成本低",
+          "进程切换涉及资源管理，线程切换主要在CPU寄存器"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "指出一个进程崩溃不影响其他进程，但一个线程崩溃可能导致整个进程崩溃。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互独立，一个进程出错不影响其他进程；线程出错可能波及所属进程的所有线程",
+          "进程有独立性，线程缺乏独立性"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "进程和线程都是计算机里运行的东西。进程好像大一点，线程小一点。区别就是进程更独立吧，线程好像是在进程里面的。线程之间可以互相通信，进程之间不太容易通信。别的区别不太清楚了。",
+    "expected_score_range": [
+      1,
+      2
+    ],
+    "human_score_1": 4.5,
+    "human_score_2": 5.5,
+    "human_score_3": 4.5,
+    "human_score_avg": 4.83,
+    "lenient_score": 1.0,
+    "strict_score": 1.0,
+    "free_score": 4.0,
+    "keyword_score": 1.7
+  },
+  {
+    "question_id": 13,
+    "subject": "数据库",
+    "question": "数据库事务的ACID特性分别指什么？请简要解释。",
+    "standard_answer": "1. 原子性：事务中的所有操作要么全部完成，要么全部不完成，不可分割。2. 一致性：事务执行前后，数据库必须从一个一致性状态变换到另一个一致性状态。3. 隔离性：多个并发事务执行时，彼此互不干扰。4. 持久性：事务一旦提交，其对数据的改变是永久性的，即使系统故障也不会丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确解释原子性：事务中的所有操作要么全部完成，要么全部不完成，不可分割。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务操作要么全部成功，要么全部失败",
+          "事务是原子的，不可分割",
+          "操作要么全部提交，要么全部回滚"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确解释一致性：事务执行前后，数据库必须从一个一致性状态变换到另一个一致性状态。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务保持数据完整性约束",
+          "事务前后数据库状态一致",
+          "事务确保数据符合预定义规则"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确解释隔离性：多个并发事务执行时，彼此互不干扰。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "并发事务之间相互隔离",
+          "事务执行不受其他并发事务影响",
+          "隔离性防止并发事务间的干扰"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确解释持久性：事务一旦提交，其对数据的改变是永久性的，即使系统故障也不会丢失。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "提交后数据永久保存",
+          "事务结果持久存储",
+          "系统故障不影响已提交事务"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "ACID是数据库事务的四个核心特性：\n1. 原子性：事务中的所有操作要么全部成功执行，要么全部回滚，不可分割。\n2. 一致性：事务执行前后，数据库必须保持一致性状态，不会破坏完整性约束。\n3. 隔离性：多个并发事务同时执行时，彼此之间不会相互干扰，保证数据隔离。\n4. 持久性：事务提交后，对数据的修改会永久保存，即使系统故障也不会丢失。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 8.7
+  },
+  {
+    "question_id": 13,
+    "subject": "数据库",
+    "question": "数据库事务的ACID特性分别指什么？请简要解释。",
+    "standard_answer": "1. 原子性：事务中的所有操作要么全部完成，要么全部不完成，不可分割。2. 一致性：事务执行前后，数据库必须从一个一致性状态变换到另一个一致性状态。3. 隔离性：多个并发事务执行时，彼此互不干扰。4. 持久性：事务一旦提交，其对数据的改变是永久性的，即使系统故障也不会丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确解释原子性：事务中的所有操作要么全部完成，要么全部不完成，不可分割。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务操作要么全部成功，要么全部失败",
+          "事务是原子的，不可分割",
+          "操作要么全部提交，要么全部回滚"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确解释一致性：事务执行前后，数据库必须从一个一致性状态变换到另一个一致性状态。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务保持数据完整性约束",
+          "事务前后数据库状态一致",
+          "事务确保数据符合预定义规则"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确解释隔离性：多个并发事务执行时，彼此互不干扰。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "并发事务之间相互隔离",
+          "事务执行不受其他并发事务影响",
+          "隔离性防止并发事务间的干扰"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确解释持久性：事务一旦提交，其对数据的改变是永久性的，即使系统故障也不会丢失。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "提交后数据永久保存",
+          "事务结果持久存储",
+          "系统故障不影响已提交事务"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "ACID特性包括：\n1. 原子性：一个事务要么全做要么全不做，不能只做一部分。\n2. 一致性：事务保证数据正确，不会出错。\n3. 隔离性：多个事务同时进行时互不影响。\n4. 持久性：事务提交后数据就保存下来了，不会丢失。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 9.5,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 9.83,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 3.5
+  },
+  {
+    "question_id": 13,
+    "subject": "数据库",
+    "question": "数据库事务的ACID特性分别指什么？请简要解释。",
+    "standard_answer": "1. 原子性：事务中的所有操作要么全部完成，要么全部不完成，不可分割。2. 一致性：事务执行前后，数据库必须从一个一致性状态变换到另一个一致性状态。3. 隔离性：多个并发事务执行时，彼此互不干扰。4. 持久性：事务一旦提交，其对数据的改变是永久性的，即使系统故障也不会丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确解释原子性：事务中的所有操作要么全部完成，要么全部不完成，不可分割。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务操作要么全部成功，要么全部失败",
+          "事务是原子的，不可分割",
+          "操作要么全部提交，要么全部回滚"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确解释一致性：事务执行前后，数据库必须从一个一致性状态变换到另一个一致性状态。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "事务保持数据完整性约束",
+          "事务前后数据库状态一致",
+          "事务确保数据符合预定义规则"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确解释隔离性：多个并发事务执行时，彼此互不干扰。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "并发事务之间相互隔离",
+          "事务执行不受其他并发事务影响",
+          "隔离性防止并发事务间的干扰"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确解释持久性：事务一旦提交，其对数据的改变是永久性的，即使系统故障也不会丢失。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "提交后数据永久保存",
+          "事务结果持久存储",
+          "系统故障不影响已提交事务"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "ACID好像是数据库的东西，A可能是原子性，就是事务要完整执行。C可能是连续性吧？隔离性应该是事务之间分开执行。持久性就是数据存下来。别的记不清了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 7.5,
+    "human_score_2": 7.5,
+    "human_score_3": 7.5,
+    "human_score_avg": 7.5,
+    "lenient_score": 7.5,
+    "strict_score": 7.5,
+    "free_score": 4.0,
+    "keyword_score": 1.7
+  },
+  {
+    "question_id": 14,
+    "subject": "数据结构",
+    "question": "简述二叉树的先序遍历、中序遍历和后序遍历的递归算法思想。",
+    "standard_answer": "1. 先序遍历：先访问根结点，然后递归地先序遍历左子树，最后递归地先序遍历右子树。2. 中序遍历：先递归地中序遍历左子树，然后访问根结点，最后递归地中序遍历右子树。3. 后序遍历：先递归地后序遍历左子树，然后递归地后序遍历右子树，最后访问根结点。三种方法的核心区别在于访问根结点的时机不同。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确说明先序遍历的递归算法思想：先访问根结点，然后递归遍历左子树，最后递归遍历右子树。",
+        "score": 3,
+        "acceptable_expressions": [
+          "先访问根结点，再递归遍历左右子树",
+          "根->左->右",
+          "先处理根节点，再递归处理左子树和右子树"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明中序遍历的递归算法思想：先递归遍历左子树，然后访问根结点，最后递归遍历右子树。",
+        "score": 3,
+        "acceptable_expressions": [
+          "左->根->右",
+          "先递归遍历左子树，再访问根，最后递归遍历右子树"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确说明后序遍历的递归算法思想：先递归遍历左子树，然后递归遍历右子树，最后访问根结点。",
+        "score": 3,
+        "acceptable_expressions": [
+          "左->右->根",
+          "先递归遍历左右子树，最后访问根结点"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出三种遍历方法的核心区别在于访问根结点的时机不同。",
+        "score": 1,
+        "acceptable_expressions": [
+          "区别在于根节点的访问顺序",
+          "核心是根节点的访问时机差异",
+          "三种遍历的区分在于根结点的处理顺序"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "二叉树的先序遍历、中序遍历和后序遍历都是基于递归思想的深度优先遍历算法。\n1. 先序遍历：首先访问当前树的根结点，然后递归地对左子树进行先序遍历，最后递归地对右子树进行先序遍历。\n2. 中序遍历：先递归地对左子树进行中序遍历，然后访问当前树的根结点，最后递归地对右子树进行中序遍历。\n3. 后序遍历：先递归地对左子树进行后序遍历，然后递归地对右子树进行后序遍历，最后访问当前树的根结点。\n这三种遍历方法的核心区别在于访问根结点的时机不同：先序遍历在递归左右子树之前访问根结点，中序遍历在递归左右子树之间访问根结点，后序遍历在递归左右子树之后访问根结点。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 14,
+    "subject": "数据结构",
+    "question": "简述二叉树的先序遍历、中序遍历和后序遍历的递归算法思想。",
+    "standard_answer": "1. 先序遍历：先访问根结点，然后递归地先序遍历左子树，最后递归地先序遍历右子树。2. 中序遍历：先递归地中序遍历左子树，然后访问根结点，最后递归地中序遍历右子树。3. 后序遍历：先递归地后序遍历左子树，然后递归地后序遍历右子树，最后访问根结点。三种方法的核心区别在于访问根结点的时机不同。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确说明先序遍历的递归算法思想：先访问根结点，然后递归遍历左子树，最后递归遍历右子树。",
+        "score": 3,
+        "acceptable_expressions": [
+          "先访问根结点，再递归遍历左右子树",
+          "根->左->右",
+          "先处理根节点，再递归处理左子树和右子树"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明中序遍历的递归算法思想：先递归遍历左子树，然后访问根结点，最后递归遍历右子树。",
+        "score": 3,
+        "acceptable_expressions": [
+          "左->根->右",
+          "先递归遍历左子树，再访问根，最后递归遍历右子树"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确说明后序遍历的递归算法思想：先递归遍历左子树，然后递归遍历右子树，最后访问根结点。",
+        "score": 3,
+        "acceptable_expressions": [
+          "左->右->根",
+          "先递归遍历左右子树，最后访问根结点"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出三种遍历方法的核心区别在于访问根结点的时机不同。",
+        "score": 1,
+        "acceptable_expressions": [
+          "区别在于根节点的访问顺序",
+          "核心是根节点的访问时机差异",
+          "三种遍历的区分在于根结点的处理顺序"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "二叉树遍历有几种方法：\n- 先序遍历：先访问根，然后遍历左子树，再遍历右子树。\n- 中序遍历：先遍历左子树，然后访问根，再遍历右子树。\n- 后序遍历：先遍历左子树，然后遍历右子树，最后访问根。\n它们都是递归实现的，区别在于访问根的顺序不一样。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 7.7
+  },
+  {
+    "question_id": 14,
+    "subject": "数据结构",
+    "question": "简述二叉树的先序遍历、中序遍历和后序遍历的递归算法思想。",
+    "standard_answer": "1. 先序遍历：先访问根结点，然后递归地先序遍历左子树，最后递归地先序遍历右子树。2. 中序遍历：先递归地中序遍历左子树，然后访问根结点，最后递归地中序遍历右子树。3. 后序遍历：先递归地后序遍历左子树，然后递归地后序遍历右子树，最后访问根结点。三种方法的核心区别在于访问根结点的时机不同。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确说明先序遍历的递归算法思想：先访问根结点，然后递归遍历左子树，最后递归遍历右子树。",
+        "score": 3,
+        "acceptable_expressions": [
+          "先访问根结点，再递归遍历左右子树",
+          "根->左->右",
+          "先处理根节点，再递归处理左子树和右子树"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确说明中序遍历的递归算法思想：先递归遍历左子树，然后访问根结点，最后递归遍历右子树。",
+        "score": 3,
+        "acceptable_expressions": [
+          "左->根->右",
+          "先递归遍历左子树，再访问根，最后递归遍历右子树"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确说明后序遍历的递归算法思想：先递归遍历左子树，然后递归遍历右子树，最后访问根结点。",
+        "score": 3,
+        "acceptable_expressions": [
+          "左->右->根",
+          "先递归遍历左右子树，最后访问根结点"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出三种遍历方法的核心区别在于访问根结点的时机不同。",
+        "score": 1,
+        "acceptable_expressions": [
+          "区别在于根节点的访问顺序",
+          "核心是根节点的访问时机差异",
+          "三种遍历的区分在于根结点的处理顺序"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "二叉树遍历就是按照一定顺序访问节点。先序遍历是从上到下访问，中序遍历是从左到右访问，后序遍历是从下到上访问。它们都是用递归来做的，就是自己调用自己。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 4.0,
+    "human_score_2": 4.0,
+    "human_score_3": 4.0,
+    "human_score_avg": 4.0,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 3.0,
+    "keyword_score": 3.1
+  },
+  {
+    "question_id": 15,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议与HTTPS协议的主要区别。",
+    "standard_answer": "1. 安全性：HTTP是明文传输，HTTPS在HTTP下加入了SSL/TLS层，对数据进行加密传输，更安全。2. 端口：HTTP默认使用80端口，HTTPS默认使用443端口。3. 证书：HTTPS需要向CA（证书颁发机构）申请数字证书，用于验证服务器身份，HTTP不需要。4. 连接过程：HTTPS在TCP三次握手后，还需要进行SSL/TLS握手，建立加密通道。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "指出安全性差异：HTTP明文传输，HTTPS通过SSL/TLS加密传输",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTP是明文的，HTTPS是加密的",
+          "HTTP不加密，HTTPS加密",
+          "HTTPS在HTTP基础上加了SSL/TLS进行加密",
+          "HTTPS数据传输是安全的，HTTP不安全"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "指出默认端口差异：HTTP默认80端口，HTTPS默认443端口",
+        "score": 2,
+        "acceptable_expressions": [
+          "HTTP用80，HTTPS用443",
+          "端口号不同",
+          "HTTP端口80，HTTPS端口443"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出证书要求差异：HTTPS需要CA颁发的数字证书验证身份，HTTP不需要",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTPS需要数字证书/SSL证书",
+          "HTTPS有证书验证服务器身份",
+          "HTTP无证书要求",
+          "HTTPS通过证书建立信任"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出连接过程差异：HTTPS在TCP握手后还需SSL/TLS握手建立加密通道",
+        "score": 2,
+        "acceptable_expressions": [
+          "HTTPS连接更复杂，多了SSL/TLS握手",
+          "HTTPS建立连接需要额外步骤",
+          "HTTPS有加密握手过程",
+          "HTTP直接传输，HTTPS先协商加密"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "HTTP和HTTPS的主要区别在于：第一，安全性不同。HTTP协议是明文传输数据，容易被窃听或篡改；而HTTPS在HTTP的基础上增加了SSL/TLS加密层，对传输的数据进行加密，因此更安全。第二，默认端口不同。HTTP通常使用80端口进行通信，HTTPS则使用443端口。第三，证书要求不同。HTTPS需要服务器向权威的CA机构申请数字证书，用于验证服务器的真实身份，防止中间人攻击，而HTTP没有这个要求。第四，连接建立过程不同。HTTPS在完成TCP三次握手后，还需要进行SSL/TLS握手来协商加密算法和交换密钥，建立安全的加密通道，这个过程比HTTP更复杂。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 15,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议与HTTPS协议的主要区别。",
+    "standard_answer": "1. 安全性：HTTP是明文传输，HTTPS在HTTP下加入了SSL/TLS层，对数据进行加密传输，更安全。2. 端口：HTTP默认使用80端口，HTTPS默认使用443端口。3. 证书：HTTPS需要向CA（证书颁发机构）申请数字证书，用于验证服务器身份，HTTP不需要。4. 连接过程：HTTPS在TCP三次握手后，还需要进行SSL/TLS握手，建立加密通道。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "指出安全性差异：HTTP明文传输，HTTPS通过SSL/TLS加密传输",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTP是明文的，HTTPS是加密的",
+          "HTTP不加密，HTTPS加密",
+          "HTTPS在HTTP基础上加了SSL/TLS进行加密",
+          "HTTPS数据传输是安全的，HTTP不安全"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "指出默认端口差异：HTTP默认80端口，HTTPS默认443端口",
+        "score": 2,
+        "acceptable_expressions": [
+          "HTTP用80，HTTPS用443",
+          "端口号不同",
+          "HTTP端口80，HTTPS端口443"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出证书要求差异：HTTPS需要CA颁发的数字证书验证身份，HTTP不需要",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTPS需要数字证书/SSL证书",
+          "HTTPS有证书验证服务器身份",
+          "HTTP无证书要求",
+          "HTTPS通过证书建立信任"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出连接过程差异：HTTPS在TCP握手后还需SSL/TLS握手建立加密通道",
+        "score": 2,
+        "acceptable_expressions": [
+          "HTTPS连接更复杂，多了SSL/TLS握手",
+          "HTTPS建立连接需要额外步骤",
+          "HTTPS有加密握手过程",
+          "HTTP直接传输，HTTPS先协商加密"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "HTTP和HTTPS的区别主要是安全方面不一样。HTTPS比HTTP安全，因为HTTPS会把数据加密了再传，HTTP就是直接传，容易被看到。另外，它们用的端口号也不同，HTTP是80，HTTPS是443。还有就是HTTPS好像需要一个什么证书，HTTP不需要。连接过程可能也有点不一样，但具体不太清楚。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 7.5,
+    "human_score_2": 8.0,
+    "human_score_3": 8.0,
+    "human_score_avg": 7.83,
+    "lenient_score": 8.0,
+    "strict_score": 8.0,
+    "free_score": 6.0,
+    "keyword_score": 4.0
+  },
+  {
+    "question_id": 15,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议与HTTPS协议的主要区别。",
+    "standard_answer": "1. 安全性：HTTP是明文传输，HTTPS在HTTP下加入了SSL/TLS层，对数据进行加密传输，更安全。2. 端口：HTTP默认使用80端口，HTTPS默认使用443端口。3. 证书：HTTPS需要向CA（证书颁发机构）申请数字证书，用于验证服务器身份，HTTP不需要。4. 连接过程：HTTPS在TCP三次握手后，还需要进行SSL/TLS握手，建立加密通道。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "指出安全性差异：HTTP明文传输，HTTPS通过SSL/TLS加密传输",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTP是明文的，HTTPS是加密的",
+          "HTTP不加密，HTTPS加密",
+          "HTTPS在HTTP基础上加了SSL/TLS进行加密",
+          "HTTPS数据传输是安全的，HTTP不安全"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "指出默认端口差异：HTTP默认80端口，HTTPS默认443端口",
+        "score": 2,
+        "acceptable_expressions": [
+          "HTTP用80，HTTPS用443",
+          "端口号不同",
+          "HTTP端口80，HTTPS端口443"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出证书要求差异：HTTPS需要CA颁发的数字证书验证身份，HTTP不需要",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTPS需要数字证书/SSL证书",
+          "HTTPS有证书验证服务器身份",
+          "HTTP无证书要求",
+          "HTTPS通过证书建立信任"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出连接过程差异：HTTPS在TCP握手后还需SSL/TLS握手建立加密通道",
+        "score": 2,
+        "acceptable_expressions": [
+          "HTTPS连接更复杂，多了SSL/TLS握手",
+          "HTTPS建立连接需要额外步骤",
+          "HTTPS有加密握手过程",
+          "HTTP直接传输，HTTPS先协商加密"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "HTTP和HTTPS都是上网用的协议，HTTPS网址前面有个锁的标志，感觉更安全点。好像HTTPS速度有时候会慢一点？其他区别不太知道了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.0,
+    "human_score_2": 1.5,
+    "human_score_3": 2.5,
+    "human_score_avg": 2.33,
+    "lenient_score": 0.0,
+    "strict_score": 3.0,
+    "free_score": 3.0,
+    "keyword_score": 1.7
+  },
+  {
+    "question_id": 16,
+    "subject": "操作系统",
+    "question": "什么是死锁？产生死锁的必要条件有哪些？",
+    "standard_answer": "1. 死锁是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。2. 产生死锁的四个必要条件：a. 互斥条件：资源一次只能被一个进程使用。b. 请求与保持条件：进程在请求新资源的同时，保持对已分配资源的占有。c. 不可剥夺条件：进程已获得的资源在未使用完之前不能被强行剥夺。d. 循环等待条件：存在一个进程-资源的循环等待链。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确定义死锁：指两个或两个以上进程在执行过程中，因争夺资源而互相等待，若无外力作用，则无法推进的现象",
+        "score": 4,
+        "acceptable_expressions": [
+          "多个进程因资源竞争互相等待而无法继续执行",
+          "进程间因资源争用陷入无限期等待的状态",
+          "系统中多个进程因互相持有对方所需资源而无法继续运行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "列出互斥条件：资源一次只能被一个进程使用",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "资源具有排他性",
+          "资源不能同时被多个进程共享使用",
+          "资源在任一时刻只能分配给一个进程"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "列出请求与保持条件：进程在请求新资源的同时保持已有资源",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "进程占有部分资源后又申请新资源",
+          "进程在等待新资源时不释放已获资源",
+          "部分分配且等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "列出不可剥夺条件：进程已获资源在未使用完前不能被强制收回",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "资源只能由占有进程自愿释放",
+          "资源不能被系统强行剥夺",
+          "非抢占式资源分配"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "列出循环等待条件：存在进程-资源的环形等待链",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "进程集合{P1,P2,...,Pn}中，P1等P2资源，P2等P3资源，...，Pn等P1资源",
+          "存在资源等待的环路",
+          "进程间形成等待资源的循环依赖"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "死锁是指在并发系统中，两个或多个进程在执行过程中，由于竞争共享资源而陷入相互等待的状态，如果没有外部干预，这些进程都无法继续向前推进。产生死锁需要同时满足四个必要条件：第一，互斥条件，即资源在任意时刻只能被一个进程独占使用；第二，请求与保持条件，进程在申请新资源的同时，会保持已分配给它的资源不释放；第三，不可剥夺条件，进程已获得的资源在未使用完毕前，不能被系统强行收回；第四，循环等待条件，存在一个进程和资源的环形等待链，每个进程都在等待下一个进程所占有的资源。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 9.1
+  },
+  {
+    "question_id": 16,
+    "subject": "操作系统",
+    "question": "什么是死锁？产生死锁的必要条件有哪些？",
+    "standard_answer": "1. 死锁是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。2. 产生死锁的四个必要条件：a. 互斥条件：资源一次只能被一个进程使用。b. 请求与保持条件：进程在请求新资源的同时，保持对已分配资源的占有。c. 不可剥夺条件：进程已获得的资源在未使用完之前不能被强行剥夺。d. 循环等待条件：存在一个进程-资源的循环等待链。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确定义死锁：指两个或两个以上进程在执行过程中，因争夺资源而互相等待，若无外力作用，则无法推进的现象",
+        "score": 4,
+        "acceptable_expressions": [
+          "多个进程因资源竞争互相等待而无法继续执行",
+          "进程间因资源争用陷入无限期等待的状态",
+          "系统中多个进程因互相持有对方所需资源而无法继续运行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "列出互斥条件：资源一次只能被一个进程使用",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "资源具有排他性",
+          "资源不能同时被多个进程共享使用",
+          "资源在任一时刻只能分配给一个进程"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "列出请求与保持条件：进程在请求新资源的同时保持已有资源",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "进程占有部分资源后又申请新资源",
+          "进程在等待新资源时不释放已获资源",
+          "部分分配且等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "列出不可剥夺条件：进程已获资源在未使用完前不能被强制收回",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "资源只能由占有进程自愿释放",
+          "资源不能被系统强行剥夺",
+          "非抢占式资源分配"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "列出循环等待条件：存在进程-资源的环形等待链",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "进程集合{P1,P2,...,Pn}中，P1等P2资源，P2等P3资源，...，Pn等P1资源",
+          "存在资源等待的环路",
+          "进程间形成等待资源的循环依赖"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "死锁就是多个进程卡住不动了，互相等着对方释放资源。要发生死锁得有这几个条件：一个是资源不能同时被多个进程用（互斥）；二是进程拿着一些资源还要申请别的资源；三是进程占着的资源不能被抢走；最后是它们之间形成了一个循环等待的关系。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 3.4
+  },
+  {
+    "question_id": 16,
+    "subject": "操作系统",
+    "question": "什么是死锁？产生死锁的必要条件有哪些？",
+    "standard_answer": "1. 死锁是指两个或两个以上的进程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。2. 产生死锁的四个必要条件：a. 互斥条件：资源一次只能被一个进程使用。b. 请求与保持条件：进程在请求新资源的同时，保持对已分配资源的占有。c. 不可剥夺条件：进程已获得的资源在未使用完之前不能被强行剥夺。d. 循环等待条件：存在一个进程-资源的循环等待链。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确定义死锁：指两个或两个以上进程在执行过程中，因争夺资源而互相等待，若无外力作用，则无法推进的现象",
+        "score": 4,
+        "acceptable_expressions": [
+          "多个进程因资源竞争互相等待而无法继续执行",
+          "进程间因资源争用陷入无限期等待的状态",
+          "系统中多个进程因互相持有对方所需资源而无法继续运行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "列出互斥条件：资源一次只能被一个进程使用",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "资源具有排他性",
+          "资源不能同时被多个进程共享使用",
+          "资源在任一时刻只能分配给一个进程"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "列出请求与保持条件：进程在请求新资源的同时保持已有资源",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "进程占有部分资源后又申请新资源",
+          "进程在等待新资源时不释放已获资源",
+          "部分分配且等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "列出不可剥夺条件：进程已获资源在未使用完前不能被强制收回",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "资源只能由占有进程自愿释放",
+          "资源不能被系统强行剥夺",
+          "非抢占式资源分配"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "列出循环等待条件：存在进程-资源的环形等待链",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "进程集合{P1,P2,...,Pn}中，P1等P2资源，P2等P3资源，...，Pn等P1资源",
+          "存在资源等待的环路",
+          "进程间形成等待资源的循环依赖"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "死锁就是程序卡死了。原因可能是资源不够或者代码写的有问题，有时候重启一下就好了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 1.0,
+    "human_score_2": 1.5,
+    "human_score_3": 2.0,
+    "human_score_avg": 1.5,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 2.0,
+    "keyword_score": 0.7
+  },
+  {
+    "question_id": 17,
+    "subject": "数据库",
+    "question": "什么是数据库的第一范式、第二范式和第三范式？",
+    "standard_answer": "1. 第一范式：数据库表中的每一列都是不可分割的基本数据项，同一列中不能有多个值。2. 第二范式：在满足第一范式的基础上，非主属性完全依赖于主键，消除非主属性对主键的部分函数依赖。3. 第三范式：在满足第二范式的基础上，任何非主属性不依赖于其他非主属性，消除传递函数依赖。目的是减少数据冗余，提高数据的一致性和完整性。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "第一范式定义正确：数据库表中的每一列都是不可分割的基本数据项，同一列中不能有多个值。",
+        "score": 3,
+        "acceptable_expressions": [
+          "每一列都是原子性的，不可再分",
+          "列中存储单一值，无重复组",
+          "满足原子性，无多值属性",
+          "属性不可分割"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "第二范式定义正确：在满足第一范式的基础上，非主属性完全依赖于主键，消除非主属性对主键的部分函数依赖。",
+        "score": 3,
+        "acceptable_expressions": [
+          "非主属性完全函数依赖于主键",
+          "消除部分依赖",
+          "所有非键字段完全依赖于整个主键",
+          "不存在部分函数依赖"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "第三范式定义正确：在满足第二范式的基础上，任何非主属性不依赖于其他非主属性，消除传递函数依赖。",
+        "score": 3,
+        "acceptable_expressions": [
+          "消除传递依赖",
+          "非主属性之间不存在函数依赖",
+          "非键字段不依赖于其他非键字段",
+          "所有非键字段只依赖于主键"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "说明范式的主要目的：减少数据冗余，提高数据的一致性和完整性。",
+        "score": 1,
+        "acceptable_expressions": [
+          "减少冗余，保证一致性",
+          "避免数据重复，确保数据准确",
+          "提高数据质量，避免异常",
+          "规范化以减少冗余和维护一致性"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "第一范式（1NF）要求数据库表中的每一列都是不可分割的基本数据项，同一列中不能存储多个值。第二范式（2NF）在满足1NF的基础上，要求非主属性必须完全依赖于主键，消除非主属性对主键的部分函数依赖。第三范式（3NF）在满足2NF的基础上，要求任何非主属性不依赖于其他非主属性，消除传递函数依赖。这些范式的主要目的是减少数据冗余，提高数据的一致性和完整性。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 9.4
+  },
+  {
+    "question_id": 17,
+    "subject": "数据库",
+    "question": "什么是数据库的第一范式、第二范式和第三范式？",
+    "standard_answer": "1. 第一范式：数据库表中的每一列都是不可分割的基本数据项，同一列中不能有多个值。2. 第二范式：在满足第一范式的基础上，非主属性完全依赖于主键，消除非主属性对主键的部分函数依赖。3. 第三范式：在满足第二范式的基础上，任何非主属性不依赖于其他非主属性，消除传递函数依赖。目的是减少数据冗余，提高数据的一致性和完整性。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "第一范式定义正确：数据库表中的每一列都是不可分割的基本数据项，同一列中不能有多个值。",
+        "score": 3,
+        "acceptable_expressions": [
+          "每一列都是原子性的，不可再分",
+          "列中存储单一值，无重复组",
+          "满足原子性，无多值属性",
+          "属性不可分割"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "第二范式定义正确：在满足第一范式的基础上，非主属性完全依赖于主键，消除非主属性对主键的部分函数依赖。",
+        "score": 3,
+        "acceptable_expressions": [
+          "非主属性完全函数依赖于主键",
+          "消除部分依赖",
+          "所有非键字段完全依赖于整个主键",
+          "不存在部分函数依赖"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "第三范式定义正确：在满足第二范式的基础上，任何非主属性不依赖于其他非主属性，消除传递函数依赖。",
+        "score": 3,
+        "acceptable_expressions": [
+          "消除传递依赖",
+          "非主属性之间不存在函数依赖",
+          "非键字段不依赖于其他非键字段",
+          "所有非键字段只依赖于主键"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "说明范式的主要目的：减少数据冗余，提高数据的一致性和完整性。",
+        "score": 1,
+        "acceptable_expressions": [
+          "减少冗余，保证一致性",
+          "避免数据重复，确保数据准确",
+          "提高数据质量，避免异常",
+          "规范化以减少冗余和维护一致性"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "第一范式是数据库表中的每一列都不能再分，比如一个字段不能存多个值。第二范式是在第一范式的基础上，非主属性要完全依赖于主键，不能只依赖一部分。第三范式要求非主属性之间不能有依赖关系。这样设计可以减少数据重复。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 5.8
+  },
+  {
+    "question_id": 17,
+    "subject": "数据库",
+    "question": "什么是数据库的第一范式、第二范式和第三范式？",
+    "standard_answer": "1. 第一范式：数据库表中的每一列都是不可分割的基本数据项，同一列中不能有多个值。2. 第二范式：在满足第一范式的基础上，非主属性完全依赖于主键，消除非主属性对主键的部分函数依赖。3. 第三范式：在满足第二范式的基础上，任何非主属性不依赖于其他非主属性，消除传递函数依赖。目的是减少数据冗余，提高数据的一致性和完整性。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "第一范式定义正确：数据库表中的每一列都是不可分割的基本数据项，同一列中不能有多个值。",
+        "score": 3,
+        "acceptable_expressions": [
+          "每一列都是原子性的，不可再分",
+          "列中存储单一值，无重复组",
+          "满足原子性，无多值属性",
+          "属性不可分割"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "第二范式定义正确：在满足第一范式的基础上，非主属性完全依赖于主键，消除非主属性对主键的部分函数依赖。",
+        "score": 3,
+        "acceptable_expressions": [
+          "非主属性完全函数依赖于主键",
+          "消除部分依赖",
+          "所有非键字段完全依赖于整个主键",
+          "不存在部分函数依赖"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "第三范式定义正确：在满足第二范式的基础上，任何非主属性不依赖于其他非主属性，消除传递函数依赖。",
+        "score": 3,
+        "acceptable_expressions": [
+          "消除传递依赖",
+          "非主属性之间不存在函数依赖",
+          "非键字段不依赖于其他非键字段",
+          "所有非键字段只依赖于主键"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "说明范式的主要目的：减少数据冗余，提高数据的一致性和完整性。",
+        "score": 1,
+        "acceptable_expressions": [
+          "减少冗余，保证一致性",
+          "避免数据重复，确保数据准确",
+          "提高数据质量，避免异常",
+          "规范化以减少冗余和维护一致性"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "数据库范式就是设计表的一些规则。第一范式好像是要求每个字段都简单一点，第二范式跟主键有关系，第三范式要求更严格一点。这样可以让数据库更好用。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.5,
+    "human_score_2": 2.0,
+    "human_score_3": 2.0,
+    "human_score_avg": 2.5,
+    "lenient_score": 1.0,
+    "strict_score": 1.0,
+    "free_score": 3.0,
+    "keyword_score": 1.6
+  },
+  {
+    "question_id": 18,
+    "subject": "数据结构",
+    "question": "比较顺序存储结构和链式存储结构的优缺点。",
+    "standard_answer": "1. 顺序存储优点：支持随机访问，存取元素速度快；缺点：插入删除需要移动大量元素，存储空间需预先分配，可能浪费或溢出。2. 链式存储优点：插入删除灵活，只需修改指针，不需要预先分配固定空间；缺点：不支持随机访问，必须从头遍历，存储密度较低（因为需要额外空间存储指针）。选择哪种结构取决于具体操作（如查询多还是增删多）和对空间效率的要求。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确指出顺序存储结构支持随机访问（或直接访问），存取速度快",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "可随机存取",
+          "可按下标直接访问",
+          "访问速度快",
+          "存取效率高"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确指出顺序存储结构插入、删除操作需要移动大量元素",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "增删需移动元素",
+          "插入删除效率低",
+          "修改操作不便"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确指出顺序存储结构需要预先分配连续存储空间，可能造成空间浪费或溢出",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "需静态分配空间",
+          "存储空间不灵活",
+          "可能浪费内存",
+          "固定长度易溢出"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确指出链式存储结构插入、删除操作灵活，只需修改指针，无需移动元素",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "增删只需改指针",
+          "插入删除效率高",
+          "动态修改方便"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确指出链式存储结构不需要预先分配固定空间，可动态申请",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "存储空间动态分配",
+          "无需预先确定大小",
+          "空间利用率高",
+          "可按需扩展"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "正确指出链式存储结构不支持随机访问，需从头顺序遍历",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "只能顺序访问",
+          "查找效率较低",
+          "访问需遍历",
+          "无法直接定位"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "正确指出链式存储结构存储密度较低（因需额外空间存储指针）",
+        "score": 1,
+        "acceptable_expressions": [
+          "有指针开销",
+          "额外存储指针",
+          "空间利用率相对低",
+          "存储开销大"
+        ]
+      },
+      {
+        "id": 8,
+        "description": "正确总结选择依据：取决于具体操作（如查询多还是增删多）和对空间效率的要求",
+        "score": 1,
+        "acceptable_expressions": [
+          "根据操作频率选择",
+          "视应用需求而定",
+          "权衡时间与空间",
+          "依具体情况选择"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "顺序存储结构的优点在于支持随机访问，可以根据下标直接存取元素，因此存取速度很快。缺点是在插入和删除元素时，通常需要移动大量后续元素以保持连续性，效率较低；并且需要预先分配一块连续的存储空间，可能因分配过大导致空间浪费，或分配不足造成溢出。链式存储结构的优点在于插入和删除操作非常灵活，只需修改相关结点的指针，无需移动元素；同时它不需要预先分配固定空间，可以根据需要动态申请结点。缺点是不支持随机访问，要访问某个元素必须从表头开始顺序遍历；此外，每个结点除了存储数据元素外还需要存储指针，因此存储密度较低。在实际应用中，选择哪种结构主要取决于具体的操作需求，例如查询操作多时适合用顺序结构，而增删操作频繁时适合用链式结构，同时也要考虑对空间效率的要求。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 11.0,
+    "strict_score": 11.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 18,
+    "subject": "数据结构",
+    "question": "比较顺序存储结构和链式存储结构的优缺点。",
+    "standard_answer": "1. 顺序存储优点：支持随机访问，存取元素速度快；缺点：插入删除需要移动大量元素，存储空间需预先分配，可能浪费或溢出。2. 链式存储优点：插入删除灵活，只需修改指针，不需要预先分配固定空间；缺点：不支持随机访问，必须从头遍历，存储密度较低（因为需要额外空间存储指针）。选择哪种结构取决于具体操作（如查询多还是增删多）和对空间效率的要求。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确指出顺序存储结构支持随机访问（或直接访问），存取速度快",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "可随机存取",
+          "可按下标直接访问",
+          "访问速度快",
+          "存取效率高"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确指出顺序存储结构插入、删除操作需要移动大量元素",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "增删需移动元素",
+          "插入删除效率低",
+          "修改操作不便"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确指出顺序存储结构需要预先分配连续存储空间，可能造成空间浪费或溢出",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "需静态分配空间",
+          "存储空间不灵活",
+          "可能浪费内存",
+          "固定长度易溢出"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确指出链式存储结构插入、删除操作灵活，只需修改指针，无需移动元素",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "增删只需改指针",
+          "插入删除效率高",
+          "动态修改方便"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确指出链式存储结构不需要预先分配固定空间，可动态申请",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "存储空间动态分配",
+          "无需预先确定大小",
+          "空间利用率高",
+          "可按需扩展"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "正确指出链式存储结构不支持随机访问，需从头顺序遍历",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "只能顺序访问",
+          "查找效率较低",
+          "访问需遍历",
+          "无法直接定位"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "正确指出链式存储结构存储密度较低（因需额外空间存储指针）",
+        "score": 1,
+        "acceptable_expressions": [
+          "有指针开销",
+          "额外存储指针",
+          "空间利用率相对低",
+          "存储开销大"
+        ]
+      },
+      {
+        "id": 8,
+        "description": "正确总结选择依据：取决于具体操作（如查询多还是增删多）和对空间效率的要求",
+        "score": 1,
+        "acceptable_expressions": [
+          "根据操作频率选择",
+          "视应用需求而定",
+          "权衡时间与空间",
+          "依具体情况选择"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "顺序存储结构的优点是存取快，可以直接找到元素，但插入删除数据时要移动其他元素，比较麻烦，而且需要提前分配好一块连续的内存。链式存储结构的优点是插入删除很方便，只要改一下指针就行，内存可以随时申请。缺点是不能直接访问某个位置，得从头开始一个个找，而且每个结点除了存数据还要存指针，占的空间多一点。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 3.8
+  },
+  {
+    "question_id": 18,
+    "subject": "数据结构",
+    "question": "比较顺序存储结构和链式存储结构的优缺点。",
+    "standard_answer": "1. 顺序存储优点：支持随机访问，存取元素速度快；缺点：插入删除需要移动大量元素，存储空间需预先分配，可能浪费或溢出。2. 链式存储优点：插入删除灵活，只需修改指针，不需要预先分配固定空间；缺点：不支持随机访问，必须从头遍历，存储密度较低（因为需要额外空间存储指针）。选择哪种结构取决于具体操作（如查询多还是增删多）和对空间效率的要求。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确指出顺序存储结构支持随机访问（或直接访问），存取速度快",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "可随机存取",
+          "可按下标直接访问",
+          "访问速度快",
+          "存取效率高"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确指出顺序存储结构插入、删除操作需要移动大量元素",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "增删需移动元素",
+          "插入删除效率低",
+          "修改操作不便"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确指出顺序存储结构需要预先分配连续存储空间，可能造成空间浪费或溢出",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "需静态分配空间",
+          "存储空间不灵活",
+          "可能浪费内存",
+          "固定长度易溢出"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确指出链式存储结构插入、删除操作灵活，只需修改指针，无需移动元素",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "增删只需改指针",
+          "插入删除效率高",
+          "动态修改方便"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确指出链式存储结构不需要预先分配固定空间，可动态申请",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "存储空间动态分配",
+          "无需预先确定大小",
+          "空间利用率高",
+          "可按需扩展"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "正确指出链式存储结构不支持随机访问，需从头顺序遍历",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "只能顺序访问",
+          "查找效率较低",
+          "访问需遍历",
+          "无法直接定位"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "正确指出链式存储结构存储密度较低（因需额外空间存储指针）",
+        "score": 1,
+        "acceptable_expressions": [
+          "有指针开销",
+          "额外存储指针",
+          "空间利用率相对低",
+          "存储开销大"
+        ]
+      },
+      {
+        "id": 8,
+        "description": "正确总结选择依据：取决于具体操作（如查询多还是增删多）和对空间效率的要求",
+        "score": 1,
+        "acceptable_expressions": [
+          "根据操作频率选择",
+          "视应用需求而定",
+          "权衡时间与空间",
+          "依具体情况选择"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "顺序存储就是数组，用起来方便。链式存储就是链表，可以随便加东西。各有各的好处吧，看情况用。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 2.5,
+    "human_score_2": 1.5,
+    "human_score_3": 2.0,
+    "human_score_avg": 2.0,
+    "lenient_score": 2.5,
+    "strict_score": 1.0,
+    "free_score": 3.0,
+    "keyword_score": 1.0
+  },
+  {
+    "question_id": 19,
+    "subject": "计算机网络",
+    "question": "简述DNS域名解析的基本过程。",
+    "standard_answer": "1. 客户端向本地DNS服务器发送查询请求。2. 若本地DNS服务器缓存中有对应记录，则直接返回IP地址（递归查询）。3. 若无，本地DNS服务器则向根DNS服务器发起迭代查询。4. 根DNS服务器返回顶级域（如.com）服务器的地址。5. 本地DNS服务器再向顶级域服务器查询，得到权威DNS服务器地址。6. 最后向权威DNS服务器查询，获得目标域名对应的IP地址，返回给客户端并缓存。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "客户端向本地DNS服务器发送域名解析请求",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户机向本地DNS服务器发送查询请求",
+          "用户向本地DNS服务器发起域名解析",
+          "客户端向本地DNS服务器发起查询"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "本地DNS服务器检查缓存，若有记录则直接返回IP地址（递归查询）",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器从缓存中查找并返回结果",
+          "若缓存中存在记录，则直接返回IP",
+          "本地DNS服务器递归返回缓存的解析结果"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "若缓存无记录，本地DNS服务器向根DNS服务器发起迭代查询",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器向根域名服务器查询",
+          "若无缓存，则向根DNS服务器请求",
+          "本地DNS服务器开始迭代查询，首先询问根服务器"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "根DNS服务器返回顶级域（如.com、.org等）服务器的地址",
+        "score": 1,
+        "acceptable_expressions": [
+          "根服务器返回顶级域名服务器的地址",
+          "根DNS回复指出负责该顶级域的服务器",
+          "根服务器告知下一步应查询的顶级域服务器"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "本地DNS服务器向顶级域服务器查询，获得权威DNS服务器地址",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器再向顶级域服务器查询，获取权威服务器地址",
+          "顶级域服务器返回负责该域名的权威DNS服务器",
+          "查询顶级域服务器得到权威DNS服务器信息"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "本地DNS服务器向权威DNS服务器查询，获得目标域名对应的IP地址，返回给客户端并缓存",
+        "score": 2,
+        "acceptable_expressions": [
+          "权威DNS服务器返回域名对应的IP，本地DNS服务器缓存并返回客户端",
+          "最终从权威服务器获得IP地址，返回给用户并保存到缓存",
+          "权威服务器提供IP，本地DNS服务器缓存后答复客户端"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "DNS域名解析的基本过程如下：首先，当用户在浏览器输入域名后，客户端会向本地DNS服务器（通常由ISP提供）发送域名解析请求。本地DNS服务器收到请求后，会先检查自身缓存中是否有该域名对应的IP地址记录。如果有，则直接通过递归查询的方式将IP地址返回给客户端，解析过程结束。如果缓存中没有记录，本地DNS服务器会启动迭代查询：它先向根DNS服务器查询，根服务器会根据域名的顶级域（如.com、.org等）返回对应的顶级域DNS服务器地址。接着，本地DNS服务器向该顶级域服务器查询，获得负责该域名的权威DNS服务器地址。最后，本地DNS服务器向权威DNS服务器查询，得到域名对应的精确IP地址，将其返回给客户端，同时将这条记录缓存到本地，以便后续快速响应。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 19,
+    "subject": "计算机网络",
+    "question": "简述DNS域名解析的基本过程。",
+    "standard_answer": "1. 客户端向本地DNS服务器发送查询请求。2. 若本地DNS服务器缓存中有对应记录，则直接返回IP地址（递归查询）。3. 若无，本地DNS服务器则向根DNS服务器发起迭代查询。4. 根DNS服务器返回顶级域（如.com）服务器的地址。5. 本地DNS服务器再向顶级域服务器查询，得到权威DNS服务器地址。6. 最后向权威DNS服务器查询，获得目标域名对应的IP地址，返回给客户端并缓存。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "客户端向本地DNS服务器发送域名解析请求",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户机向本地DNS服务器发送查询请求",
+          "用户向本地DNS服务器发起域名解析",
+          "客户端向本地DNS服务器发起查询"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "本地DNS服务器检查缓存，若有记录则直接返回IP地址（递归查询）",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器从缓存中查找并返回结果",
+          "若缓存中存在记录，则直接返回IP",
+          "本地DNS服务器递归返回缓存的解析结果"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "若缓存无记录，本地DNS服务器向根DNS服务器发起迭代查询",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器向根域名服务器查询",
+          "若无缓存，则向根DNS服务器请求",
+          "本地DNS服务器开始迭代查询，首先询问根服务器"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "根DNS服务器返回顶级域（如.com、.org等）服务器的地址",
+        "score": 1,
+        "acceptable_expressions": [
+          "根服务器返回顶级域名服务器的地址",
+          "根DNS回复指出负责该顶级域的服务器",
+          "根服务器告知下一步应查询的顶级域服务器"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "本地DNS服务器向顶级域服务器查询，获得权威DNS服务器地址",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器再向顶级域服务器查询，获取权威服务器地址",
+          "顶级域服务器返回负责该域名的权威DNS服务器",
+          "查询顶级域服务器得到权威DNS服务器信息"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "本地DNS服务器向权威DNS服务器查询，获得目标域名对应的IP地址，返回给客户端并缓存",
+        "score": 2,
+        "acceptable_expressions": [
+          "权威DNS服务器返回域名对应的IP，本地DNS服务器缓存并返回客户端",
+          "最终从权威服务器获得IP地址，返回给用户并保存到缓存",
+          "权威服务器提供IP，本地DNS服务器缓存后答复客户端"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "DNS解析就是找IP地址的过程。用户输入网址后，电脑会先问本地DNS服务器。如果这个服务器以前查过，有记录在缓存里，就直接告诉电脑IP。如果没有，本地DNS服务器会去问别的服务器，先问根服务器，根服务器告诉它该去问谁（比如.com的服务器），然后它再去问那个服务器，最后找到真正的权威服务器，拿到IP地址，回来告诉电脑。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 4.7
+  },
+  {
+    "question_id": 19,
+    "subject": "计算机网络",
+    "question": "简述DNS域名解析的基本过程。",
+    "standard_answer": "1. 客户端向本地DNS服务器发送查询请求。2. 若本地DNS服务器缓存中有对应记录，则直接返回IP地址（递归查询）。3. 若无，本地DNS服务器则向根DNS服务器发起迭代查询。4. 根DNS服务器返回顶级域（如.com）服务器的地址。5. 本地DNS服务器再向顶级域服务器查询，得到权威DNS服务器地址。6. 最后向权威DNS服务器查询，获得目标域名对应的IP地址，返回给客户端并缓存。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "客户端向本地DNS服务器发送域名解析请求",
+        "score": 1,
+        "acceptable_expressions": [
+          "客户机向本地DNS服务器发送查询请求",
+          "用户向本地DNS服务器发起域名解析",
+          "客户端向本地DNS服务器发起查询"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "本地DNS服务器检查缓存，若有记录则直接返回IP地址（递归查询）",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器从缓存中查找并返回结果",
+          "若缓存中存在记录，则直接返回IP",
+          "本地DNS服务器递归返回缓存的解析结果"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "若缓存无记录，本地DNS服务器向根DNS服务器发起迭代查询",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器向根域名服务器查询",
+          "若无缓存，则向根DNS服务器请求",
+          "本地DNS服务器开始迭代查询，首先询问根服务器"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "根DNS服务器返回顶级域（如.com、.org等）服务器的地址",
+        "score": 1,
+        "acceptable_expressions": [
+          "根服务器返回顶级域名服务器的地址",
+          "根DNS回复指出负责该顶级域的服务器",
+          "根服务器告知下一步应查询的顶级域服务器"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "本地DNS服务器向顶级域服务器查询，获得权威DNS服务器地址",
+        "score": 2,
+        "acceptable_expressions": [
+          "本地DNS服务器再向顶级域服务器查询，获取权威服务器地址",
+          "顶级域服务器返回负责该域名的权威DNS服务器",
+          "查询顶级域服务器得到权威DNS服务器信息"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "本地DNS服务器向权威DNS服务器查询，获得目标域名对应的IP地址，返回给客户端并缓存",
+        "score": 2,
+        "acceptable_expressions": [
+          "权威DNS服务器返回域名对应的IP，本地DNS服务器缓存并返回客户端",
+          "最终从权威服务器获得IP地址，返回给用户并保存到缓存",
+          "权威服务器提供IP，本地DNS服务器缓存后答复客户端"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "DNS就是把网址变成IP地址。电脑上网的时候需要IP地址，DNS服务器负责这个转换。你输入网址，它就去查一下，然后给你一个IP，你就能访问网站了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.0,
+    "human_score_2": 3.0,
+    "human_score_3": 4.5,
+    "human_score_avg": 3.5,
+    "lenient_score": 3.0,
+    "strict_score": 1.0,
+    "free_score": 5.0,
+    "keyword_score": 2.0
+  },
+  {
+    "question_id": 20,
+    "subject": "操作系统",
+    "question": "什么是虚拟内存？其核心作用是什么？",
+    "standard_answer": "1. 虚拟内存是计算机系统内存管理的一种技术，它使得应用程序认为它拥有连续可用的内存（一个连续完整的地址空间），而实际上，它通常被分隔成多个物理内存碎片，还有部分暂时存储在外部磁盘存储器上，在需要时进行数据交换。2. 核心作用：a. 扩大逻辑地址空间，允许运行比物理内存更大的程序。b. 实现内存共享与保护。c. 通过请求分页/分段技术，提高内存利用率和管理灵活性。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确表述虚拟内存的基本概念（技术性质）",
+        "score": 3,
+        "acceptable_expressions": [
+          "计算机系统内存管理的一种技术",
+          "内存管理技术",
+          "操作系统提供的一种抽象",
+          "一种内存管理机制"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "说明虚拟内存使应用程序认为拥有连续完整的地址空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "应用程序认为拥有连续可用的内存",
+          "提供连续的逻辑地址空间",
+          "让程序以为自己独占连续内存",
+          "隐藏物理内存的不连续性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "说明虚拟内存的实际物理存储方式（物理内存碎片+外部磁盘交换）",
+        "score": 2,
+        "acceptable_expressions": [
+          "实际存储在多个物理内存碎片和外部磁盘上",
+          "部分在物理内存，部分在硬盘（交换区）",
+          "通过数据交换在内存和磁盘间移动",
+          "使用磁盘空间扩展内存"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "核心作用：扩大逻辑地址空间，允许运行比物理内存更大的程序",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "运行比物理内存大的程序",
+          "提供比物理内存更大的地址空间",
+          "扩展可用内存容量",
+          "突破物理内存大小限制"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "核心作用：实现内存共享与保护",
+        "score": 1,
+        "acceptable_expressions": [
+          "实现进程间内存共享",
+          "提供内存保护机制",
+          "隔离不同进程的内存空间",
+          "防止程序间非法访问"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "核心作用：通过请求分页/分段技术提高内存利用率和管理灵活性",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "使用分页/分段技术",
+          "提高内存利用率",
+          "按需加载内存内容",
+          "更灵活的内存管理"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "虚拟内存是操作系统提供的一种内存管理技术。它让每个应用程序都感觉自己独占一段连续且完整的地址空间，但实际上这些地址空间可能对应着物理内存中不连续的碎片，甚至有一部分被暂时存储在硬盘的交换文件或页面文件中，操作系统会根据需要自动在物理内存和硬盘之间交换数据。它的核心作用主要有三点：第一，突破物理内存大小的限制，让计算机可以运行比实际物理内存更大的程序；第二，实现不同进程间内存的共享与隔离保护，提高系统安全性；第三，通过请求分页（或分段）机制，更灵活地分配和管理内存，从而显著提高了内存的利用率和系统整体的运行效率。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 8.9
+  },
+  {
+    "question_id": 20,
+    "subject": "操作系统",
+    "question": "什么是虚拟内存？其核心作用是什么？",
+    "standard_answer": "1. 虚拟内存是计算机系统内存管理的一种技术，它使得应用程序认为它拥有连续可用的内存（一个连续完整的地址空间），而实际上，它通常被分隔成多个物理内存碎片，还有部分暂时存储在外部磁盘存储器上，在需要时进行数据交换。2. 核心作用：a. 扩大逻辑地址空间，允许运行比物理内存更大的程序。b. 实现内存共享与保护。c. 通过请求分页/分段技术，提高内存利用率和管理灵活性。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确表述虚拟内存的基本概念（技术性质）",
+        "score": 3,
+        "acceptable_expressions": [
+          "计算机系统内存管理的一种技术",
+          "内存管理技术",
+          "操作系统提供的一种抽象",
+          "一种内存管理机制"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "说明虚拟内存使应用程序认为拥有连续完整的地址空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "应用程序认为拥有连续可用的内存",
+          "提供连续的逻辑地址空间",
+          "让程序以为自己独占连续内存",
+          "隐藏物理内存的不连续性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "说明虚拟内存的实际物理存储方式（物理内存碎片+外部磁盘交换）",
+        "score": 2,
+        "acceptable_expressions": [
+          "实际存储在多个物理内存碎片和外部磁盘上",
+          "部分在物理内存，部分在硬盘（交换区）",
+          "通过数据交换在内存和磁盘间移动",
+          "使用磁盘空间扩展内存"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "核心作用：扩大逻辑地址空间，允许运行比物理内存更大的程序",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "运行比物理内存大的程序",
+          "提供比物理内存更大的地址空间",
+          "扩展可用内存容量",
+          "突破物理内存大小限制"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "核心作用：实现内存共享与保护",
+        "score": 1,
+        "acceptable_expressions": [
+          "实现进程间内存共享",
+          "提供内存保护机制",
+          "隔离不同进程的内存空间",
+          "防止程序间非法访问"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "核心作用：通过请求分页/分段技术提高内存利用率和管理灵活性",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "使用分页/分段技术",
+          "提高内存利用率",
+          "按需加载内存内容",
+          "更灵活的内存管理"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "虚拟内存是一种技术，它能让程序觉得自己有连续可用的内存空间。实际上，内存可能是不连续的，有些数据还会放在硬盘上，需要的时候再调进来。它的作用主要是可以让电脑运行更大的程序，因为不光是靠物理内存，还能用硬盘的空间。另外，它也能让不同程序之间共享一些内存，还能提高内存的利用率。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 9.0,
+    "human_score_2": 9.0,
+    "human_score_3": 9.0,
+    "human_score_avg": 9.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 3.1
+  },
+  {
+    "question_id": 20,
+    "subject": "操作系统",
+    "question": "什么是虚拟内存？其核心作用是什么？",
+    "standard_answer": "1. 虚拟内存是计算机系统内存管理的一种技术，它使得应用程序认为它拥有连续可用的内存（一个连续完整的地址空间），而实际上，它通常被分隔成多个物理内存碎片，还有部分暂时存储在外部磁盘存储器上，在需要时进行数据交换。2. 核心作用：a. 扩大逻辑地址空间，允许运行比物理内存更大的程序。b. 实现内存共享与保护。c. 通过请求分页/分段技术，提高内存利用率和管理灵活性。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确表述虚拟内存的基本概念（技术性质）",
+        "score": 3,
+        "acceptable_expressions": [
+          "计算机系统内存管理的一种技术",
+          "内存管理技术",
+          "操作系统提供的一种抽象",
+          "一种内存管理机制"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "说明虚拟内存使应用程序认为拥有连续完整的地址空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "应用程序认为拥有连续可用的内存",
+          "提供连续的逻辑地址空间",
+          "让程序以为自己独占连续内存",
+          "隐藏物理内存的不连续性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "说明虚拟内存的实际物理存储方式（物理内存碎片+外部磁盘交换）",
+        "score": 2,
+        "acceptable_expressions": [
+          "实际存储在多个物理内存碎片和外部磁盘上",
+          "部分在物理内存，部分在硬盘（交换区）",
+          "通过数据交换在内存和磁盘间移动",
+          "使用磁盘空间扩展内存"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "核心作用：扩大逻辑地址空间，允许运行比物理内存更大的程序",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "运行比物理内存大的程序",
+          "提供比物理内存更大的地址空间",
+          "扩展可用内存容量",
+          "突破物理内存大小限制"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "核心作用：实现内存共享与保护",
+        "score": 1,
+        "acceptable_expressions": [
+          "实现进程间内存共享",
+          "提供内存保护机制",
+          "隔离不同进程的内存空间",
+          "防止程序间非法访问"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "核心作用：通过请求分页/分段技术提高内存利用率和管理灵活性",
+        "score": 0.5,
+        "acceptable_expressions": [
+          "使用分页/分段技术",
+          "提高内存利用率",
+          "按需加载内存内容",
+          "更灵活的内存管理"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "虚拟内存就是电脑硬盘上划出来的一部分空间，当内存不够用的时候，可以拿来当内存用，这样电脑就不会卡了。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 4.0,
+    "human_score_2": 4.5,
+    "human_score_3": 4.0,
+    "human_score_avg": 4.17,
+    "lenient_score": 3.5,
+    "strict_score": 3.5,
+    "free_score": 4.0,
+    "keyword_score": 1.4
+  },
+  {
+    "question_id": 21,
+    "subject": "计算机网络",
+    "question": "简述TCP和UDP的主要区别。",
+    "standard_answer": "1. 连接性：TCP是面向连接的协议，通信前需建立连接；UDP是无连接的。2. 可靠性：TCP提供可靠传输，保证数据顺序和完整性；UDP不保证可靠交付。3. 开销：TCP有复杂控制机制（如确认、重传），开销较大；UDP简单高效，开销小。4. 应用场景：TCP用于文件传输、网页浏览等；UDP用于实时视频、DNS查询等。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "连接性：指出TCP是面向连接的，通信前需要建立连接；UDP是无连接的。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP需要建立连接，UDP不需要连接",
+          "TCP是面向连接的，UDP是面向无连接的",
+          "TCP在通信前需三次握手建立连接，UDP直接发送数据"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "可靠性：指出TCP提供可靠传输，保证数据顺序和完整性；UDP不保证可靠交付。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP可靠，UDP不可靠",
+          "TCP保证数据正确到达，UDP可能丢包或乱序",
+          "TCP有确认和重传机制，UDP没有"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "开销：指出TCP控制机制复杂（如确认、重传），开销大；UDP简单高效，开销小。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP开销大，UDP开销小",
+          "TCP需要更多资源处理连接和确认，UDP更轻量",
+          "TCP有流量控制和拥塞控制，UDP没有"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "应用场景：指出TCP用于文件传输、网页浏览等；UDP用于实时视频、DNS查询等。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP适合需要可靠传输的场景（如FTP、HTTP），UDP适合实时应用（如视频流、语音通话）",
+          "TCP用于Web浏览、电子邮件，UDP用于在线游戏、DNS解析"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "TCP和UDP的主要区别体现在四个方面：\n1. 连接性：TCP是面向连接的协议，通信前必须通过三次握手建立连接；UDP是无连接的，直接发送数据。\n2. 可靠性：TCP提供可靠传输，通过确认、重传、流量控制和拥塞控制等机制保证数据顺序和完整性；UDP不保证可靠交付，可能出现丢包或乱序。\n3. 开销：TCP控制机制复杂，头部较大（20字节以上），传输效率较低；UDP头部简单（8字节），开销小，传输效率高。\n4. 应用场景：TCP适用于对可靠性要求高的场景，如文件传输（FTP）、网页浏览（HTTP/HTTPS）、电子邮件等；UDP适用于实时性要求高的场景，如视频会议、在线游戏、DNS查询、语音通话等。",
+    "expected_score_range": [
+      9,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 21,
+    "subject": "计算机网络",
+    "question": "简述TCP和UDP的主要区别。",
+    "standard_answer": "1. 连接性：TCP是面向连接的协议，通信前需建立连接；UDP是无连接的。2. 可靠性：TCP提供可靠传输，保证数据顺序和完整性；UDP不保证可靠交付。3. 开销：TCP有复杂控制机制（如确认、重传），开销较大；UDP简单高效，开销小。4. 应用场景：TCP用于文件传输、网页浏览等；UDP用于实时视频、DNS查询等。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "连接性：指出TCP是面向连接的，通信前需要建立连接；UDP是无连接的。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP需要建立连接，UDP不需要连接",
+          "TCP是面向连接的，UDP是面向无连接的",
+          "TCP在通信前需三次握手建立连接，UDP直接发送数据"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "可靠性：指出TCP提供可靠传输，保证数据顺序和完整性；UDP不保证可靠交付。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP可靠，UDP不可靠",
+          "TCP保证数据正确到达，UDP可能丢包或乱序",
+          "TCP有确认和重传机制，UDP没有"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "开销：指出TCP控制机制复杂（如确认、重传），开销大；UDP简单高效，开销小。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP开销大，UDP开销小",
+          "TCP需要更多资源处理连接和确认，UDP更轻量",
+          "TCP有流量控制和拥塞控制，UDP没有"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "应用场景：指出TCP用于文件传输、网页浏览等；UDP用于实时视频、DNS查询等。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP适合需要可靠传输的场景（如FTP、HTTP），UDP适合实时应用（如视频流、语音通话）",
+          "TCP用于Web浏览、电子邮件，UDP用于在线游戏、DNS解析"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "TCP和UDP的区别主要是：\n1. TCP需要先建立连接才能通信，UDP不用连接。\n2. TCP能保证数据正确到达，UDP可能丢包。\n3. TCP速度慢一些，因为要检查数据；UDP更快。\n4. TCP用来传文件、上网，UDP用来视频聊天、查域名。\n（没有详细说明机制和具体场景）",
+    "expected_score_range": [
+      5,
+      6
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 7.0,
+    "keyword_score": 3.0
+  },
+  {
+    "question_id": 21,
+    "subject": "计算机网络",
+    "question": "简述TCP和UDP的主要区别。",
+    "standard_answer": "1. 连接性：TCP是面向连接的协议，通信前需建立连接；UDP是无连接的。2. 可靠性：TCP提供可靠传输，保证数据顺序和完整性；UDP不保证可靠交付。3. 开销：TCP有复杂控制机制（如确认、重传），开销较大；UDP简单高效，开销小。4. 应用场景：TCP用于文件传输、网页浏览等；UDP用于实时视频、DNS查询等。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "连接性：指出TCP是面向连接的，通信前需要建立连接；UDP是无连接的。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP需要建立连接，UDP不需要连接",
+          "TCP是面向连接的，UDP是面向无连接的",
+          "TCP在通信前需三次握手建立连接，UDP直接发送数据"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "可靠性：指出TCP提供可靠传输，保证数据顺序和完整性；UDP不保证可靠交付。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP可靠，UDP不可靠",
+          "TCP保证数据正确到达，UDP可能丢包或乱序",
+          "TCP有确认和重传机制，UDP没有"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "开销：指出TCP控制机制复杂（如确认、重传），开销大；UDP简单高效，开销小。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP开销大，UDP开销小",
+          "TCP需要更多资源处理连接和确认，UDP更轻量",
+          "TCP有流量控制和拥塞控制，UDP没有"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "应用场景：指出TCP用于文件传输、网页浏览等；UDP用于实时视频、DNS查询等。",
+        "score": 2.5,
+        "acceptable_expressions": [
+          "TCP适合需要可靠传输的场景（如FTP、HTTP），UDP适合实时应用（如视频流、语音通话）",
+          "TCP用于Web浏览、电子邮件，UDP用于在线游戏、DNS解析"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "TCP和UDP都是网络协议，TCP比较稳定，UDP比较快。TCP上网用得多，UDP打游戏用得多。别的区别不太清楚。",
+    "expected_score_range": [
+      1,
+      2
+    ],
+    "human_score_1": 7.5,
+    "human_score_2": 6.5,
+    "human_score_3": 5.5,
+    "human_score_avg": 6.5,
+    "lenient_score": 5.0,
+    "strict_score": 7.5,
+    "free_score": 4.0,
+    "keyword_score": 1.2
+  },
+  {
+    "question_id": 22,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？它们的主要区别是什么？",
+    "standard_answer": "1. 定义：进程是资源分配的单位，线程是CPU调度的基本单位。2. 资源：进程拥有独立地址空间和资源；线程共享进程资源。3. 开销：进程创建、切换开销大；线程创建、切换开销小。4. 独立性：进程间相互独立；线程间通信更高效。5. 健壮性：一个线程崩溃可能导致整个进程终止。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "明确给出进程的定义，强调进程是资源分配的单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是资源分配的基本单位",
+          "进程是操作系统进行资源分配和保护的独立单位",
+          "进程是程序的一次执行过程，拥有独立的地址空间和资源"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "明确给出线程的定义，强调线程是CPU调度的单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是CPU调度的基本单位",
+          "线程是进程中的一个执行流",
+          "线程是进程内独立运行和调度的基本单位"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程拥有独立地址空间/资源，而线程共享进程资源。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程资源独立，线程资源共享",
+          "进程有独立内存空间，线程共享进程内存",
+          "每个进程有独立的代码、数据和系统资源，同一进程的多个线程共享这些资源"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程开销大（创建、切换），线程开销小。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程创建、切换代价高，线程创建、切换代价低",
+          "进程上下文切换开销大，线程切换开销小",
+          "进程管理需要更多系统资源，线程更轻量"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出进程间相互独立，线程间通信更高效，或一个线程崩溃可能影响整个进程。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互隔离，线程间通信方便但一个线程出错可能导致整个进程崩溃",
+          "进程独立性强健壮性好，线程依赖性强但通信效率高",
+          "进程崩溃不影响其他进程，线程崩溃可能导致所属进程终止"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "进程是操作系统进行资源分配的基本单位，每个进程拥有独立的地址空间和系统资源；线程是CPU调度的基本单位，是进程内的执行单元。两者主要区别在于：1. 资源管理：进程拥有独立的资源（如内存、文件等），而线程共享所属进程的资源；2. 开销：进程的创建、切换开销较大，线程的创建、切换开销较小；3. 独立性：进程间相互独立，一个进程崩溃不会直接影响其他进程，但线程间通信更高效；4. 健壮性：一个线程崩溃可能导致整个进程终止。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 22,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？它们的主要区别是什么？",
+    "standard_answer": "1. 定义：进程是资源分配的单位，线程是CPU调度的基本单位。2. 资源：进程拥有独立地址空间和资源；线程共享进程资源。3. 开销：进程创建、切换开销大；线程创建、切换开销小。4. 独立性：进程间相互独立；线程间通信更高效。5. 健壮性：一个线程崩溃可能导致整个进程终止。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "明确给出进程的定义，强调进程是资源分配的单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是资源分配的基本单位",
+          "进程是操作系统进行资源分配和保护的独立单位",
+          "进程是程序的一次执行过程，拥有独立的地址空间和资源"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "明确给出线程的定义，强调线程是CPU调度的单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是CPU调度的基本单位",
+          "线程是进程中的一个执行流",
+          "线程是进程内独立运行和调度的基本单位"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程拥有独立地址空间/资源，而线程共享进程资源。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程资源独立，线程资源共享",
+          "进程有独立内存空间，线程共享进程内存",
+          "每个进程有独立的代码、数据和系统资源，同一进程的多个线程共享这些资源"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程开销大（创建、切换），线程开销小。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程创建、切换代价高，线程创建、切换代价低",
+          "进程上下文切换开销大，线程切换开销小",
+          "进程管理需要更多系统资源，线程更轻量"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出进程间相互独立，线程间通信更高效，或一个线程崩溃可能影响整个进程。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互隔离，线程间通信方便但一个线程出错可能导致整个进程崩溃",
+          "进程独立性强健壮性好，线程依赖性强但通信效率高",
+          "进程崩溃不影响其他进程，线程崩溃可能导致所属进程终止"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "进程是程序的一次执行，线程是进程的一部分。区别是进程有自己独立的内存空间，而线程共享内存。进程切换比较慢，线程切换快一些。另外，线程之间通信比进程方便。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 9.0,
+    "human_score_3": 9.0,
+    "human_score_avg": 9.33,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 2.7
+  },
+  {
+    "question_id": 22,
+    "subject": "操作系统",
+    "question": "什么是进程和线程？它们的主要区别是什么？",
+    "standard_answer": "1. 定义：进程是资源分配的单位，线程是CPU调度的基本单位。2. 资源：进程拥有独立地址空间和资源；线程共享进程资源。3. 开销：进程创建、切换开销大；线程创建、切换开销小。4. 独立性：进程间相互独立；线程间通信更高效。5. 健壮性：一个线程崩溃可能导致整个进程终止。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "明确给出进程的定义，强调进程是资源分配的单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程是资源分配的基本单位",
+          "进程是操作系统进行资源分配和保护的独立单位",
+          "进程是程序的一次执行过程，拥有独立的地址空间和资源"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "明确给出线程的定义，强调线程是CPU调度的单位。",
+        "score": 2,
+        "acceptable_expressions": [
+          "线程是CPU调度的基本单位",
+          "线程是进程中的一个执行流",
+          "线程是进程内独立运行和调度的基本单位"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "指出进程拥有独立地址空间/资源，而线程共享进程资源。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程资源独立，线程资源共享",
+          "进程有独立内存空间，线程共享进程内存",
+          "每个进程有独立的代码、数据和系统资源，同一进程的多个线程共享这些资源"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "指出进程开销大（创建、切换），线程开销小。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程创建、切换代价高，线程创建、切换代价低",
+          "进程上下文切换开销大，线程切换开销小",
+          "进程管理需要更多系统资源，线程更轻量"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "指出进程间相互独立，线程间通信更高效，或一个线程崩溃可能影响整个进程。",
+        "score": 2,
+        "acceptable_expressions": [
+          "进程间相互隔离，线程间通信方便但一个线程出错可能导致整个进程崩溃",
+          "进程独立性强健壮性好，线程依赖性强但通信效率高",
+          "进程崩溃不影响其他进程，线程崩溃可能导致所属进程终止"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "进程就是运行的程序，线程好像也是程序运行时的东西，具体不太清楚。区别可能是进程大一点，线程小一点吧。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 2.5,
+    "human_score_2": 2.5,
+    "human_score_3": 2.0,
+    "human_score_avg": 2.33,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 2.0,
+    "keyword_score": 1.6
+  },
+  {
+    "question_id": 23,
+    "subject": "数据库",
+    "question": "简述数据库事务的ACID特性。",
+    "standard_answer": "1. 原子性：事务要么全部完成，要么全部不执行。2. 一致性：事务使数据库从一个一致状态转变到另一个一致状态。3. 隔离性：并发事务相互隔离，互不干扰。4. 持久性：事务提交后，对数据库的修改是永久性的，即使系统故障也不丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "原子性：事务要么全部完成，要么全部不执行，不可分割",
+        "score": 3,
+        "acceptable_expressions": [
+          "原子性：事务是不可分割的工作单位，要么全部执行，要么全部回滚",
+          "原子性：所有操作要么全部成功，要么全部失败",
+          "原子性：事务中的操作要么全部完成，要么都不执行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "一致性：事务执行前后，数据库必须保持一致性状态",
+        "score": 2,
+        "acceptable_expressions": [
+          "一致性：事务使数据库从一个一致性状态转变到另一个一致性状态",
+          "一致性：事务执行不破坏数据的完整性和业务规则",
+          "一致性：事务执行后数据库仍满足所有约束条件"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "隔离性：并发事务相互隔离，互不干扰，一个事务的执行不应影响其他事务",
+        "score": 3,
+        "acceptable_expressions": [
+          "隔离性：多个并发事务执行时，彼此隔离，互不影响",
+          "隔离性：一个事务在提交前对其他事务不可见",
+          "隔离性：并发事务的执行如同串行执行一样"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "持久性：事务一旦提交，对数据库的修改就是永久性的，即使系统故障也不会丢失",
+        "score": 2,
+        "acceptable_expressions": [
+          "持久性：事务提交后，数据的修改永久保存到数据库中",
+          "持久性：事务完成后，数据变更持久保存，不会因故障而丢失",
+          "持久性：事务提交后，即使系统崩溃，数据也能恢复"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "数据库事务的ACID特性包括：1. 原子性：指事务是一个不可分割的操作单元，要么全部执行成功，要么全部失败回滚，不存在部分执行的情况。2. 一致性：事务执行前后，数据库必须保持一致性状态，即所有数据约束（如完整性约束）都得到满足。3. 隔离性：多个并发事务执行时，每个事务的操作不会被其他事务干扰，确保数据在并发环境下的正确性。4. 持久性：事务一旦提交，对数据库的修改就是永久性的，即使系统发生故障（如断电、崩溃），修改也不会丢失。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 23,
+    "subject": "数据库",
+    "question": "简述数据库事务的ACID特性。",
+    "standard_answer": "1. 原子性：事务要么全部完成，要么全部不执行。2. 一致性：事务使数据库从一个一致状态转变到另一个一致状态。3. 隔离性：并发事务相互隔离，互不干扰。4. 持久性：事务提交后，对数据库的修改是永久性的，即使系统故障也不丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "原子性：事务要么全部完成，要么全部不执行，不可分割",
+        "score": 3,
+        "acceptable_expressions": [
+          "原子性：事务是不可分割的工作单位，要么全部执行，要么全部回滚",
+          "原子性：所有操作要么全部成功，要么全部失败",
+          "原子性：事务中的操作要么全部完成，要么都不执行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "一致性：事务执行前后，数据库必须保持一致性状态",
+        "score": 2,
+        "acceptable_expressions": [
+          "一致性：事务使数据库从一个一致性状态转变到另一个一致性状态",
+          "一致性：事务执行不破坏数据的完整性和业务规则",
+          "一致性：事务执行后数据库仍满足所有约束条件"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "隔离性：并发事务相互隔离，互不干扰，一个事务的执行不应影响其他事务",
+        "score": 3,
+        "acceptable_expressions": [
+          "隔离性：多个并发事务执行时，彼此隔离，互不影响",
+          "隔离性：一个事务在提交前对其他事务不可见",
+          "隔离性：并发事务的执行如同串行执行一样"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "持久性：事务一旦提交，对数据库的修改就是永久性的，即使系统故障也不会丢失",
+        "score": 2,
+        "acceptable_expressions": [
+          "持久性：事务提交后，数据的修改永久保存到数据库中",
+          "持久性：事务完成后，数据变更持久保存，不会因故障而丢失",
+          "持久性：事务提交后，即使系统崩溃，数据也能恢复"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "ACID特性有：1. 原子性：事务要么全部做，要么全部不做。2. 一致性：事务执行后数据要一致。3. 隔离性：多个事务同时执行时互不影响。4. 持久性：事务提交后修改会保存下来。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 8.0,
+    "strict_score": 6.0,
+    "free_score": 9.0,
+    "keyword_score": 3.3
+  },
+  {
+    "question_id": 23,
+    "subject": "数据库",
+    "question": "简述数据库事务的ACID特性。",
+    "standard_answer": "1. 原子性：事务要么全部完成，要么全部不执行。2. 一致性：事务使数据库从一个一致状态转变到另一个一致状态。3. 隔离性：并发事务相互隔离，互不干扰。4. 持久性：事务提交后，对数据库的修改是永久性的，即使系统故障也不丢失。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "原子性：事务要么全部完成，要么全部不执行，不可分割",
+        "score": 3,
+        "acceptable_expressions": [
+          "原子性：事务是不可分割的工作单位，要么全部执行，要么全部回滚",
+          "原子性：所有操作要么全部成功，要么全部失败",
+          "原子性：事务中的操作要么全部完成，要么都不执行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "一致性：事务执行前后，数据库必须保持一致性状态",
+        "score": 2,
+        "acceptable_expressions": [
+          "一致性：事务使数据库从一个一致性状态转变到另一个一致性状态",
+          "一致性：事务执行不破坏数据的完整性和业务规则",
+          "一致性：事务执行后数据库仍满足所有约束条件"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "隔离性：并发事务相互隔离，互不干扰，一个事务的执行不应影响其他事务",
+        "score": 3,
+        "acceptable_expressions": [
+          "隔离性：多个并发事务执行时，彼此隔离，互不影响",
+          "隔离性：一个事务在提交前对其他事务不可见",
+          "隔离性：并发事务的执行如同串行执行一样"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "持久性：事务一旦提交，对数据库的修改就是永久性的，即使系统故障也不会丢失",
+        "score": 2,
+        "acceptable_expressions": [
+          "持久性：事务提交后，数据的修改永久保存到数据库中",
+          "持久性：事务完成后，数据变更持久保存，不会因故障而丢失",
+          "持久性：事务提交后，即使系统崩溃，数据也能恢复"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "ACID就是数据库里的一些要求，比如事务要一次做完，不能做一半，还有数据要存好不能丢。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 5.0,
+    "human_score_2": 5.0,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.0,
+    "lenient_score": 5.0,
+    "strict_score": 5.0,
+    "free_score": 3.0,
+    "keyword_score": 1.0
+  },
+  {
+    "question_id": 24,
+    "subject": "数据结构",
+    "question": "比较数组和链表在存储结构和操作效率上的主要差异。",
+    "standard_answer": "1. 存储结构：数组是连续存储；链表是非连续存储（通过指针链接）。2. 访问效率：数组支持随机访问，O(1)；链表需顺序访问，O(n)。3. 插入/删除：数组插入/删除需移动元素，O(n)；链表插入/删除只需修改指针，O(1)。4. 空间开销：链表需额外存储指针。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确指出数组是连续存储，链表是非连续存储（通过指针链接）",
+        "score": 3,
+        "acceptable_expressions": [
+          "数组在内存中连续存放",
+          "数组元素地址连续",
+          "链表节点通过指针连接",
+          "链表节点分散存储",
+          "链表使用指针链接节点"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确比较访问效率：数组支持随机访问（O(1)），链表需顺序访问（O(n)）",
+        "score": 2,
+        "acceptable_expressions": [
+          "数组可按索引直接访问",
+          "数组访问时间复杂度为常数",
+          "链表必须从头遍历访问",
+          "链表访问时间复杂度为线性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确比较插入/删除效率：数组需移动元素（O(n)），链表只需修改指针（O(1)）",
+        "score": 3,
+        "acceptable_expressions": [
+          "数组插入/删除需要移动后续元素",
+          "数组插入/删除时间复杂度为线性",
+          "链表插入/删除只需调整指针",
+          "链表插入/删除时间复杂度为常数"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确指出链表的空间开销包括存储指针的额外空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "链表每个节点需存储指针",
+          "链表有额外的指针存储开销",
+          "链表空间效率低于数组",
+          "链表需要额外空间存储链接信息"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "在存储结构上，数组是连续的内存空间存储元素，而链表是通过指针将非连续的节点链接起来。在访问效率方面，数组支持随机访问，时间复杂度为O(1)；链表只能顺序访问，需要O(n)的时间。对于插入和删除操作，数组需要移动后续元素，平均时间复杂度为O(n)；链表只需修改相邻节点的指针，时间复杂度为O(1)。此外，链表的每个节点需要额外存储指针，因此有额外的空间开销。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 24,
+    "subject": "数据结构",
+    "question": "比较数组和链表在存储结构和操作效率上的主要差异。",
+    "standard_answer": "1. 存储结构：数组是连续存储；链表是非连续存储（通过指针链接）。2. 访问效率：数组支持随机访问，O(1)；链表需顺序访问，O(n)。3. 插入/删除：数组插入/删除需移动元素，O(n)；链表插入/删除只需修改指针，O(1)。4. 空间开销：链表需额外存储指针。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确指出数组是连续存储，链表是非连续存储（通过指针链接）",
+        "score": 3,
+        "acceptable_expressions": [
+          "数组在内存中连续存放",
+          "数组元素地址连续",
+          "链表节点通过指针连接",
+          "链表节点分散存储",
+          "链表使用指针链接节点"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确比较访问效率：数组支持随机访问（O(1)），链表需顺序访问（O(n)）",
+        "score": 2,
+        "acceptable_expressions": [
+          "数组可按索引直接访问",
+          "数组访问时间复杂度为常数",
+          "链表必须从头遍历访问",
+          "链表访问时间复杂度为线性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确比较插入/删除效率：数组需移动元素（O(n)），链表只需修改指针（O(1)）",
+        "score": 3,
+        "acceptable_expressions": [
+          "数组插入/删除需要移动后续元素",
+          "数组插入/删除时间复杂度为线性",
+          "链表插入/删除只需调整指针",
+          "链表插入/删除时间复杂度为常数"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确指出链表的空间开销包括存储指针的额外空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "链表每个节点需存储指针",
+          "链表有额外的指针存储开销",
+          "链表空间效率低于数组",
+          "链表需要额外空间存储链接信息"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "数组是连续存储的，链表是用指针连起来的。数组查找快，链表插入删除方便。链表每个节点还要存指针，所以占的空间多一点。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 4.2
+  },
+  {
+    "question_id": 24,
+    "subject": "数据结构",
+    "question": "比较数组和链表在存储结构和操作效率上的主要差异。",
+    "standard_answer": "1. 存储结构：数组是连续存储；链表是非连续存储（通过指针链接）。2. 访问效率：数组支持随机访问，O(1)；链表需顺序访问，O(n)。3. 插入/删除：数组插入/删除需移动元素，O(n)；链表插入/删除只需修改指针，O(1)。4. 空间开销：链表需额外存储指针。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确指出数组是连续存储，链表是非连续存储（通过指针链接）",
+        "score": 3,
+        "acceptable_expressions": [
+          "数组在内存中连续存放",
+          "数组元素地址连续",
+          "链表节点通过指针连接",
+          "链表节点分散存储",
+          "链表使用指针链接节点"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确比较访问效率：数组支持随机访问（O(1)），链表需顺序访问（O(n)）",
+        "score": 2,
+        "acceptable_expressions": [
+          "数组可按索引直接访问",
+          "数组访问时间复杂度为常数",
+          "链表必须从头遍历访问",
+          "链表访问时间复杂度为线性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确比较插入/删除效率：数组需移动元素（O(n)），链表只需修改指针（O(1)）",
+        "score": 3,
+        "acceptable_expressions": [
+          "数组插入/删除需要移动后续元素",
+          "数组插入/删除时间复杂度为线性",
+          "链表插入/删除只需调整指针",
+          "链表插入/删除时间复杂度为常数"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确指出链表的空间开销包括存储指针的额外空间",
+        "score": 2,
+        "acceptable_expressions": [
+          "链表每个节点需存储指针",
+          "链表有额外的指针存储开销",
+          "链表空间效率低于数组",
+          "链表需要额外空间存储链接信息"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "数组和链表都是存数据的，数组快一点，链表慢一点。链表可以随便插数据，数组不行。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 5.0,
+    "human_score_2": 3.0,
+    "human_score_3": 2.0,
+    "human_score_avg": 3.33,
+    "lenient_score": 3.0,
+    "strict_score": 3.0,
+    "free_score": 4.0,
+    "keyword_score": 1.2
+  },
+  {
+    "question_id": 25,
+    "subject": "计算机网络",
+    "question": "简述OSI参考模型的七层结构及各层主要功能（只需列出层名和核心功能）。",
+    "standard_answer": "1. 物理层：传输原始比特流。2. 数据链路层：提供节点到节点的可靠传输。3. 网络层：负责路由选择和数据包转发。4. 传输层：提供端到端的通信服务。5. 会话层：管理会话和对话控制。6. 表示层：处理数据格式和加密。7. 应用层：为用户提供网络服务接口。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "物理层：传输原始比特流",
+        "score": 1,
+        "acceptable_expressions": [
+          "传输比特流",
+          "处理原始比特",
+          "负责物理介质传输",
+          "处理电气/光信号"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "数据链路层：提供节点到节点的可靠传输",
+        "score": 2,
+        "acceptable_expressions": [
+          "节点间可靠传输",
+          "帧传输",
+          "差错控制与流量控制",
+          "MAC与LLC子层功能",
+          "相邻节点数据传输"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "网络层：负责路由选择和数据包转发",
+        "score": 2,
+        "acceptable_expressions": [
+          "路由与转发",
+          "寻址和路径选择",
+          "IP层功能",
+          "跨网络数据传输",
+          "逻辑地址寻址"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "传输层：提供端到端的通信服务",
+        "score": 2,
+        "acceptable_expressions": [
+          "端到端通信",
+          "可靠传输控制",
+          "TCP/UDP功能",
+          "进程间通信",
+          "流量控制与错误恢复"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "会话层：管理会话和对话控制",
+        "score": 1,
+        "acceptable_expressions": [
+          "会话管理",
+          "对话控制",
+          "建立/维护/终止会话",
+          "同步会话"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "表示层：处理数据格式和加密",
+        "score": 1,
+        "acceptable_expressions": [
+          "数据格式转换",
+          "加密解密",
+          "压缩解压缩",
+          "语法表示转换"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "应用层：为用户提供网络服务接口",
+        "score": 1,
+        "acceptable_expressions": [
+          "用户接口层",
+          "提供网络服务",
+          "应用程序服务",
+          "HTTP/FTP等协议层"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "OSI参考模型的七层结构及核心功能如下：1. 物理层：负责传输原始比特流；2. 数据链路层：提供节点到节点的可靠传输，处理帧的传输和错误控制；3. 网络层：负责路由选择和数据包转发，实现不同网络间的通信；4. 传输层：提供端到端的通信服务，确保数据的可靠传输；5. 会话层：管理会话和对话控制，负责建立、维护和终止会话；6. 表示层：处理数据格式和加密，确保数据格式兼容与安全；7. 应用层：为用户提供网络服务接口，如HTTP、FTP等协议。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 9.4
+  },
+  {
+    "question_id": 25,
+    "subject": "计算机网络",
+    "question": "简述OSI参考模型的七层结构及各层主要功能（只需列出层名和核心功能）。",
+    "standard_answer": "1. 物理层：传输原始比特流。2. 数据链路层：提供节点到节点的可靠传输。3. 网络层：负责路由选择和数据包转发。4. 传输层：提供端到端的通信服务。5. 会话层：管理会话和对话控制。6. 表示层：处理数据格式和加密。7. 应用层：为用户提供网络服务接口。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "物理层：传输原始比特流",
+        "score": 1,
+        "acceptable_expressions": [
+          "传输比特流",
+          "处理原始比特",
+          "负责物理介质传输",
+          "处理电气/光信号"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "数据链路层：提供节点到节点的可靠传输",
+        "score": 2,
+        "acceptable_expressions": [
+          "节点间可靠传输",
+          "帧传输",
+          "差错控制与流量控制",
+          "MAC与LLC子层功能",
+          "相邻节点数据传输"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "网络层：负责路由选择和数据包转发",
+        "score": 2,
+        "acceptable_expressions": [
+          "路由与转发",
+          "寻址和路径选择",
+          "IP层功能",
+          "跨网络数据传输",
+          "逻辑地址寻址"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "传输层：提供端到端的通信服务",
+        "score": 2,
+        "acceptable_expressions": [
+          "端到端通信",
+          "可靠传输控制",
+          "TCP/UDP功能",
+          "进程间通信",
+          "流量控制与错误恢复"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "会话层：管理会话和对话控制",
+        "score": 1,
+        "acceptable_expressions": [
+          "会话管理",
+          "对话控制",
+          "建立/维护/终止会话",
+          "同步会话"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "表示层：处理数据格式和加密",
+        "score": 1,
+        "acceptable_expressions": [
+          "数据格式转换",
+          "加密解密",
+          "压缩解压缩",
+          "语法表示转换"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "应用层：为用户提供网络服务接口",
+        "score": 1,
+        "acceptable_expressions": [
+          "用户接口层",
+          "提供网络服务",
+          "应用程序服务",
+          "HTTP/FTP等协议层"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "OSI模型分为七层：物理层（传输比特流）、数据链路层（负责节点间传输）、网络层（处理路由和转发）、传输层（端到端通信）、会话层（管理会话）、表示层（格式转换）、应用层（用户接口）。但具体功能记得不太清楚，比如数据链路层和网络层的区别可能有点模糊。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 3.8
+  },
+  {
+    "question_id": 25,
+    "subject": "计算机网络",
+    "question": "简述OSI参考模型的七层结构及各层主要功能（只需列出层名和核心功能）。",
+    "standard_answer": "1. 物理层：传输原始比特流。2. 数据链路层：提供节点到节点的可靠传输。3. 网络层：负责路由选择和数据包转发。4. 传输层：提供端到端的通信服务。5. 会话层：管理会话和对话控制。6. 表示层：处理数据格式和加密。7. 应用层：为用户提供网络服务接口。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "物理层：传输原始比特流",
+        "score": 1,
+        "acceptable_expressions": [
+          "传输比特流",
+          "处理原始比特",
+          "负责物理介质传输",
+          "处理电气/光信号"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "数据链路层：提供节点到节点的可靠传输",
+        "score": 2,
+        "acceptable_expressions": [
+          "节点间可靠传输",
+          "帧传输",
+          "差错控制与流量控制",
+          "MAC与LLC子层功能",
+          "相邻节点数据传输"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "网络层：负责路由选择和数据包转发",
+        "score": 2,
+        "acceptable_expressions": [
+          "路由与转发",
+          "寻址和路径选择",
+          "IP层功能",
+          "跨网络数据传输",
+          "逻辑地址寻址"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "传输层：提供端到端的通信服务",
+        "score": 2,
+        "acceptable_expressions": [
+          "端到端通信",
+          "可靠传输控制",
+          "TCP/UDP功能",
+          "进程间通信",
+          "流量控制与错误恢复"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "会话层：管理会话和对话控制",
+        "score": 1,
+        "acceptable_expressions": [
+          "会话管理",
+          "对话控制",
+          "建立/维护/终止会话",
+          "同步会话"
+        ]
+      },
+      {
+        "id": 6,
+        "description": "表示层：处理数据格式和加密",
+        "score": 1,
+        "acceptable_expressions": [
+          "数据格式转换",
+          "加密解密",
+          "压缩解压缩",
+          "语法表示转换"
+        ]
+      },
+      {
+        "id": 7,
+        "description": "应用层：为用户提供网络服务接口",
+        "score": 1,
+        "acceptable_expressions": [
+          "用户接口层",
+          "提供网络服务",
+          "应用程序服务",
+          "HTTP/FTP等协议层"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "OSI模型好像有七层，分别是物理层、网络层、传输层和应用层，其他几层记不太清了。物理层是传数据的，网络层是找路的，应用层是上网用的。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 5.0,
+    "human_score_2": 5.0,
+    "human_score_3": 4.5,
+    "human_score_avg": 4.83,
+    "lenient_score": 6.0,
+    "strict_score": 4.0,
+    "free_score": 3.0,
+    "keyword_score": 0.5
+  },
+  {
+    "question_id": 26,
+    "subject": "操作系统",
+    "question": "什么是死锁？产生死锁的四个必要条件是什么？",
+    "standard_answer": "1. 定义：死锁是多个进程因竞争资源而相互等待，无法推进的状态。2. 必要条件：互斥条件（资源独占）；请求和保持条件（持有资源并请求新资源）；不可剥夺条件（资源不能被强制剥夺）；循环等待条件（进程间形成等待环路）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确写出死锁的定义：多个进程因竞争资源而相互等待，无法推进的状态",
+        "score": 4,
+        "acceptable_expressions": [
+          "多个进程因竞争资源而相互等待，无法继续执行",
+          "多个进程因争夺资源而陷入相互等待，无法向前推进",
+          "进程因竞争资源而陷入无限等待的状态",
+          "多个进程因资源竞争导致相互阻塞，无法继续运行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确写出第一个必要条件：互斥条件（资源独占）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "互斥条件",
+          "资源独占",
+          "资源一次只能被一个进程使用",
+          "资源具有排他性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确写出第二个必要条件：请求和保持条件（持有资源并请求新资源）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "请求和保持条件",
+          "进程在持有资源的同时请求新资源",
+          "进程保持已有资源并申请新资源",
+          "占有并等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确写出第三个必要条件：不可剥夺条件（资源不能被强制剥夺）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "不可剥夺条件",
+          "资源不能被强制剥夺",
+          "进程持有的资源不能被其他进程强行抢占",
+          "资源只能由持有进程主动释放"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确写出第四个必要条件：循环等待条件（进程间形成等待环路）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "循环等待条件",
+          "进程间形成等待环路",
+          "存在进程等待资源的循环链",
+          "进程等待关系构成环"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "死锁是指在并发系统中，两个或多个进程因竞争资源而陷入相互等待的状态，每个进程都在等待其他进程释放资源，导致所有进程都无法继续向前推进。产生死锁的四个必要条件是：1. 互斥条件，即资源在任何时刻只能被一个进程独占使用；2. 请求与保持条件，进程在持有至少一种资源的同时，请求其他资源并等待；3. 不可剥夺条件，进程已获得的资源在未使用完毕前不能被强制剥夺；4. 循环等待条件，存在一个进程等待链，每个进程都在等待下一个进程所占有的资源，形成环路等待。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 26,
+    "subject": "操作系统",
+    "question": "什么是死锁？产生死锁的四个必要条件是什么？",
+    "standard_answer": "1. 定义：死锁是多个进程因竞争资源而相互等待，无法推进的状态。2. 必要条件：互斥条件（资源独占）；请求和保持条件（持有资源并请求新资源）；不可剥夺条件（资源不能被强制剥夺）；循环等待条件（进程间形成等待环路）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确写出死锁的定义：多个进程因竞争资源而相互等待，无法推进的状态",
+        "score": 4,
+        "acceptable_expressions": [
+          "多个进程因竞争资源而相互等待，无法继续执行",
+          "多个进程因争夺资源而陷入相互等待，无法向前推进",
+          "进程因竞争资源而陷入无限等待的状态",
+          "多个进程因资源竞争导致相互阻塞，无法继续运行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确写出第一个必要条件：互斥条件（资源独占）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "互斥条件",
+          "资源独占",
+          "资源一次只能被一个进程使用",
+          "资源具有排他性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确写出第二个必要条件：请求和保持条件（持有资源并请求新资源）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "请求和保持条件",
+          "进程在持有资源的同时请求新资源",
+          "进程保持已有资源并申请新资源",
+          "占有并等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确写出第三个必要条件：不可剥夺条件（资源不能被强制剥夺）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "不可剥夺条件",
+          "资源不能被强制剥夺",
+          "进程持有的资源不能被其他进程强行抢占",
+          "资源只能由持有进程主动释放"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确写出第四个必要条件：循环等待条件（进程间形成等待环路）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "循环等待条件",
+          "进程间形成等待环路",
+          "存在进程等待资源的循环链",
+          "进程等待关系构成环"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "死锁就是几个进程互相等着对方，结果谁都动不了。产生死锁需要几个条件：首先资源不能共享，只能给一个进程用；其次进程拿着资源还要申请新资源；然后资源不能被抢走；最后就是进程之间形成一个循环等待的关系。不过具体细节记不太清了，比如循环等待具体怎么描述可能不太准确。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 7.0,
+    "keyword_score": 3.6
+  },
+  {
+    "question_id": 26,
+    "subject": "操作系统",
+    "question": "什么是死锁？产生死锁的四个必要条件是什么？",
+    "standard_answer": "1. 定义：死锁是多个进程因竞争资源而相互等待，无法推进的状态。2. 必要条件：互斥条件（资源独占）；请求和保持条件（持有资源并请求新资源）；不可剥夺条件（资源不能被强制剥夺）；循环等待条件（进程间形成等待环路）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确写出死锁的定义：多个进程因竞争资源而相互等待，无法推进的状态",
+        "score": 4,
+        "acceptable_expressions": [
+          "多个进程因竞争资源而相互等待，无法继续执行",
+          "多个进程因争夺资源而陷入相互等待，无法向前推进",
+          "进程因竞争资源而陷入无限等待的状态",
+          "多个进程因资源竞争导致相互阻塞，无法继续运行"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确写出第一个必要条件：互斥条件（资源独占）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "互斥条件",
+          "资源独占",
+          "资源一次只能被一个进程使用",
+          "资源具有排他性"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确写出第二个必要条件：请求和保持条件（持有资源并请求新资源）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "请求和保持条件",
+          "进程在持有资源的同时请求新资源",
+          "进程保持已有资源并申请新资源",
+          "占有并等待"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确写出第三个必要条件：不可剥夺条件（资源不能被强制剥夺）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "不可剥夺条件",
+          "资源不能被强制剥夺",
+          "进程持有的资源不能被其他进程强行抢占",
+          "资源只能由持有进程主动释放"
+        ]
+      },
+      {
+        "id": 5,
+        "description": "正确写出第四个必要条件：循环等待条件（进程间形成等待环路）",
+        "score": 1.5,
+        "acceptable_expressions": [
+          "循环等待条件",
+          "进程间形成等待环路",
+          "存在进程等待资源的循环链",
+          "进程等待关系构成环"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "死锁就是程序卡住了不动了，可能是因为资源不够用吧。条件好像有什么互斥、等待之类的，但具体说不清楚。有时候电脑死机可能就是死锁造成的。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 3.0,
+    "human_score_2": 4.0,
+    "human_score_3": 3.5,
+    "human_score_avg": 3.5,
+    "lenient_score": 1.5,
+    "strict_score": 1.5,
+    "free_score": 2.0,
+    "keyword_score": 1.7
+  },
+  {
+    "question_id": 27,
+    "subject": "数据库",
+    "question": "简述数据库第一范式、第二范式和第三范式的要求。",
+    "standard_answer": "1. 第一范式：属性不可再分，即每一列都是原子值。2. 第二范式：满足第一范式，且非主属性完全依赖于主键（消除部分依赖）。3. 第三范式：满足第二范式，且非主属性不传递依赖于主键（消除传递依赖）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确表述第一范式的要求：属性不可再分，即每一列都是原子值。",
+        "score": 4,
+        "acceptable_expressions": [
+          "属性不可再分",
+          "每一列都是原子值",
+          "列是原子的",
+          "所有属性都是原子的",
+          "没有复合或多值属性"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确表述第二范式的要求：满足第一范式，且非主属性完全依赖于主键（消除部分依赖）。",
+        "score": 3,
+        "acceptable_expressions": [
+          "满足第一范式且非主属性完全依赖于主键",
+          "消除部分依赖",
+          "所有非主属性完全函数依赖于主键",
+          "非主属性不能只依赖于部分主键"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确表述第三范式的要求：满足第二范式，且非主属性不传递依赖于主键（消除传递依赖）。",
+        "score": 3,
+        "acceptable_expressions": [
+          "满足第二范式且非主属性不传递依赖于主键",
+          "消除传递依赖",
+          "非主属性之间没有依赖关系",
+          "非主属性直接依赖于主键"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "第一范式要求数据库表的每一列都是不可再分的原子值，属性不能包含多个值或重复的组。第二范式在满足第一范式的基础上，要求所有非主属性完全依赖于主键，不能存在部分依赖，即非主属性不能只依赖于主键的一部分。第三范式在满足第二范式的基础上，要求非主属性之间不能有传递依赖，即非主属性不能依赖于其他非主属性。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 27,
+    "subject": "数据库",
+    "question": "简述数据库第一范式、第二范式和第三范式的要求。",
+    "standard_answer": "1. 第一范式：属性不可再分，即每一列都是原子值。2. 第二范式：满足第一范式，且非主属性完全依赖于主键（消除部分依赖）。3. 第三范式：满足第二范式，且非主属性不传递依赖于主键（消除传递依赖）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确表述第一范式的要求：属性不可再分，即每一列都是原子值。",
+        "score": 4,
+        "acceptable_expressions": [
+          "属性不可再分",
+          "每一列都是原子值",
+          "列是原子的",
+          "所有属性都是原子的",
+          "没有复合或多值属性"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确表述第二范式的要求：满足第一范式，且非主属性完全依赖于主键（消除部分依赖）。",
+        "score": 3,
+        "acceptable_expressions": [
+          "满足第一范式且非主属性完全依赖于主键",
+          "消除部分依赖",
+          "所有非主属性完全函数依赖于主键",
+          "非主属性不能只依赖于部分主键"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确表述第三范式的要求：满足第二范式，且非主属性不传递依赖于主键（消除传递依赖）。",
+        "score": 3,
+        "acceptable_expressions": [
+          "满足第二范式且非主属性不传递依赖于主键",
+          "消除传递依赖",
+          "非主属性之间没有依赖关系",
+          "非主属性直接依赖于主键"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "第一范式是属性不可再分，比如不能把多个信息放在一个字段里。第二范式要消除部分依赖，就是非主属性要完全依赖主键。第三范式是消除传递依赖，比如非主属性不能依赖于另一个非主属性。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 9.0,
+    "keyword_score": 7.2
+  },
+  {
+    "question_id": 27,
+    "subject": "数据库",
+    "question": "简述数据库第一范式、第二范式和第三范式的要求。",
+    "standard_answer": "1. 第一范式：属性不可再分，即每一列都是原子值。2. 第二范式：满足第一范式，且非主属性完全依赖于主键（消除部分依赖）。3. 第三范式：满足第二范式，且非主属性不传递依赖于主键（消除传递依赖）。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确表述第一范式的要求：属性不可再分，即每一列都是原子值。",
+        "score": 4,
+        "acceptable_expressions": [
+          "属性不可再分",
+          "每一列都是原子值",
+          "列是原子的",
+          "所有属性都是原子的",
+          "没有复合或多值属性"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确表述第二范式的要求：满足第一范式，且非主属性完全依赖于主键（消除部分依赖）。",
+        "score": 3,
+        "acceptable_expressions": [
+          "满足第一范式且非主属性完全依赖于主键",
+          "消除部分依赖",
+          "所有非主属性完全函数依赖于主键",
+          "非主属性不能只依赖于部分主键"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确表述第三范式的要求：满足第二范式，且非主属性不传递依赖于主键（消除传递依赖）。",
+        "score": 3,
+        "acceptable_expressions": [
+          "满足第二范式且非主属性不传递依赖于主键",
+          "消除传递依赖",
+          "非主属性之间没有依赖关系",
+          "非主属性直接依赖于主键"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "数据库范式就是规范数据存储的方式。第一范式好像是不能有重复的列，第二范式是主键要唯一，第三范式是减少数据冗余。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 2.5,
+    "human_score_2": 2.0,
+    "human_score_3": 2.0,
+    "human_score_avg": 2.17,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 4.0,
+    "keyword_score": 2.2
+  },
+  {
+    "question_id": 28,
+    "subject": "数据结构",
+    "question": "简述二叉树的先序、中序、后序遍历的递归定义。",
+    "standard_answer": "1. 先序遍历：访问根节点 -> 遍历左子树 -> 遍历右子树。2. 中序遍历：遍历左子树 -> 访问根节点 -> 遍历右子树。3. 后序遍历：遍历左子树 -> 遍历右子树 -> 访问根节点。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确描述先序遍历的递归定义：先访问根节点，再遍历左子树，最后遍历右子树",
+        "score": 4,
+        "acceptable_expressions": [
+          "访问根节点 -> 遍历左子树 -> 遍历右子树",
+          "根左右",
+          "根 -> 左 -> 右",
+          "先处理根节点，再处理左子树，最后处理右子树"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确描述中序遍历的递归定义：先遍历左子树，再访问根节点，最后遍历右子树",
+        "score": 3,
+        "acceptable_expressions": [
+          "遍历左子树 -> 访问根节点 -> 遍历右子树",
+          "左根右",
+          "左 -> 根 -> 右",
+          "先处理左子树，再处理根节点，最后处理右子树"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确描述后序遍历的递归定义：先遍历左子树，再遍历右子树，最后访问根节点",
+        "score": 3,
+        "acceptable_expressions": [
+          "遍历左子树 -> 遍历右子树 -> 访问根节点",
+          "左右根",
+          "左 -> 右 -> 根",
+          "先处理左子树，再处理右子树，最后处理根节点"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "二叉树的三种递归遍历定义如下：\n1. 先序遍历：首先访问根节点，然后递归地先序遍历左子树，最后递归地先序遍历右子树。\n2. 中序遍历：首先递归地中序遍历左子树，然后访问根节点，最后递归地中序遍历右子树。\n3. 后序遍历：首先递归地后序遍历左子树，然后递归地后序遍历右子树，最后访问根节点。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 28,
+    "subject": "数据结构",
+    "question": "简述二叉树的先序、中序、后序遍历的递归定义。",
+    "standard_answer": "1. 先序遍历：访问根节点 -> 遍历左子树 -> 遍历右子树。2. 中序遍历：遍历左子树 -> 访问根节点 -> 遍历右子树。3. 后序遍历：遍历左子树 -> 遍历右子树 -> 访问根节点。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确描述先序遍历的递归定义：先访问根节点，再遍历左子树，最后遍历右子树",
+        "score": 4,
+        "acceptable_expressions": [
+          "访问根节点 -> 遍历左子树 -> 遍历右子树",
+          "根左右",
+          "根 -> 左 -> 右",
+          "先处理根节点，再处理左子树，最后处理右子树"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确描述中序遍历的递归定义：先遍历左子树，再访问根节点，最后遍历右子树",
+        "score": 3,
+        "acceptable_expressions": [
+          "遍历左子树 -> 访问根节点 -> 遍历右子树",
+          "左根右",
+          "左 -> 根 -> 右",
+          "先处理左子树，再处理根节点，最后处理右子树"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确描述后序遍历的递归定义：先遍历左子树，再遍历右子树，最后访问根节点",
+        "score": 3,
+        "acceptable_expressions": [
+          "遍历左子树 -> 遍历右子树 -> 访问根节点",
+          "左右根",
+          "左 -> 右 -> 根",
+          "先处理左子树，再处理右子树，最后处理根节点"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "二叉树的遍历有先序、中序和后序三种。先序遍历是先根后左右，中序遍历是先左后根再右，后序遍历是先左右后根。具体来说，就是先访问根节点，再处理左右子树，但顺序不同。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 9.5,
+    "human_score_3": 9.5,
+    "human_score_avg": 9.67,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 4.4
+  },
+  {
+    "question_id": 28,
+    "subject": "数据结构",
+    "question": "简述二叉树的先序、中序、后序遍历的递归定义。",
+    "standard_answer": "1. 先序遍历：访问根节点 -> 遍历左子树 -> 遍历右子树。2. 中序遍历：遍历左子树 -> 访问根节点 -> 遍历右子树。3. 后序遍历：遍历左子树 -> 遍历右子树 -> 访问根节点。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确描述先序遍历的递归定义：先访问根节点，再遍历左子树，最后遍历右子树",
+        "score": 4,
+        "acceptable_expressions": [
+          "访问根节点 -> 遍历左子树 -> 遍历右子树",
+          "根左右",
+          "根 -> 左 -> 右",
+          "先处理根节点，再处理左子树，最后处理右子树"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确描述中序遍历的递归定义：先遍历左子树，再访问根节点，最后遍历右子树",
+        "score": 3,
+        "acceptable_expressions": [
+          "遍历左子树 -> 访问根节点 -> 遍历右子树",
+          "左根右",
+          "左 -> 根 -> 右",
+          "先处理左子树，再处理根节点，最后处理右子树"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确描述后序遍历的递归定义：先遍历左子树，再遍历右子树，最后访问根节点",
+        "score": 3,
+        "acceptable_expressions": [
+          "遍历左子树 -> 遍历右子树 -> 访问根节点",
+          "左右根",
+          "左 -> 右 -> 根",
+          "先处理左子树，再处理右子树，最后处理根节点"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "二叉树遍历就是按一定顺序访问节点。先序是从根开始，然后左和右；中序是左、根、右；后序是左、右、根。差不多就是这样，递归就是自己调用自己。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 9.0,
+    "human_score_2": 9.0,
+    "human_score_3": 9.0,
+    "human_score_avg": 9.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 5.0,
+    "keyword_score": 3.8
+  },
+  {
+    "question_id": 29,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议的无状态性以及Cookie和Session如何用于状态管理。",
+    "standard_answer": "1. 无状态性：HTTP协议不保存之前请求的信息，每次请求独立。2. Cookie：服务器发送给客户端的小段数据，客户端后续请求时携带，用于识别用户。3. Session：服务器端存储的用户状态信息，通过Session ID（通常存放在Cookie中）关联。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确解释HTTP协议的无状态性，即协议本身不保存请求间的状态信息，每次请求独立处理。",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTP协议不记忆之前的请求",
+          "每次请求都是独立的，服务器不保留客户端状态",
+          "协议本身是无状态的，不保存会话信息"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确描述Cookie的作用，即服务器发送给客户端的小段数据，客户端在后续请求中携带以识别用户。",
+        "score": 3,
+        "acceptable_expressions": [
+          "服务器向客户端发送数据片段，客户端存储并在请求中传回",
+          "Cookie用于在客户端保存用户标识信息",
+          "通过Cookie实现客户端状态管理"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确描述Session的作用，即服务器端存储用户状态信息，通过Session ID（通常借助Cookie传递）关联客户端。",
+        "score": 4,
+        "acceptable_expressions": [
+          "Session在服务器端保存用户状态，通过Session ID识别",
+          "服务器存储会话数据，客户端通过Session ID（如通过Cookie）关联",
+          "Session用于服务器端状态管理，依赖Session ID维持连接"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "HTTP协议的无状态性是指协议本身不会记录之前的请求信息，每次请求都是独立处理的，服务器不会主动保留客户端的状态。为了在无状态的HTTP协议上实现状态管理，常用的技术是Cookie和Session。\n\n1. Cookie是服务器发送到客户端浏览器并保存在本地的一小段数据。当客户端再次向同一服务器发起请求时，会自动携带这个Cookie，从而让服务器识别用户身份或记录一些状态信息（如登录状态、用户偏好等）。\n\n2. Session是服务器端用来存储用户状态信息的机制。当用户第一次访问服务器时，服务器会创建一个唯一的Session ID，并将这个ID通过Cookie（或其他方式如URL重写）发送给客户端。客户端在后续请求中携带这个Session ID，服务器根据ID找到对应的Session数据，从而维持用户的状态。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 10.0
+  },
+  {
+    "question_id": 29,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议的无状态性以及Cookie和Session如何用于状态管理。",
+    "standard_answer": "1. 无状态性：HTTP协议不保存之前请求的信息，每次请求独立。2. Cookie：服务器发送给客户端的小段数据，客户端后续请求时携带，用于识别用户。3. Session：服务器端存储的用户状态信息，通过Session ID（通常存放在Cookie中）关联。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确解释HTTP协议的无状态性，即协议本身不保存请求间的状态信息，每次请求独立处理。",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTP协议不记忆之前的请求",
+          "每次请求都是独立的，服务器不保留客户端状态",
+          "协议本身是无状态的，不保存会话信息"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确描述Cookie的作用，即服务器发送给客户端的小段数据，客户端在后续请求中携带以识别用户。",
+        "score": 3,
+        "acceptable_expressions": [
+          "服务器向客户端发送数据片段，客户端存储并在请求中传回",
+          "Cookie用于在客户端保存用户标识信息",
+          "通过Cookie实现客户端状态管理"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确描述Session的作用，即服务器端存储用户状态信息，通过Session ID（通常借助Cookie传递）关联客户端。",
+        "score": 4,
+        "acceptable_expressions": [
+          "Session在服务器端保存用户状态，通过Session ID识别",
+          "服务器存储会话数据，客户端通过Session ID（如通过Cookie）关联",
+          "Session用于服务器端状态管理，依赖Session ID维持连接"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "HTTP协议是无状态的，意思是每次请求都是独立的，服务器不会记住之前的请求。为了解决这个问题，可以用Cookie和Session。\n\nCookie是服务器发给浏览器的一小段数据，浏览器保存下来，下次请求时再发回给服务器，这样服务器就知道是同一个用户了。\n\nSession是存在服务器上的用户信息，服务器给每个用户一个Session ID，通常放在Cookie里传给浏览器，浏览器下次请求时带上这个ID，服务器就能找到对应的Session数据。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 8.0,
+    "keyword_score": 5.1
+  },
+  {
+    "question_id": 29,
+    "subject": "计算机网络",
+    "question": "简述HTTP协议的无状态性以及Cookie和Session如何用于状态管理。",
+    "standard_answer": "1. 无状态性：HTTP协议不保存之前请求的信息，每次请求独立。2. Cookie：服务器发送给客户端的小段数据，客户端后续请求时携带，用于识别用户。3. Session：服务器端存储的用户状态信息，通过Session ID（通常存放在Cookie中）关联。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确解释HTTP协议的无状态性，即协议本身不保存请求间的状态信息，每次请求独立处理。",
+        "score": 3,
+        "acceptable_expressions": [
+          "HTTP协议不记忆之前的请求",
+          "每次请求都是独立的，服务器不保留客户端状态",
+          "协议本身是无状态的，不保存会话信息"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确描述Cookie的作用，即服务器发送给客户端的小段数据，客户端在后续请求中携带以识别用户。",
+        "score": 3,
+        "acceptable_expressions": [
+          "服务器向客户端发送数据片段，客户端存储并在请求中传回",
+          "Cookie用于在客户端保存用户标识信息",
+          "通过Cookie实现客户端状态管理"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确描述Session的作用，即服务器端存储用户状态信息，通过Session ID（通常借助Cookie传递）关联客户端。",
+        "score": 4,
+        "acceptable_expressions": [
+          "Session在服务器端保存用户状态，通过Session ID识别",
+          "服务器存储会话数据，客户端通过Session ID（如通过Cookie）关联",
+          "Session用于服务器端状态管理，依赖Session ID维持连接"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "HTTP协议每次请求都是新的，不会记住之前的东西。Cookie就是存在浏览器里的一些小文件，可以记录用户信息。Session好像是服务器里存的东西，但具体怎么用不太清楚。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 7.5,
+    "human_score_2": 8.5,
+    "human_score_3": 7.0,
+    "human_score_avg": 7.67,
+    "lenient_score": 6.0,
+    "strict_score": 6.0,
+    "free_score": 4.0,
+    "keyword_score": 2.2
+  },
+  {
+    "question_id": 30,
+    "subject": "操作系统",
+    "question": "什么是虚拟内存？其主要作用是什么？",
+    "standard_answer": "1. 定义：虚拟内存是一种内存管理技术，使得程序认为拥有连续可用的内存空间。2. 作用：扩展物理内存，使程序能使用比实际物理内存更大的地址空间；提供内存隔离和保护；允许部分程序装入内存即可运行，提高多道程序并发度。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确答出虚拟内存的定义：是一种内存管理技术，使得程序认为拥有连续可用的内存空间。",
+        "score": 4,
+        "acceptable_expressions": [
+          "虚拟内存是一种内存管理技术，它让每个程序都以为自己拥有一段连续且完整的内存地址空间",
+          "一种操作系统内存管理技术，它向每个进程提供一个连续的、私有的地址空间",
+          "一种技术，通过它，应用程序可以访问一个比实际物理内存更大的、连续的地址空间"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确答出虚拟内存的主要作用之一是：扩展物理内存，使程序能使用比实际物理内存更大的地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "扩展可用的内存容量",
+          "允许程序使用超过物理RAM大小的内存",
+          "通过硬盘空间来模拟更大的内存",
+          "提供比物理内存更大的逻辑地址空间"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确答出虚拟内存的主要作用之一是：提供内存隔离和保护。",
+        "score": 2,
+        "acceptable_expressions": [
+          "实现进程间的地址空间隔离，防止互相干扰",
+          "为每个进程提供独立的、受保护的地址空间",
+          "确保一个进程不能随意访问另一个进程的内存数据",
+          "提供内存保护机制"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确答出虚拟内存的主要作用之一是：允许部分程序装入内存即可运行，提高多道程序并发度。",
+        "score": 2,
+        "acceptable_expressions": [
+          "实现按需调页，只需将当前需要的部分加载到内存",
+          "允许更多的程序同时驻留在内存中（或部分驻留），提高系统吞吐量",
+          "通过部分加载实现更高的多道程序并发执行能力",
+          "提高CPU和内存的利用率"
+        ]
+      }
+    ],
+    "quality": "HIGH",
+    "student_answer": "虚拟内存是一种内存管理技术，它让每个程序都认为自己拥有连续且完整的地址空间，即使实际物理内存可能并不连续或容量有限。其主要作用包括：第一，扩展物理内存的容量，通过硬盘空间模拟额外的内存，使得程序能够使用比实际物理内存更大的地址空间；第二，提供内存隔离与保护，确保不同程序之间的内存空间互不干扰，增强系统安全性；第三，允许程序只需部分装入内存即可运行，通过请求分页等技术，提高了多道程序的并发执行效率，优化了系统资源利用率。",
+    "expected_score_range": [
+      8,
+      10
+    ],
+    "human_score_1": 10.0,
+    "human_score_2": 10.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 10.0,
+    "lenient_score": 10.0,
+    "strict_score": 10.0,
+    "free_score": 10.0,
+    "keyword_score": 9.0
+  },
+  {
+    "question_id": 30,
+    "subject": "操作系统",
+    "question": "什么是虚拟内存？其主要作用是什么？",
+    "standard_answer": "1. 定义：虚拟内存是一种内存管理技术，使得程序认为拥有连续可用的内存空间。2. 作用：扩展物理内存，使程序能使用比实际物理内存更大的地址空间；提供内存隔离和保护；允许部分程序装入内存即可运行，提高多道程序并发度。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确答出虚拟内存的定义：是一种内存管理技术，使得程序认为拥有连续可用的内存空间。",
+        "score": 4,
+        "acceptable_expressions": [
+          "虚拟内存是一种内存管理技术，它让每个程序都以为自己拥有一段连续且完整的内存地址空间",
+          "一种操作系统内存管理技术，它向每个进程提供一个连续的、私有的地址空间",
+          "一种技术，通过它，应用程序可以访问一个比实际物理内存更大的、连续的地址空间"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确答出虚拟内存的主要作用之一是：扩展物理内存，使程序能使用比实际物理内存更大的地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "扩展可用的内存容量",
+          "允许程序使用超过物理RAM大小的内存",
+          "通过硬盘空间来模拟更大的内存",
+          "提供比物理内存更大的逻辑地址空间"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确答出虚拟内存的主要作用之一是：提供内存隔离和保护。",
+        "score": 2,
+        "acceptable_expressions": [
+          "实现进程间的地址空间隔离，防止互相干扰",
+          "为每个进程提供独立的、受保护的地址空间",
+          "确保一个进程不能随意访问另一个进程的内存数据",
+          "提供内存保护机制"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确答出虚拟内存的主要作用之一是：允许部分程序装入内存即可运行，提高多道程序并发度。",
+        "score": 2,
+        "acceptable_expressions": [
+          "实现按需调页，只需将当前需要的部分加载到内存",
+          "允许更多的程序同时驻留在内存中（或部分驻留），提高系统吞吐量",
+          "通过部分加载实现更高的多道程序并发执行能力",
+          "提高CPU和内存的利用率"
+        ]
+      }
+    ],
+    "quality": "MEDIUM",
+    "student_answer": "虚拟内存是一种计算机技术，用来让程序感觉有更多内存可用。它可以把硬盘空间当作内存来用，这样即使物理内存不够，程序也能运行。另外，它还能保护不同程序的内存，防止它们互相干扰。不过，有时候用虚拟内存会让电脑变慢，因为读写硬盘比内存慢。",
+    "expected_score_range": [
+      4,
+      7
+    ],
+    "human_score_1": 9.5,
+    "human_score_2": 9.0,
+    "human_score_3": 10.0,
+    "human_score_avg": 9.5,
+    "lenient_score": 8.0,
+    "strict_score": 8.0,
+    "free_score": 8.0,
+    "keyword_score": 2.2
+  },
+  {
+    "question_id": 30,
+    "subject": "操作系统",
+    "question": "什么是虚拟内存？其主要作用是什么？",
+    "standard_answer": "1. 定义：虚拟内存是一种内存管理技术，使得程序认为拥有连续可用的内存空间。2. 作用：扩展物理内存，使程序能使用比实际物理内存更大的地址空间；提供内存隔离和保护；允许部分程序装入内存即可运行，提高多道程序并发度。",
+    "total_score": 10,
+    "points": [
+      {
+        "id": 1,
+        "description": "正确答出虚拟内存的定义：是一种内存管理技术，使得程序认为拥有连续可用的内存空间。",
+        "score": 4,
+        "acceptable_expressions": [
+          "虚拟内存是一种内存管理技术，它让每个程序都以为自己拥有一段连续且完整的内存地址空间",
+          "一种操作系统内存管理技术，它向每个进程提供一个连续的、私有的地址空间",
+          "一种技术，通过它，应用程序可以访问一个比实际物理内存更大的、连续的地址空间"
+        ]
+      },
+      {
+        "id": 2,
+        "description": "正确答出虚拟内存的主要作用之一是：扩展物理内存，使程序能使用比实际物理内存更大的地址空间。",
+        "score": 2,
+        "acceptable_expressions": [
+          "扩展可用的内存容量",
+          "允许程序使用超过物理RAM大小的内存",
+          "通过硬盘空间来模拟更大的内存",
+          "提供比物理内存更大的逻辑地址空间"
+        ]
+      },
+      {
+        "id": 3,
+        "description": "正确答出虚拟内存的主要作用之一是：提供内存隔离和保护。",
+        "score": 2,
+        "acceptable_expressions": [
+          "实现进程间的地址空间隔离，防止互相干扰",
+          "为每个进程提供独立的、受保护的地址空间",
+          "确保一个进程不能随意访问另一个进程的内存数据",
+          "提供内存保护机制"
+        ]
+      },
+      {
+        "id": 4,
+        "description": "正确答出虚拟内存的主要作用之一是：允许部分程序装入内存即可运行，提高多道程序并发度。",
+        "score": 2,
+        "acceptable_expressions": [
+          "实现按需调页，只需将当前需要的部分加载到内存",
+          "允许更多的程序同时驻留在内存中（或部分驻留），提高系统吞吐量",
+          "通过部分加载实现更高的多道程序并发执行能力",
+          "提高CPU和内存的利用率"
+        ]
+      }
+    ],
+    "quality": "LOW",
+    "student_answer": "虚拟内存就是电脑里的一种内存，好像是用来存东西的。作用嘛，应该是让电脑运行更快吧，或者可以开更多程序。不太清楚具体是啥。",
+    "expected_score_range": [
+      0,
+      3
+    ],
+    "human_score_1": 1.5,
+    "human_score_2": 3.0,
+    "human_score_3": 1.5,
+    "human_score_avg": 2.0,
+    "lenient_score": 0.0,
+    "strict_score": 0.0,
+    "free_score": 2.0,
+    "keyword_score": 1.6
+  }
+]

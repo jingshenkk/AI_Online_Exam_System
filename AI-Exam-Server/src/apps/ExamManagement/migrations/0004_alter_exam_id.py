@@ -1,0 +1,18 @@
+
+from django.db import migrations, models
+import uuid
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('ExamManagement', '0003_remove_exam_description_exam_remark'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='exam',
+            name='id',
+            field=models.CharField(default=uuid.uuid4, editable=False, max_length=255, primary_key=True, serialize=False),
+        ),
+    ]

@@ -1,0 +1,23 @@
+
+from django.db import migrations, models
+import uuid
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('UserManagement', '0004_alter_teacher_teacher_id'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='student',
+            name='id',
+            field=models.CharField(default=uuid.uuid4, editable=False, max_length=255, primary_key=True, serialize=False),
+        ),
+        migrations.AlterField(
+            model_name='teacher',
+            name='id',
+            field=models.CharField(default=uuid.uuid4, editable=False, max_length=255, primary_key=True, serialize=False),
+        ),
+    ]

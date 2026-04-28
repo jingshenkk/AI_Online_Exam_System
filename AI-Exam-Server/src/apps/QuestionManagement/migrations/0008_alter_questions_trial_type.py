@@ -1,0 +1,17 @@
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('QuestionManagement', '0007_alter_errorarchive_difficulty'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='questions',
+            name='trial_type',
+            field=models.CharField(choices=[('public', 'Public'), ('private', 'Private')], default='private', help_text='所属题库类型', max_length=10),
+        ),
+    ]

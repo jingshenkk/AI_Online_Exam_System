@@ -1,0 +1,17 @@
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('PaperManagement', '0006_paper_is_public'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='paperquestions',
+            name='marks',
+            field=models.FloatField(default=5, help_text='试题分数'),
+        ),
+    ]

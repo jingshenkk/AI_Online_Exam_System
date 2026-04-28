@@ -1,0 +1,27 @@
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('PaperManagement', '0007_alter_paperquestions_marks'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='papermodule',
+            name='paper_id',
+            field=models.CharField(help_text='试卷ID', max_length=255),
+        ),
+        migrations.AlterField(
+            model_name='paperquestions',
+            name='paper_id',
+            field=models.CharField(help_text='试卷ID', max_length=255),
+        ),
+        migrations.AlterField(
+            model_name='paperquestions',
+            name='question_id',
+            field=models.CharField(help_text='试题ID', max_length=255),
+        ),
+    ]
