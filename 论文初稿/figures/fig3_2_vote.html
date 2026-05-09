@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>严格模式多模型投票评分流程图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 900px;
+            background: white;
+            position: relative;
+        }
+
+        .box {
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .input-box {
+            background-color: #37474F;
+            color: white;
+            margin: 0 auto 30px auto;
+            width: 280px;
+        }
+
+        .llm-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .llm-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .llm-box {
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .llm-1 {
+            background-color: #1976D2;
+        }
+
+        .llm-2 {
+            background-color: #388E3C;
+        }
+
+        .llm-3 {
+            background-color: #F57C00;
+        }
+
+        .result-card {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin-top: 15px;
+            font-size: 12px;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            min-width: 140px;
+        }
+
+        .result-card-1 {
+            border-left: 3px solid #1976D2;
+            background-color: #E3F2FD;
+        }
+
+        .result-card-2 {
+            border-left: 3px solid #388E3C;
+            background-color: #E8F5E9;
+        }
+
+        .result-card-3 {
+            border-left: 3px solid #F57C00;
+            background-color: #FFF3E0;
+        }
+
+        .vote-box {
+            background-color: #7B1FA2;
+            color: white;
+            margin: 0 auto 30px auto;
+            width: 220px;
+        }
+
+        .vote-result-card {
+            background-color: #F3E5F5;
+            border-left: 4px solid #7B1FA2;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 0 auto 30px auto;
+            font-size: 13px;
+            text-align: left;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        .vote-result-card .result-line {
+            margin: 6px 0;
+            line-height: 1.6;
+        }
+
+        .output-box {
+            background-color: #37474F;
+            color: white;
+            margin: 0 auto;
+            width: 220px;
+        }
+
+        .full {
+            color: #388E3C;
+            font-weight: 600;
+        }
+
+        .miss {
+            color: #D32F2F;
+            font-weight: 600;
+        }
+
+        svg {
+            position: absolute;
+            z-index: 1;
+        }
+
+        .arrow-line {
+            stroke: #555;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .arrow-head {
+            fill: #555;
+        }
+
+        .vertical-spacer {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部输入框 -->
+        <div class="box input-box">
+            输入：学生答案 + 评分细则
+        </div>
+
+        <!-- 向下分三路的箭头 -->
+        <svg width="900" height="900" style="top: 0; left: 0;">
+            <!-- 从输入框到三个LLM的箭头 -->
+            <path d="M 450 65 L 450 95 L 150 95 L 150 125" class="arrow-line"/>
+            <polygon points="150,125 145,115 155,115" class="arrow-head"/>
+
+            <path d="M 450 65 L 450 125" class="arrow-line"/>
+            <polygon points="450,125 445,115 455,115" class="arrow-head"/>
+
+            <path d="M 450 65 L 450 95 L 750 95 L 750 125" class="arrow-line"/>
+            <polygon points="750,125 745,115 755,115" class="arrow-head"/>
+
+            <!-- 从三个LLM到投票框的箭头 -->
+            <path d="M 150 210 L 150 240 L 450 240 L 450 270" class="arrow-line"/>
+            <polygon points="450,270 445,260 455,260" class="arrow-head"/>
+
+            <path d="M 450 210 L 450 270" class="arrow-line"/>
+            <polygon points="450,270 445,260 455,260" class="arrow-head"/>
+
+            <path d="M 750 210 L 750 240 L 450 240 L 450 270" class="arrow-line"/>
+            <polygon points="450,270 445,260 455,260" class="arrow-head"/>
+
+            <!-- 从投票框到结果卡片的箭头 -->
+            <path d="M 450 325 L 450 365" class="arrow-line"/>
+            <polygon points="450,365 445,355 455,355" class="arrow-head"/>
+
+            <!-- 从结果卡片到输出框的箭头 -->
+            <path d="M 450 480 L 450 530" class="arrow-line"/>
+            <polygon points="450,530 445,520 455,520" class="arrow-head"/>
+        </svg>
+
+        <!-- 三个并排的LLM评分框 -->
+        <div class="llm-container">
+            <div class="llm-column">
+                <div class="llm-box llm-1">
+                    LLM评分 #1
+                </div>
+                <div class="result-card result-card-1">
+                    <div>得分点1: <span class="full">FULL</span></div>
+                    <div>得分点2: <span class="miss">MISS</span></div>
+                    <div>得分点3: <span class="full">FULL</span></div>
+                </div>
+            </div>
+
+            <div class="llm-column">
+                <div class="llm-box llm-2">
+                    LLM评分 #2
+                </div>
+                <div class="result-card result-card-2">
+                    <div>得分点1: <span class="full">FULL</span></div>
+                    <div>得分点2: <span class="full">FULL</span></div>
+                    <div>得分点3: <span class="miss">MISS</span></div>
+                </div>
+            </div>
+
+            <div class="llm-column">
+                <div class="llm-box llm-3">
+                    LLM评分 #3
+                </div>
+                <div class="result-card result-card-3">
+                    <div>得分点1: <span class="miss">MISS</span></div>
+                    <div>得分点2: <span class="miss">MISS</span></div>
+                    <div>得分点3我将为您创建严格模式多模型投票评分流程图的HTML文件。
+
+<tool_calls>
+<tool>
+<tool_name>create_file
