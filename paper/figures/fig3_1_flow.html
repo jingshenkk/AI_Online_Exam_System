@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能评分方案整体流程图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background-color: #ffffff;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            width: 100%;
+            position: relative;
+        }
+        
+        .stage {
+            border: 2px dashed #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .stage-title {
+            position: absolute;
+            top: -14px;
+            left: 20px;
+            background-color: #ffffff;
+            padding: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #666;
+        }
+        
+        .flow-row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            position: relative;
+        }
+        
+        .node {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .node-green {
+            background-color: #2E7D32;
+        }
+        
+        .node-darkgreen {
+            background-color: #1B5E20;
+        }
+        
+        .node-yellow {
+            background-color: #F5A623;
+            color: #333;
+        }
+        
+        .node-orange {
+            background-color: #FF8F00;
+        }
+        
+        .node-deeporange {
+            background-color: #E65100;
+        }
+        
+        .node-lightgreen {
+            background-color: #43A047;
+        }
+        
+        .diamond {
+            width: 100px;
+            height: 100px;
+            background-color: #F5A623;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .diamond-text {
+            transform: rotate(-45deg);
+            color: #333;
+            font-size: 13px;
+            font-weight: 500;
+            text-align: center;
+            white-space: nowrap;
+        }
+        
+        .arrow {
+            flex-shrink: 0;
+        }
+        
+        .branch-container {
+            display: flex;
+            gap: 40px;
+            position: relative;
+        }
+        
+        .branch {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .branch-label {
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .database {
+            background-color: #43A047;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            white-space: nowrap;
+        }
+        
+        .stage-connector {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 60px;
+            border-left: 2px dashed #999;
+        }
+        
+        .stage-connector-label {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            background-color: #ffffff;
+            padding: 5px 10px;
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .arrow-container {
+            position: relative;
+            width: 40px;
+            height: 30px;
+        }
+        
+        .arrow-container svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .diamond-connector {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+            height: 120px;
+            pointer-events: none;
+        }
+        
+        .branch-arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 80px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 第一阶段：评分细则生成 -->
+        <div class="stage">
+            <div class="stage-title">第一阶段：评分细则生成</div>
+            <div class="flow-row">
+                <div class="node node-green">教师创建试题</div>
+                
+                <div class="arrow-container">
+                    <svg viewBox="0 0 40 30">
+                        <defs>
+                            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+                            </marker>
+                        </defs>
+                        <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </svg>
+                </div>
+                
+                <div class="node node-green">输入标准答案</div>
+                
+                <div class="arrow-container">
+                    <svg viewBox="0 0 40 30">
+                        <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </svg>
+                </div>
+                
+                <div class="node node-darkgreen">rubric_chain<br/><small style="font-size:11px; font-weight:normal;">评分细则生成链</small></div>
+                
+                <div class="arrow-container">
+                    <svg viewBox="0 0 40 30">
+                        <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </svg>
+                </div>
+                
+                <div class="node node-green">生成评分细则列表</div>
+                
+                <div class="arrow-container">
+                    <svg viewBox="0 0 40 30">
+                        <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </svg>
+                </div>
+                
+                <div style="position: relative;">
+                    <div class="diamond">
+                        <div class="diamond-text">教师审核</div>
+                    </div>
+                    <svg class="diamond-connector" viewBox="0 0 160 120">
+                        <defs>
+                            <marker id="arrowhead-diamond" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+                            </marker>
+                        </defs>
+                        <path d="M 80 60 L 140 60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead-diamond)"/>
+                        <text x="85" y="50" font-size="11" fill="#666">审核通过</text>
+                        <path d="M 80 60 L 20 60" stroke="#666" stroke-width="2" marker-end="url(#arrowhead-diamond)"/>
+                        <text x="25" y="50" font-size="11" fill="#666">审核不通过</text>
+                    </svg>
+                </div>
+                
+                <div class="database">存入数据库</div>
+                
+                <div class="arrow-container" style="margin-left: 30px;">
+                    <svg viewBox="0 0 60 30">
+                        <path d="M 30 15 L 55 15" stroke="#999" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+                        <text x="32" y="10" font-size="10" fill="#999">返回修改</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 阶段连接器 -->
+        <div style="position: relative; height: 60px;">
+            <div style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 2px; height: 60px; border-left: 2px dashed #999;"></div>
+            <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: #ffffff; padding: 5px 10px; font-size: 12px; color: #666; white-space: nowrap;">审核通过的评分细则</div>
+        </div>
+        
+        <!-- 第二阶段：学生答案评分 -->
+        <div class="stage">
+            <div class="stage-title">第二阶段：学生答案评分</div>
+            <div class="flow-row">
+                <div class="node node-lightgreen">学生提交答案</div>
+                
+                <div class="arrow-container">
+                    <svg viewBox="0 0 40 30">
+                        <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </svg>
+                </div>
+                
+                <div class="node node-darkgreen">score_chain<br/><small style="font-size:11px; font-weight:normal;">学生答案评分链</small></div>
+                
+                <div class="arrow-container">
+                    <svg viewBox="0 0 40 30">
+                        <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    </svg>
+                </div>
+                
+                <div style="position: relative;">
+                    <div class="diamond" style="background-color: #F57F17;">
+                        <div class="diamond-text">评分模式?</div>
+                    </div>
+                    <svg class="branch-arrow" viewBox="0 0 200 80">
+                        <path d="M 100 40 L 160 15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead-diamond)"/>
+                        <text x="110" y="25" font-size="11" fill="#666">宽松</text>
+                        <path d="M 100 40 L 160 65" stroke="#666" stroke-width="2" marker-end="url(#arrowhead-diamond)"/>
+                        <text x="110" y="60" font-size="11" fill="#666">严格</text>
+                    </svg>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 30px; margin-left: 30px;">
+                    <div class="branch">
+                        <div class="node node-orange">单LLM评分</div>
+                        <div class="arrow-container">
+                            <svg viewBox="0 0 40 30">
+                                <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="branch">
+                        <div class="node node-deeporange">三LLM投票</div>
+                        <div class="arrow-container">
+                            <svg viewBox="0 0 40 30">
+                                <line x1="0" y1="15" x2="35" y2="15" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="node node-lightgreen">写入成绩记录</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<tool_calls>
+<tool>
+<tool_name>create_file

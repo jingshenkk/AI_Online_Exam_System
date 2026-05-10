@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统整体架构图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px;
+        }
+        
+        .container {
+            width: 1200px;
+        }
+        
+        .layer {
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .layer-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .layer-content {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .item-box {
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* 第1层：用户层 */
+        .layer-user {
+            background-color: #E3F2FD;
+            border: 2px solid #90CAF9;
+        }
+        
+        .layer-user .layer-title {
+            color: #1565C0;
+        }
+        
+        .layer-user .item-box {
+            background-color: #1565C0;
+            color: white;
+            min-width: 100px;
+        }
+        
+        /* 第2层：前端层 */
+        .layer-frontend {
+            background-color: #E8F5E9;
+            border: 2px solid #A5D6A7;
+        }
+        
+        .layer-frontend .layer-title {
+            color: #43A047;
+        }
+        
+        .layer-frontend .item-box {
+            background-color: #43A047;
+            color: white;
+            min-width: 100px;
+        }
+        
+        .frontend-note {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        /* 第3层：后端层 */
+        .layer-backend {
+            background-color: #FFF3E0;
+            border: 2px solid #FFCC80;
+        }
+        
+        .layer-backend .layer-title {
+            color: #F57C00;
+        }
+        
+        .layer-backend .item-box {
+            background-color: #F57C00;
+            color: white;
+            min-width: 110px;
+        }
+        
+        .middleware-bar {
+            background-color: #FFE0B2;
+            border-radius: 8px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: #E65100;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+        .service-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .service-box {
+            background-color: #BF360C;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        /* 第4层：数据层 */
+        .layer-data {
+            background-color: #F3E5F5;
+            border: 2px solid #CE93D8;
+        }
+        
+        .layer-data .layer-title {
+            color: #7B1FA2;
+        }
+        
+        .layer-data .item-box {
+            min-width: 200px;
+        }
+        
+        .data-box-1 {
+            background-color: #7B1FA2;
+            color: white;
+        }
+        
+        .data-box-2 {
+            background-color: #4A148C;
+            color: white;
+        }
+        
+        /* 箭头 */
+        .arrow-container {
+            display: flex;
+            justify-content: center;
+            margin: -30px 0;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .arrow-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 2px 8px;
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 第1层：用户层 -->
+        <div class="layer layer-user">
+            <div class="layer-title">用户层</div>
+            <div class="layer-content">
+                <div class="item-box">管理员</div>
+                <div class="item-box">教师</div>
+                <div class="item-box">学生</div>
+            </div>
+        </div>
+        
+        <!-- 箭头 -->
+        <div class="arrow-container">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+                    </marker>
+                </defs>
+                <line x1="20" y1="0" x2="20" y2="35" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+            </svg>
+        </div>
+        
+        <!-- 第2层：前端层 -->
+        <div class="layer layer-frontend">
+            <div class="layer-title">前端层 (Vue 3 + Element Plus + TypeScript)</div>
+            <div class="layer-content">
+                <div class="item-box">用户管理</div>
+                <div class="item-box">试题管理</div>
+                <div class="item-box">试卷管理</div>
+                <div class="item-box">考试管理</div>
+                <div class="item-box">成绩管理</div>
+            </div>
+            <div class="frontend-note">Axios HTTP Client (JWT Token)</div>
+        </div>
+        
+        <!-- 箭头 -->
+        <div class="arrow-container">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <line x1="20" y1="0" x2="20" y2="35" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+            </svg>
+            <div class="arrow-label">RESTful API</div>
+        </div>
+        
+        <!-- 第3层：后端层 -->
+        <div class="layer layer-backend">
+            <div class="layer-title">后端层 (Django 4.2 + DRF 3.14)</div>
+            
+            <!-- 中间件条 -->
+            <div class="middleware-bar">
+                <span>CORS中间件</span>
+                <span>|</span>
+                <span>JWT认证中间件</span>
+                <span>|</span>
+                <span>路由分发</span>
+            </div>
+            
+            <!-- 业务应用 -->
+            <div class="layer-content">
+                <div class="item-box">UserMgmt</div>
+                <div class="item-box">QuestionMgmt</div>
+                <div class="item-box">PaperMgmt</div>
+                <div class="item-box">ExamMgmt</div>
+                <div class="item-box">ExamResult</div>
+                <div class="item-box">MenuMgmt</div>
+            </div>
+            
+            <!-- 服务 -->
+            <div class="service-row">
+                <div class="service-box">LLM评分服务 (LangChain)</div>
+                <div class="service-box">Excel处理服务</div>
+            </div>
+        </div>
+        
+        <!-- 箭头 -->
+        <div class="arrow-container">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <line x1="20" y1="0" x2="20" y2="35" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+            </svg>
+        </div>
+        
+        <!-- 第4层：数据层 -->
+        <div class="layer layer-data">
+            <div class="layer-title">数据层</div>
+            <div class="layer-content">
+                <div class="item-box data-box-1">MySQL 8.2 关系型数据库<br/>(15张业务表)</div>
+                <div class="item-box data-box-2">LLM服务 (DeepSeek-V3.2)<br/>OpenAI兼容API</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
