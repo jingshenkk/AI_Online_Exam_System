@@ -27,7 +27,9 @@
         <el-table-column prop="type" label="试题类型" align="center" width="80">
           <template #default="scope">
             <span v-if="scope['row']['type'] === 'select'">选择题</span>
-            <span v-else>判断题</span>
+            <span v-else-if="scope['row']['type'] === 'judge'">判断题</span>
+            <span v-else-if="scope['row']['type'] === 'essay'">主观题</span>
+            <span v-else>未知</span>
           </template>
         </el-table-column>
         <el-table-column prop="topic" label="试题标题" header-align="center" />
@@ -66,7 +68,7 @@
           <div style="color: #5e5e5e;margin-bottom: 10px;">
             <el-tag style="margin-right: 10px" :icon="Bookmark">
               <el-icon><Tag /></el-icon>
-              {{ item['type'] === 'select' ? '选择题' : '判断题' }}
+              {{ item['type'] === 'select' ? '选择题' : item['type'] === 'judge' ? '判断题' : '主观题' }}
             </el-tag>
             <span style="line-height: 30px;">{{ index + 1 }}. {{ item['topic'] }}</span>
             <el-form-item
@@ -76,9 +78,17 @@
                 :prop="item['id']"
                 :rules="[{ required: true, message: '请输入分数', trigger: 'blur' }]"
             >
-              <el-input v-model="formData[item['id']]" placeholder="请输入试题分数" clearable>
+              <el-input
+                  v-model="formData[item['id']]"
+                  :placeholder="item['type'] === 'essay' ? '' : '请输入试题分数'"
+                  :disabled="item['type'] === 'essay'"
+                  clearable
+              >
                 <template #append>分</template>
               </el-input>
+              <span v-if="item['type'] === 'essay'" style="color: #909399; font-size: 12px; margin-top: 4px;">
+                主观题分数由评分细则决定，不可修改
+              </span>
             </el-form-item>
           </div>
           <el-divider v-if="index !== selectedQuestionsRef.length - 1" style="margin-top: 5px"/>
@@ -109,6 +119,7 @@
           <el-option label="随机" value="random"/>
           <el-option label="选择题" value="select"/>
           <el-option label="判断题" value="judge"/>
+          <el-option label="主观题" value="essay"/>
         </el-select>
       </el-form-item>
       <el-form-item required label="随机数量" prop="randomNumber">
@@ -167,7 +178,8 @@ const getQuestionsWarehouse = () => {
           tempData.push({
             id: item['id'],
             topic: item['topic'],
-            type: item['type']
+            type: item['type'],
+            rubric_total_score: item['rubric_total_score'] || 0
           })
         }
       })
@@ -201,10 +213,14 @@ const handleClickQuestionsLink = () => {
   } else {
     linkQuestionsDialogVisible.value = true
     selectedQuestionsRef.value = selectedQuestions
-    // 初始化表单数据
+    // 初始化表单数据（主观题自动填入评分细则总分）
     const tempData: any = {}
     for (const selectedQuestion of selectedQuestions) {
-      tempData[selectedQuestion['id']] = 0
+      if (selectedQuestion['type'] === 'essay') {
+        tempData[selectedQuestion['id']] = selectedQuestion['rubric_total_score'] || 0
+      } else {
+        tempData[selectedQuestion['id']] = 0
+      }
     }
     formData.value = tempData
   }
@@ -300,10 +316,14 @@ const handleSubmitRandom = (formEl: any) => {
         // 打开关联试题Dialog，填写分数
         linkQuestionsDialogVisible.value = true
         selectedQuestionsRef.value = response.data
-        // 初始化表单数据
+        // 初始化表单数据（主观题自动填入评分细则总分）
         const tempData: any = {}
         for (const selectedQuestion of response.data) {
-          tempData[selectedQuestion['id']] = 0
+          if (selectedQuestion['type'] === 'essay') {
+            tempData[selectedQuestion['id']] = selectedQuestion['rubric_total_score'] || 0
+          } else {
+            tempData[selectedQuestion['id']] = 0
+          }
         }
         formData.value = tempData
       })

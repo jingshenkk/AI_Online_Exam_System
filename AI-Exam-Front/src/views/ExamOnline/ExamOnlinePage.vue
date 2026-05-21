@@ -14,8 +14,8 @@
     </div>
     <div class="exam-online-operation-area">
       <div class="exam-online-questions-box">
-        <h2>高中物理第一次测验</h2>
-        <span>共6道题，祝大家好运</span>
+        <h2>{{ examDetail?.paper_info?.title || '在线考试' }}</h2>
+        <span>共{{ totalQuestionCount }}道题，祝大家好运</span>
         <div class="exam-online-paper-module-box" v-for="item in paperModuleQuestion">
           <div class="module-info-box">
             <span>{{ item.title }}（{{ item.description }}）</span>
@@ -71,7 +71,7 @@
 <script setup lang="ts">
 import moment from "moment";
 import { Paper, Exam, ExamResult, AIGrading} from "../../api"
-import { onMounted, ref, onBeforeUnmount, watch } from 'vue'
+import { onMounted, ref, onBeforeUnmount, watch, computed } from 'vue'
 import { MonitorCheck, CircleAlert, Check } from "lucide-vue-next";
 import { ElMessage, ElMessageBox } from "element-plus";
 import router from "../../router";
@@ -108,6 +108,13 @@ const answers = ref({})
 // 试卷信息，渲染页面
 const paperModuleQuestion: any = ref([])
 
+// 计算总题数
+const totalQuestionCount = computed(() => {
+  return paperModuleQuestion.value.reduce((sum: number, module: any) => {
+    return sum + (module.questions ? module.questions.length : 0)
+  }, 0)
+})
+
 // 获取完整试卷信息
 const getCompletePaperInfo = () => {
   Paper.getCompletePaperApi(examDetail.value.paper_id).then((response: any) => {
@@ -119,8 +126,9 @@ const getCompletePaperInfo = () => {
     // 处理试题选项
     response.data.forEach((item: any) => {
       item.questions.forEach((element: any) => {
-        if (element.question_detail.options !== 'T&F') {
-          element.question_detail.options = JSON.parse(element.question_detail.options)
+        const options = element.question_detail.options
+        if (options && options !== 'T&F' && element.question_detail.type !== 'essay') {
+          element.question_detail.options = JSON.parse(options)
         }
         tempAnswers[element['question_detail']['id']] = null
       })

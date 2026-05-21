@@ -103,7 +103,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 9.7
+    "keyword_score": 9.7,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 1,
@@ -202,14 +206,10 @@
       4,
       7
     ],
-    "human_score_1": 8.0,
-    "human_score_2": 9.0,
-    "human_score_3": 8.5,
-    "human_score_avg": 8.5,
-    "lenient_score": 7.5,
-    "strict_score": 7.5,
-    "free_score": 8.0,
-    "keyword_score": 5.5
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 6.0,
+    "human_score_avg": 5.83
   },
   {
     "question_id": 1,
@@ -315,7 +315,11 @@
     "lenient_score": 2.0,
     "strict_score": 4.5,
     "free_score": 4.0,
-    "keyword_score": 1.7
+    "keyword_score": 1.7,
+    "original_lenient_score": 4.5,
+    "original_strict_score": 4.5,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 2.5
   },
   {
     "question_id": 2,
@@ -388,7 +392,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 2,
@@ -454,14 +462,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 4.0
+    "human_score_1": 6.0,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.5
   },
   {
     "question_id": 2,
@@ -534,7 +538,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 3.0,
-    "keyword_score": 1.2
+    "keyword_score": 1.2,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 3,
@@ -597,7 +605,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 8.6
+    "keyword_score": 8.6,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 3,
@@ -653,14 +665,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 10.0,
-    "keyword_score": 2.8
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 3,
@@ -723,7 +731,11 @@
     "lenient_score": 2.5,
     "strict_score": 2.5,
     "free_score": 3.0,
-    "keyword_score": 1.0
+    "keyword_score": 1.0,
+    "original_lenient_score": 2.5,
+    "original_strict_score": 2.5,
+    "enhanced_lenient_score": 2.5,
+    "enhanced_strict_score": 2.5
   },
   {
     "question_id": 4,
@@ -790,7 +802,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 4,
@@ -848,16 +864,12 @@
     "student_answer": "二叉搜索树是一种二叉树，它的每个节点都满足：左子树上所有节点的值小于当前节点，右子树上所有节点的值大于当前节点。查找时，平均时间复杂度是O(log n)，但如果树不平衡，最坏会变成O(n)。插入操作也是先找到位置再插入，平均O(log n)。删除操作平均也是O(log n)，但删除时要考虑节点有没有子节点的情况。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 7.3
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 4,
@@ -924,7 +936,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 2.0,
-    "keyword_score": 1.3
+    "keyword_score": 1.3,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 5,
@@ -996,7 +1012,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 8.9
+    "keyword_score": 8.9,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 5,
@@ -1061,14 +1081,10 @@
       4,
       7
     ],
-    "human_score_1": 8.5,
-    "human_score_2": 8.5,
-    "human_score_3": 8.5,
-    "human_score_avg": 8.5,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 2.5
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.5
   },
   {
     "question_id": 5,
@@ -1140,7 +1156,11 @@
     "lenient_score": 2.0,
     "strict_score": 2.0,
     "free_score": 4.0,
-    "keyword_score": 1.5
+    "keyword_score": 1.5,
+    "original_lenient_score": 2.0,
+    "original_strict_score": 2.0,
+    "enhanced_lenient_score": 2.0,
+    "enhanced_strict_score": 2.0
   },
   {
     "question_id": 6,
@@ -1213,7 +1233,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 7.6
+    "keyword_score": 7.6,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 6,
@@ -1277,16 +1301,12 @@
     "student_answer": "死锁就是多个进程互相等着对方释放资源，结果谁都执行不下去。四个必要条件包括：互斥条件（资源不能共享）、请求与保持（占着资源还要新的）、不可剥夺（资源不能被抢走），还有一个是……嗯，好像是进程之间形成一个循环等待的关系。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 7.2
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 6,
@@ -1359,7 +1379,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 3.0,
-    "keyword_score": 2.0
+    "keyword_score": 2.0,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 7,
@@ -1421,7 +1445,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 8.9
+    "keyword_score": 8.9,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 7,
@@ -1473,17 +1501,13 @@
     "quality": "MEDIUM",
     "student_answer": "数据库的规范化是为了减少数据重复，提高数据一致性。第一范式要求表中的字段不能有多个值，每个字段都应该是单独的，不能把几个数据放在一个字段里。比如，不能用一个字段存放多个电话号码。",
     "expected_score_range": [
-      4,
+      5,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 2.2
+    "human_score_1": 6.5,
+    "human_score_2": 6.0,
+    "human_score_3": 6.0,
+    "human_score_avg": 6.17
   },
   {
     "question_id": 7,
@@ -1545,7 +1569,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 3.0,
-    "keyword_score": 0.6
+    "keyword_score": 0.6,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 8,
@@ -1619,7 +1647,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 8.7
+    "keyword_score": 8.7,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 8,
@@ -1686,14 +1718,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 3.8
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 6.0,
+    "human_score_avg": 5.83
   },
   {
     "question_id": 8,
@@ -1767,7 +1795,11 @@
     "lenient_score": 4.0,
     "strict_score": 4.0,
     "free_score": 3.0,
-    "keyword_score": 2.0
+    "keyword_score": 2.0,
+    "original_lenient_score": 4.0,
+    "original_strict_score": 4.0,
+    "enhanced_lenient_score": 2.0,
+    "enhanced_strict_score": 2.0
   },
   {
     "question_id": 9,
@@ -1830,7 +1862,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 9.0,
-    "keyword_score": 8.8
+    "keyword_score": 8.8,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 9,
@@ -1883,17 +1919,13 @@
     "quality": "MEDIUM",
     "student_answer": "IP地址是用来标识网络设备的，可以在不同网络间通信时使用，比如上网时路由器会分配IP。MAC地址是网卡自带的地址，每个设备都不一样，主要在局域网内用来找设备。IP地址有时候会变，MAC地址一般不变。",
     "expected_score_range": [
-      4,
+      5,
       7
     ],
-    "human_score_1": 9.0,
-    "human_score_2": 9.0,
-    "human_score_3": 9.5,
-    "human_score_avg": 9.17,
-    "lenient_score": 8.0,
-    "strict_score": 8.0,
-    "free_score": 7.0,
-    "keyword_score": 2.5
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 6.5,
+    "human_score_avg": 6.0
   },
   {
     "question_id": 9,
@@ -1956,7 +1988,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 3.0,
-    "keyword_score": 1.8
+    "keyword_score": 1.8,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 10,
@@ -2034,7 +2070,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 10,
@@ -2103,16 +2143,12 @@
     "student_answer": "虚拟内存就是让电脑能同时运行很多大程序，即使内存不够用。它的原理是把硬盘的一部分当做内存来用，把暂时用不到的程序数据先存到硬盘上，等需要的时候再换回来。这样电脑就能运行比实际内存更大的程序了。它还能让每个程序都有自己的内存空间，互相不干扰，比较安全。这样编程也简单一些，不用总想着内存到底够不够。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 9.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 9.67,
-    "lenient_score": 9.0,
-    "strict_score": 9.0,
-    "free_score": 8.0,
-    "keyword_score": 1.6
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.17
   },
   {
     "question_id": 10,
@@ -2190,7 +2226,11 @@
     "lenient_score": 5.0,
     "strict_score": 5.0,
     "free_score": 4.0,
-    "keyword_score": 1.4
+    "keyword_score": 1.4,
+    "original_lenient_score": 5.0,
+    "original_strict_score": 5.0,
+    "enhanced_lenient_score": 5.0,
+    "enhanced_strict_score": 5.0
   },
   {
     "question_id": 11,
@@ -2255,7 +2295,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 11,
@@ -2311,16 +2355,12 @@
     "student_answer": "三次握手就是客户端和服务器之间要建立连接。第一步是客户端发送一个请求，第二步是服务器收到后回复一个同意连接的报文，第三步是客户端再发一个确认。这样连接就建立起来了。目的主要是为了保证连接的可靠性。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 9.0,
-    "human_score_2": 8.0,
-    "human_score_3": 8.0,
-    "human_score_avg": 8.33,
-    "lenient_score": 2.0,
-    "strict_score": 2.0,
-    "free_score": 6.0,
-    "keyword_score": 4.2
+    "human_score_1": 5.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.17
   },
   {
     "question_id": 11,
@@ -2385,7 +2425,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 4.0,
-    "keyword_score": 2.2
+    "keyword_score": 2.2,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 12,
@@ -2465,7 +2509,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 12,
@@ -2535,17 +2583,13 @@
     "quality": "MEDIUM",
     "student_answer": "进程就是运行中的程序，系统会给它分配内存等资源。线程是进程里更小的执行单位，一个进程可以有多个线程。\n区别方面：进程之间是相互独立的，每个进程有自己的内存，所以一个进程出问题不会影响别的进程。线程是共享进程资源的，所以线程之间通信比较方便，但一个线程崩溃的话可能会让整个进程都挂掉。另外，线程切换比进程切换要快一些，因为线程共享进程的资源。",
     "expected_score_range": [
-      5,
-      6
+      4,
+      7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 3.7
+    "human_score_1": 5.5,
+    "human_score_2": 6.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 12,
@@ -2625,7 +2669,11 @@
     "lenient_score": 1.0,
     "strict_score": 1.0,
     "free_score": 4.0,
-    "keyword_score": 1.7
+    "keyword_score": 1.7,
+    "original_lenient_score": 1.0,
+    "original_strict_score": 1.0,
+    "enhanced_lenient_score": 1.0,
+    "enhanced_strict_score": 1.0
   },
   {
     "question_id": 13,
@@ -2688,7 +2736,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 8.7
+    "keyword_score": 8.7,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 13,
@@ -2744,14 +2796,10 @@
       4,
       7
     ],
-    "human_score_1": 9.5,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 9.83,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 3.5
+    "human_score_1": 5.5,
+    "human_score_2": 6.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 13,
@@ -2814,7 +2862,11 @@
     "lenient_score": 7.5,
     "strict_score": 7.5,
     "free_score": 4.0,
-    "keyword_score": 1.7
+    "keyword_score": 1.7,
+    "original_lenient_score": 7.5,
+    "original_strict_score": 7.5,
+    "enhanced_lenient_score": 7.5,
+    "enhanced_strict_score": 7.5
   },
   {
     "question_id": 14,
@@ -2875,7 +2927,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 14,
@@ -2926,17 +2982,13 @@
     "quality": "MEDIUM",
     "student_answer": "二叉树遍历有几种方法：\n- 先序遍历：先访问根，然后遍历左子树，再遍历右子树。\n- 中序遍历：先遍历左子树，然后访问根，再遍历右子树。\n- 后序遍历：先遍历左子树，然后遍历右子树，最后访问根。\n它们都是递归实现的，区别在于访问根的顺序不一样。",
     "expected_score_range": [
-      4,
+      5,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 10.0,
-    "keyword_score": 7.7
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 6.0,
+    "human_score_avg": 5.83
   },
   {
     "question_id": 14,
@@ -2997,7 +3049,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 3.0,
-    "keyword_score": 3.1
+    "keyword_score": 3.1,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 15,
@@ -3063,7 +3119,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 15,
@@ -3122,14 +3182,10 @@
       4,
       7
     ],
-    "human_score_1": 7.5,
-    "human_score_2": 8.0,
-    "human_score_3": 8.0,
-    "human_score_avg": 7.83,
-    "lenient_score": 8.0,
-    "strict_score": 8.0,
-    "free_score": 6.0,
-    "keyword_score": 4.0
+    "human_score_1": 5.5,
+    "human_score_2": 6.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 15,
@@ -3195,7 +3251,11 @@
     "lenient_score": 0.0,
     "strict_score": 3.0,
     "free_score": 3.0,
-    "keyword_score": 1.7
+    "keyword_score": 1.7,
+    "original_lenient_score": 3.0,
+    "original_strict_score": 3.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 16,
@@ -3268,7 +3328,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 9.1
+    "keyword_score": 9.1,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 16,
@@ -3334,14 +3398,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 3.4
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 16,
@@ -3414,7 +3474,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 2.0,
-    "keyword_score": 0.7
+    "keyword_score": 0.7,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 17,
@@ -3481,7 +3545,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 9.4
+    "keyword_score": 9.4,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 17,
@@ -3541,14 +3609,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 5.8
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 17,
@@ -3615,7 +3679,11 @@
     "lenient_score": 1.0,
     "strict_score": 1.0,
     "free_score": 3.0,
-    "keyword_score": 1.6
+    "keyword_score": 1.6,
+    "original_lenient_score": 1.0,
+    "original_strict_score": 1.0,
+    "enhanced_lenient_score": 1.0,
+    "enhanced_strict_score": 1.0
   },
   {
     "question_id": 18,
@@ -3724,7 +3792,11 @@
     "lenient_score": 11.0,
     "strict_score": 11.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 11.0,
+    "original_strict_score": 11.0,
+    "enhanced_lenient_score": 11.0,
+    "enhanced_strict_score": 11.0
   },
   {
     "question_id": 18,
@@ -3824,16 +3896,12 @@
     "student_answer": "顺序存储结构的优点是存取快，可以直接找到元素，但插入删除数据时要移动其他元素，比较麻烦，而且需要提前分配好一块连续的内存。链式存储结构的优点是插入删除很方便，只要改一下指针就行，内存可以随时申请。缺点是不能直接访问某个位置，得从头开始一个个找，而且每个结点除了存数据还要存指针，占的空间多一点。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 3.8
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 18,
@@ -3942,7 +4010,11 @@
     "lenient_score": 2.5,
     "strict_score": 1.0,
     "free_score": 3.0,
-    "keyword_score": 1.0
+    "keyword_score": 1.0,
+    "original_lenient_score": 4.0,
+    "original_strict_score": 1.0,
+    "enhanced_lenient_score": 1.0,
+    "enhanced_strict_score": 1.0
   },
   {
     "question_id": 19,
@@ -4025,7 +4097,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 19,
@@ -4099,16 +4175,12 @@
     "student_answer": "DNS解析就是找IP地址的过程。用户输入网址后，电脑会先问本地DNS服务器。如果这个服务器以前查过，有记录在缓存里，就直接告诉电脑IP。如果没有，本地DNS服务器会去问别的服务器，先问根服务器，根服务器告诉它该去问谁（比如.com的服务器），然后它再去问那个服务器，最后找到真正的权威服务器，拿到IP地址，回来告诉电脑。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 4.7
+    "human_score_1": 5.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.17
   },
   {
     "question_id": 19,
@@ -4191,7 +4263,11 @@
     "lenient_score": 3.0,
     "strict_score": 1.0,
     "free_score": 5.0,
-    "keyword_score": 2.0
+    "keyword_score": 2.0,
+    "original_lenient_score": 1.0,
+    "original_strict_score": 1.0,
+    "enhanced_lenient_score": 1.0,
+    "enhanced_strict_score": 1.0
   },
   {
     "question_id": 20,
@@ -4280,7 +4356,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 8.9
+    "keyword_score": 8.9,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 20,
@@ -4360,16 +4440,12 @@
     "student_answer": "虚拟内存是一种技术，它能让程序觉得自己有连续可用的内存空间。实际上，内存可能是不连续的，有些数据还会放在硬盘上，需要的时候再调进来。它的作用主要是可以让电脑运行更大的程序，因为不光是靠物理内存，还能用硬盘的空间。另外，它也能让不同程序之间共享一些内存，还能提高内存的利用率。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 9.0,
-    "human_score_2": 9.0,
-    "human_score_3": 9.0,
-    "human_score_avg": 9.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 3.1
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 20,
@@ -4458,7 +4534,11 @@
     "lenient_score": 3.5,
     "strict_score": 3.5,
     "free_score": 4.0,
-    "keyword_score": 1.4
+    "keyword_score": 1.4,
+    "original_lenient_score": 3.5,
+    "original_strict_score": 3.5,
+    "enhanced_lenient_score": 2.5,
+    "enhanced_strict_score": 1.5
   },
   {
     "question_id": 21,
@@ -4520,7 +4600,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 21,
@@ -4572,17 +4656,13 @@
     "quality": "MEDIUM",
     "student_answer": "TCP和UDP的区别主要是：\n1. TCP需要先建立连接才能通信，UDP不用连接。\n2. TCP能保证数据正确到达，UDP可能丢包。\n3. TCP速度慢一些，因为要检查数据；UDP更快。\n4. TCP用来传文件、上网，UDP用来视频聊天、查域名。\n（没有详细说明机制和具体场景）",
     "expected_score_range": [
-      5,
+      4,
       6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 7.0,
-    "keyword_score": 3.0
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 21,
@@ -4644,7 +4724,11 @@
     "lenient_score": 5.0,
     "strict_score": 7.5,
     "free_score": 4.0,
-    "keyword_score": 1.2
+    "keyword_score": 1.2,
+    "original_lenient_score": 7.5,
+    "original_strict_score": 7.5,
+    "enhanced_lenient_score": 5.0,
+    "enhanced_strict_score": 5.0
   },
   {
     "question_id": 22,
@@ -4717,7 +4801,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 22,
@@ -4781,16 +4869,12 @@
     "student_answer": "进程是程序的一次执行，线程是进程的一部分。区别是进程有自己独立的内存空间，而线程共享内存。进程切换比较慢，线程切换快一些。另外，线程之间通信比进程方便。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 9.0,
-    "human_score_3": 9.0,
-    "human_score_avg": 9.33,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 2.7
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 22,
@@ -4863,7 +4947,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 2.0,
-    "keyword_score": 1.6
+    "keyword_score": 1.6,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 23,
@@ -4926,7 +5014,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 23,
@@ -4980,16 +5072,12 @@
     "student_answer": "ACID特性有：1. 原子性：事务要么全部做，要么全部不做。2. 一致性：事务执行后数据要一致。3. 隔离性：多个事务同时执行时互不影响。4. 持久性：事务提交后修改会保存下来。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 8.0,
-    "strict_score": 6.0,
-    "free_score": 9.0,
-    "keyword_score": 3.3
+    "human_score_1": 5.5,
+    "human_score_2": 5.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.33
   },
   {
     "question_id": 23,
@@ -5052,7 +5140,11 @@
     "lenient_score": 5.0,
     "strict_score": 5.0,
     "free_score": 3.0,
-    "keyword_score": 1.0
+    "keyword_score": 1.0,
+    "original_lenient_score": 5.0,
+    "original_strict_score": 5.0,
+    "enhanced_lenient_score": 5.0,
+    "enhanced_strict_score": 5.0
   },
   {
     "question_id": 24,
@@ -5120,7 +5212,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 24,
@@ -5179,16 +5275,12 @@
     "student_answer": "数组是连续存储的，链表是用指针连起来的。数组查找快，链表插入删除方便。链表每个节点还要存指针，所以占的空间多一点。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 4.2
+    "human_score_1": 5.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.17
   },
   {
     "question_id": 24,
@@ -5256,7 +5348,11 @@
     "lenient_score": 3.0,
     "strict_score": 3.0,
     "free_score": 4.0,
-    "keyword_score": 1.2
+    "keyword_score": 1.2,
+    "original_lenient_score": 3.0,
+    "original_strict_score": 3.0,
+    "enhanced_lenient_score": 5.0,
+    "enhanced_strict_score": 5.0
   },
   {
     "question_id": 25,
@@ -5359,7 +5455,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 9.4
+    "keyword_score": 9.4,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 25,
@@ -5453,16 +5553,12 @@
     "student_answer": "OSI模型分为七层：物理层（传输比特流）、数据链路层（负责节点间传输）、网络层（处理路由和转发）、传输层（端到端通信）、会话层（管理会话）、表示层（格式转换）、应用层（用户接口）。但具体功能记得不太清楚，比如数据链路层和网络层的区别可能有点模糊。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 3.8
+    "human_score_1": 5.0,
+    "human_score_2": 5.5,
+    "human_score_3": 5.0,
+    "human_score_avg": 5.17
   },
   {
     "question_id": 25,
@@ -5565,7 +5661,11 @@
     "lenient_score": 6.0,
     "strict_score": 4.0,
     "free_score": 3.0,
-    "keyword_score": 0.5
+    "keyword_score": 0.5,
+    "original_lenient_score": 4.0,
+    "original_strict_score": 6.0,
+    "enhanced_lenient_score": 4.0,
+    "enhanced_strict_score": 4.0
   },
   {
     "question_id": 26,
@@ -5643,7 +5743,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 26,
@@ -5714,14 +5818,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 7.0,
-    "keyword_score": 3.6
+    "human_score_1": 5.5,
+    "human_score_2": 6.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 26,
@@ -5799,7 +5899,11 @@
     "lenient_score": 1.5,
     "strict_score": 1.5,
     "free_score": 2.0,
-    "keyword_score": 1.7
+    "keyword_score": 1.7,
+    "original_lenient_score": 1.5,
+    "original_strict_score": 1.5,
+    "enhanced_lenient_score": 1.5,
+    "enhanced_strict_score": 1.5
   },
   {
     "question_id": 27,
@@ -5856,7 +5960,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 27,
@@ -5903,17 +6011,13 @@
     "quality": "MEDIUM",
     "student_answer": "第一范式是属性不可再分，比如不能把多个信息放在一个字段里。第二范式要消除部分依赖，就是非主属性要完全依赖主键。第三范式是消除传递依赖，比如非主属性不能依赖于另一个非主属性。",
     "expected_score_range": [
-      4,
+      5,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 9.0,
-    "keyword_score": 7.2
+    "human_score_1": 6.0,
+    "human_score_2": 5.5,
+    "human_score_3": 6.0,
+    "human_score_avg": 5.83
   },
   {
     "question_id": 27,
@@ -5970,7 +6074,11 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 4.0,
-    "keyword_score": 2.2
+    "keyword_score": 2.2,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   },
   {
     "question_id": 28,
@@ -6026,7 +6134,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 28,
@@ -6075,14 +6187,10 @@
       4,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 9.5,
-    "human_score_3": 9.5,
-    "human_score_avg": 9.67,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 4.4
+    "human_score_1": 5.5,
+    "human_score_2": 6.0,
+    "human_score_3": 5.5,
+    "human_score_avg": 5.67
   },
   {
     "question_id": 28,
@@ -6138,7 +6246,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 5.0,
-    "keyword_score": 3.8
+    "keyword_score": 3.8,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 29,
@@ -6191,7 +6303,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 10.0
+    "keyword_score": 10.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 29,
@@ -6234,17 +6350,13 @@
     "quality": "MEDIUM",
     "student_answer": "HTTP协议是无状态的，意思是每次请求都是独立的，服务器不会记住之前的请求。为了解决这个问题，可以用Cookie和Session。\n\nCookie是服务器发给浏览器的一小段数据，浏览器保存下来，下次请求时再发回给服务器，这样服务器就知道是同一个用户了。\n\nSession是存在服务器上的用户信息，服务器给每个用户一个Session ID，通常放在Cookie里传给浏览器，浏览器下次请求时带上这个ID，服务器就能找到对应的Session数据。",
     "expected_score_range": [
-      4,
+      5,
       7
     ],
-    "human_score_1": 10.0,
-    "human_score_2": 10.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 10.0,
-    "lenient_score": 10.0,
-    "strict_score": 10.0,
-    "free_score": 8.0,
-    "keyword_score": 5.1
+    "human_score_1": 6.5,
+    "human_score_2": 6.0,
+    "human_score_3": 6.5,
+    "human_score_avg": 6.33
   },
   {
     "question_id": 29,
@@ -6297,7 +6409,11 @@
     "lenient_score": 6.0,
     "strict_score": 6.0,
     "free_score": 4.0,
-    "keyword_score": 2.2
+    "keyword_score": 2.2,
+    "original_lenient_score": 6.0,
+    "original_strict_score": 6.0,
+    "enhanced_lenient_score": 6.0,
+    "enhanced_strict_score": 6.0
   },
   {
     "question_id": 30,
@@ -6363,7 +6479,11 @@
     "lenient_score": 10.0,
     "strict_score": 10.0,
     "free_score": 10.0,
-    "keyword_score": 9.0
+    "keyword_score": 9.0,
+    "original_lenient_score": 10.0,
+    "original_strict_score": 10.0,
+    "enhanced_lenient_score": 10.0,
+    "enhanced_strict_score": 10.0
   },
   {
     "question_id": 30,
@@ -6420,16 +6540,12 @@
     "student_answer": "虚拟内存是一种计算机技术，用来让程序感觉有更多内存可用。它可以把硬盘空间当作内存来用，这样即使物理内存不够，程序也能运行。另外，它还能保护不同程序的内存，防止它们互相干扰。不过，有时候用虚拟内存会让电脑变慢，因为读写硬盘比内存慢。",
     "expected_score_range": [
       4,
-      7
+      6
     ],
-    "human_score_1": 9.5,
-    "human_score_2": 9.0,
-    "human_score_3": 10.0,
-    "human_score_avg": 9.5,
-    "lenient_score": 8.0,
-    "strict_score": 8.0,
-    "free_score": 8.0,
-    "keyword_score": 2.2
+    "human_score_1": 5.0,
+    "human_score_2": 4.5,
+    "human_score_3": 5.0,
+    "human_score_avg": 4.83
   },
   {
     "question_id": 30,
@@ -6495,6 +6611,10 @@
     "lenient_score": 0.0,
     "strict_score": 0.0,
     "free_score": 2.0,
-    "keyword_score": 1.6
+    "keyword_score": 1.6,
+    "original_lenient_score": 0.0,
+    "original_strict_score": 0.0,
+    "enhanced_lenient_score": 0.0,
+    "enhanced_strict_score": 0.0
   }
 ]

@@ -111,6 +111,9 @@
                       <el-tooltip v-if="element['question_detail']['type'] === 'judge'" content="判断题" placement="top">
                         <el-image style="width: 18px;" src="/src/images/JudgeIcon.png" fit="cover"/>
                       </el-tooltip>
+                      <el-tooltip v-else-if="element['question_detail']['type'] === 'essay'" content="主观题" placement="top">
+                        <PencilLine :size="18" color="#409EFF" />
+                      </el-tooltip>
                       <el-tooltip v-else content="选择题" placement="top">
                         <el-image style="width: 18px;" src="/src/images/SelectIcon.png" fit="cover"/>
                       </el-tooltip>
@@ -122,7 +125,7 @@
                     </div>
                     <el-divider direction="vertical"  style="height: 50%;margin: 0"  v-if="!props.paperInfo['is_published']" />
                     <div class="item-opt-box" v-if="!props.paperInfo['is_published']">
-                      <el-tooltip content="编辑" placement="top">
+                      <el-tooltip v-if="element['question_detail']['type'] !== 'essay'" content="编辑" placement="top">
                         <el-button link class="item-opt-box-item" :icon="PencilLine" type="primary" @click="handleOpenEditQuestionDialog(element)"/>
                       </el-tooltip>
                       <el-tooltip content="取消关联" placement="top">

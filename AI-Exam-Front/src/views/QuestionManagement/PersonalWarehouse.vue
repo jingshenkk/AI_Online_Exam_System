@@ -172,6 +172,10 @@
         <el-form-item v-if="formData.type === 'essay'" label="字数上限" :label-width="formLabelWidth" prop="max_chars" required>
           <el-input-number v-model="formData.max_chars" :min="100" :max="5000" :step="100" placeholder="字数上限"/>
         </el-form-item>
+        <el-form-item v-if="formData.type === 'essay'" label="题目总分" :label-width="formLabelWidth" prop="total_score" required>
+          <el-input-number v-model="formData.total_score" :min="1" :max="100" :step="1" placeholder="题目总分"/>
+          <span style="color: #909399; font-size: 12px; margin-left: 8px;">系统将根据总分自动生成评分细则</span>
+        </el-form-item>
         <el-form-item label="参考答案" :label-width="formLabelWidth" prop="answer" required>
           <el-input v-if="formData.type == 'select'" v-model="formData.answer" placeholder="请输入参考答案" clearable/>
           <el-radio-group v-else-if="formData.type == 'judge'" v-model="formData.answer">
@@ -437,7 +441,8 @@ const initFormData = {
   status: true,
   created_user: userId,
   updated_user: userId,
-  max_chars: 1000
+  max_chars: 1000,
+  total_score: 10
 }
 // 试题 FormData
 const formData = ref(initFormData)

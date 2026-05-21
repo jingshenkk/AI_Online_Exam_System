@@ -17,7 +17,7 @@ class Questions(models.Model):
     # 试题选项
     options = models.TextField(default='T&F', max_length=500, help_text='试题选项')
     # 试题答案（客观题为标准答案，主观题为参考答案）
-    answer = models.TextField(max_length=2000, help_text='试题参考答案')
+    answer = models.TextField(help_text='试题参考答案')
     # 试题类型
     TYPE_CHOICES = [('select', 'Select'), ('judge', 'Judge'), ('essay', 'Essay')]
     type = models.CharField(max_length=10, choices=TYPE_CHOICES, default='select', help_text='试题类型')

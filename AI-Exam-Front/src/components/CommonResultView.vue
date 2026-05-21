@@ -143,8 +143,9 @@ const getExamResultInfo = () => {
     // 处理试题选项
     response.data.forEach((item: any) => {
       item.questions.forEach((element: any) => {
-        if (element.question_detail.options !== 'T&F') {
-          element.question_detail.options = JSON.parse(element.question_detail.options)
+        const options = element.question_detail.options
+        if (options && options !== 'T&F' && element.question_detail.type !== 'essay') {
+          element.question_detail.options = JSON.parse(options)
         }
       })
     })

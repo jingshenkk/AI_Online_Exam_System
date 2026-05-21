@@ -1,0 +1,154 @@
+{
+  "原始-宽松(Zero-shot)": {
+    "HIGH": {
+      "count": 30,
+      "pearson_r": 0.0,
+      "mae": 0.0333,
+      "rmse": 0.1826,
+      "consistency_rate": 100.0,
+      "avg_ai_score": 10.03,
+      "avg_human_score": 10.0
+    },
+    "MEDIUM": {
+      "count": 30,
+      "pearson_r": 0.6015,
+      "mae": 0.6503,
+      "rmse": 1.5168,
+      "consistency_rate": 83.33,
+      "avg_ai_score": 9.25,
+      "avg_human_score": 9.64
+    },
+    "LOW": {
+      "count": 30,
+      "pearson_r": 0.7689,
+      "mae": 1.7783,
+      "rmse": 2.2603,
+      "consistency_rate": 40.0,
+      "avg_ai_score": 2.53,
+      "avg_human_score": 3.98
+    },
+    "ALL": {
+      "count": 90,
+      "pearson_r": 0.9396,
+      "mae": 0.8207,
+      "rmse": 1.5751,
+      "consistency_rate": 74.44,
+      "avg_ai_score": 7.27,
+      "avg_human_score": 7.87
+    }
+  },
+  "原始-严格(Zero-shot)": {
+    "HIGH": {
+      "count": 30,
+      "pearson_r": 0.0,
+      "mae": 0.0333,
+      "rmse": 0.1826,
+      "consistency_rate": 100.0,
+      "avg_ai_score": 10.03,
+      "avg_human_score": 10.0
+    },
+    "MEDIUM": {
+      "count": 30,
+      "pearson_r": 0.6604,
+      "mae": 0.467,
+      "rmse": 1.2682,
+      "consistency_rate": 86.67,
+      "avg_ai_score": 9.4,
+      "avg_human_score": 9.64
+    },
+    "LOW": {
+      "count": 30,
+      "pearson_r": 0.7998,
+      "mae": 1.7563,
+      "rmse": 2.2431,
+      "consistency_rate": 40.0,
+      "avg_ai_score": 2.5,
+      "avg_human_score": 3.98
+    },
+    "ALL": {
+      "count": 90,
+      "pearson_r": 0.9512,
+      "mae": 0.7522,
+      "rmse": 1.4915,
+      "consistency_rate": 75.56,
+      "avg_ai_score": 7.31,
+      "avg_human_score": 7.87
+    }
+  },
+  "改进-宽松(Few-shot)": {
+    "HIGH": {
+      "count": 30,
+      "pearson_r": 0.0,
+      "mae": 0.0333,
+      "rmse": 0.1826,
+      "consistency_rate": 100.0,
+      "avg_ai_score": 10.03,
+      "avg_human_score": 10.0
+    },
+    "MEDIUM": {
+      "count": 30,
+      "pearson_r": 0.628,
+      "mae": 0.5837,
+      "rmse": 1.4722,
+      "consistency_rate": 86.67,
+      "avg_ai_score": 9.32,
+      "avg_human_score": 9.64
+    },
+    "LOW": {
+      "count": 30,
+      "pearson_r": 0.7804,
+      "mae": 2.1003,
+      "rmse": 2.5227,
+      "consistency_rate": 26.67,
+      "avg_ai_score": 2.07,
+      "avg_human_score": 3.98
+    },
+    "ALL": {
+      "count": 90,
+      "pearson_r": 0.9488,
+      "mae": 0.9058,
+      "rmse": 1.6897,
+      "consistency_rate": 71.11,
+      "avg_ai_score": 7.14,
+      "avg_human_score": 7.87
+    }
+  },
+  "改进-严格(Few-shot)": {
+    "HIGH": {
+      "count": 30,
+      "pearson_r": 0.0,
+      "mae": 0.0333,
+      "rmse": 0.1826,
+      "consistency_rate": 100.0,
+      "avg_ai_score": 10.03,
+      "avg_human_score": 10.0
+    },
+    "MEDIUM": {
+      "count": 30,
+      "pearson_r": 0.628,
+      "mae": 0.5837,
+      "rmse": 1.4722,
+      "consistency_rate": 86.67,
+      "avg_ai_score": 9.32,
+      "avg_human_score": 9.64
+    },
+    "LOW": {
+      "count": 30,
+      "pearson_r": 0.7927,
+      "mae": 2.0503,
+      "rmse": 2.4485,
+      "consistency_rate": 26.67,
+      "avg_ai_score": 2.12,
+      "avg_human_score": 3.98
+    },
+    "ALL": {
+      "count": 90,
+      "pearson_r": 0.9503,
+      "mae": 0.8891,
+      "rmse": 1.6529,
+      "consistency_rate": 71.11,
+      "avg_ai_score": 7.16,
+      "avg_human_score": 7.87
+    }
+  }
+}

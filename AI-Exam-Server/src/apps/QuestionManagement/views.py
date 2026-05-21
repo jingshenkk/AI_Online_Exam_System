@@ -6,7 +6,7 @@ import logging
 
 import pandas as pd
 import numpy as np
-from django.db.models import Q
+from django.db.models import Q, Sum
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -34,7 +34,32 @@ class QuestionBaseView(APIView):
         if serializer.is_valid():
             serializer.save()
             data = Response(serializer.data)
-            return api_response(ResponseCode.SUCCESS, '创建成功', data.data)
+            question_data = data.data
+            # 主观题自动生成评分细则
+            if question_data.get('type') == 'essay' and question_data.get('answer'):
+                total_score = request.data.get('total_score', 10)
+                try:
+                    from src.services.llm_service import LLMService
+                    llm_service = LLMService()
+                    rubric_data = llm_service.generate_rubric(
+                        question_data['topic'],
+                        question_data['answer'],
+                        total_score
+                    )
+                    if rubric_data and 'points' in rubric_data:
+                        for idx, point_data in enumerate(rubric_data['points']):
+                            ScoringPoint.objects.create(
+                                question_id=question_data['id'],
+                                description=point_data['description'],
+                                score=point_data['score'],
+                                acceptable_expressions=point_data.get('acceptable_expressions', []),
+                                sort_order=idx,
+                                is_approved=True
+                            )
+                        logger.info(f"主观题 {question_data['id']} 评分细则自动生成成功")
+                except Exception as rubric_error:
+                    logger.error(f"主观题 {question_data['id']} 评分细则自动生成失败: {rubric_error}")
+            return api_response(ResponseCode.SUCCESS, '创建成功', question_data)
         else:
             return api_response(ResponseCode.BAD_REQUEST, '创建失败', serializer.errors)
 
@@ -249,7 +274,17 @@ class QuestionsWarehouseForPaper(APIView):
                 Q(created_user=user_id) | Q(id__in = favorite_questions_ids)).order_by('created_at')
         serializer = QuestionSerializer(questions_instance, many=True)
         data = Response(serializer.data)
-        return api_response(ResponseCode.SUCCESS, '获取题库试题成功！', data.data)
+        # 为每道题附加评分细则总分（主观题从评分细则计算，客观题为0）
+        result = list(data.data)
+        for item in result:
+            if item.get('type') == 'essay':
+                rubric_score = ScoringPoint.objects.filter(
+                    question_id=item['id'], is_approved=True
+                ).aggregate(total=Sum('score'))['total'] or 0
+                item['rubric_total_score'] = float(rubric_score)
+            else:
+                item['rubric_total_score'] = 0
+        return api_response(ResponseCode.SUCCESS, '获取题库试题成功！', result)
 
 
 class UploadFileForQuestionsView(APIView):
@@ -258,18 +293,24 @@ class UploadFileForQuestionsView(APIView):
     
     def __analysis_data(self, data, creator):
         success_list, fail_list = [], []
+        type_mapping = {'选择题': 'select', '判断题': 'judge', '简答题': 'essay'}
         for item in data:
-            required_keys = ['topic', 'type', 'trial_type', 'options', 'answer']
-            # 使用any()函数，如果任何一个键的值为None或'<NA>'，数据就放入失败组
-            if any(item.get(key) is None for key in required_keys):
+            question_type_cn = item.get('type')
+            question_type = type_mapping.get(question_type_cn)
+            # 简答题不要求options字段，其他题型全部字段必填
+            if question_type == 'essay':
+                required_keys = ['topic', 'type', 'trial_type', 'answer']
+            else:
+                required_keys = ['topic', 'type', 'trial_type', 'options', 'answer']
+            # 校验必填字段和题型是否合法
+            if question_type is None or any(item.get(key) is None for key in required_keys):
                 fail_list.append(item)
             else:
-                # 进行数据处理后，将数据放到成功组
                 question_instance = Questions()
                 question_instance.topic = item['topic']
-                question_instance.type = 'select' if item['type'] == '选择题' else 'judge'
+                question_instance.type = question_type
                 question_instance.trial_type = 'public' if item['trial_type'] == '公共题库' else 'private'
-                question_instance.options = item['options']
+                question_instance.options = item.get('options') or ''
                 question_instance.answer = item['answer']
                 question_instance.created_user = creator
                 success_list.append(question_instance)
@@ -293,15 +334,48 @@ class UploadFileForQuestionsView(APIView):
                 # 数据解析处理
                 success, fail = self.__analysis_data(translated_data, user_id)
                 if success:
-                    Questions.objects.bulk_create(success)
+                    created_questions = Questions.objects.bulk_create(success)
+                    # 为导入的主观题自动生成评分细则
+                    essay_questions = [q for q in created_questions if q.type == 'essay' and q.answer]
+                    rubric_fail_count = 0
+                    if essay_questions:
+                        try:
+                            from src.services.llm_service import LLMService
+                            llm_service = LLMService()
+                            for question in essay_questions:
+                                try:
+                                    rubric_data = llm_service.generate_rubric(
+                                        question.topic, question.answer, 10
+                                    )
+                                    if rubric_data and 'points' in rubric_data:
+                                        for idx, point_data in enumerate(rubric_data['points']):
+                                            ScoringPoint.objects.create(
+                                                question_id=str(question.id),
+                                                description=point_data['description'],
+                                                score=point_data['score'],
+                                                acceptable_expressions=point_data.get('acceptable_expressions', []),
+                                                sort_order=idx,
+                                                is_approved=True
+                                            )
+                                        logger.info(f"批量导入：主观题 {question.id} 评分细则自动生成成功")
+                                except Exception as rubric_error:
+                                    rubric_fail_count += 1
+                                    logger.error(f"批量导入：主观题 {question.id} 评分细则生成失败: {rubric_error}")
+                        except Exception as init_error:
+                            logger.error(f"批量导入：LLM服务初始化失败: {init_error}")
+                    rubric_msg = ''
+                    if essay_questions:
+                        rubric_success = len(essay_questions) - rubric_fail_count
+                        rubric_msg = f'（其中{len(essay_questions)}道主观题，{rubric_success}道已自动生成评分细则）'
                     if fail:
-                        return api_response(ResponseCode.SUCCESS, 'Excel文件解析成功！部分新增成功！', { 'fail_list': fail })
+                        return api_response(ResponseCode.SUCCESS, f'Excel文件解析成功！部分新增成功！{rubric_msg}', { 'fail_list': fail })
                     else:
-                        return api_response(ResponseCode.SUCCESS, 'Excel文件解析成功！全部新增成功！', { 'fail_list': fail })
+                        return api_response(ResponseCode.SUCCESS, f'Excel文件解析成功！全部新增成功！{rubric_msg}', { 'fail_list': fail })
                 else:
                     return api_response(ResponseCode.BAD_REQUEST, 'Excel文件解析成功！全部新增失败！', { 'fail_list': fail })
             except Exception as e:
-                return api_response(ResponseCode.INTERNAL_SERVER_ERROR, '解析失败！存在错误信息！请检查单元格类型和必填信息！')
+                logger.error(f'试题上传解析失败: {e}', exc_info=True)
+                return api_response(ResponseCode.INTERNAL_SERVER_ERROR, f'解析失败！错误信息：{str(e)}')
         else:
             return api_response(ResponseCode.INTERNAL_SERVER_ERROR, '文件上传失败！')
 
@@ -328,7 +402,17 @@ class RandomSelectQuestionsView(APIView):
             if int(random_num) > len(serializer_data) or int(random_num) <= 0:
                 return api_response(ResponseCode.BAD_REQUEST, '参数错误！随机数量不能大于可选题总数或小于等于0')
             random_data = random.sample(serializer_data, int(random_num))
-            return api_response(ResponseCode.SUCCESS, '获取题库试题成功！', random_data)
+            # 为每道题附加评分细则总分
+            result = list(random_data)
+            for item in result:
+                if item.get('type') == 'essay':
+                    rubric_score = ScoringPoint.objects.filter(
+                        question_id=item['id'], is_approved=True
+                    ).aggregate(total=Sum('score'))['total'] or 0
+                    item['rubric_total_score'] = float(rubric_score)
+                else:
+                    item['rubric_total_score'] = 0
+            return api_response(ResponseCode.SUCCESS, '获取题库试题成功！', result)
         except Exception as e:
             return api_response(ResponseCode.BAD_REQUEST, '参数错误！请输入正确的参数！')
 
